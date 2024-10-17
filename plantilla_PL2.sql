@@ -77,6 +77,77 @@ CREATE TABLE IF NO EXISTS Géneros(
 )
 
 \echo 'creando un esquema temporal'
+CREATE TABLE IF NO EXISTS DiscoTemp(
+    Año_Publicacion TEXT ,
+    Título TEXT ,
+    Url_Portada TEXT ,
+    Nombre_Grupo TEXT ,
+    CONSTRAINT Disco_PK PRIMARY KEY (Año_Publicacion, Título)
+    CONSTRAINT Grupo_FK FOREIGN KEY (Nombre_Grupo) REFERENCES Grupo(Nombre) MATCH FULL
+    ON DELETE RESTRICT ON UPDATE CASCADE
+)
+
+CREATE TABLE IF NO EXISTS GrupoTemp(
+    Nombre TEXT ,
+    URL_Grupo TEXT ,
+    CONSTRAINT Nombre_PK PRIMARY KEY (Nombre)
+)
+
+CREATE TABLE IF NO EXISTS UsuarioTemp(
+    Nombre_Usuario TEXT ,
+    Nombre TEXT ,
+    Email TEXT ,
+    Contraseña TEXT ,
+    CONSTRAINT Usuario_PK PRIMARY KEY (Nombre_Usuario)
+)
+
+CREATE TABLE IF NO EXISTS CanciónTemp(
+    Título TEXT ,
+    Duración TEXT ,
+    Título_Disco TEXT ,
+    Año_Publicación_Disco TEXT ,
+    CONSTRAINT Canción_PK PRIMARY KEY (Título, Año_Publicación_Disco, Título_Disco)
+    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
+    ON DELETE RESTRICT ON UPDATE CASCADE
+)
+
+CREATE TABLE IF NO EXISTS EdiciónTemp(
+    Formato TEXT ,
+    Año_Edición TEXT ,
+    País TEXT ,
+    Año_Publicación_Disco TEXT ,
+    Título_Disco TEXT ,
+    CONSTRAINT Edición_PK PRIMARY KEY (Formato, Año_Edición, País, Año_Publicación_Disco, Título_Disco)
+    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
+    ON DELETE RESTRICT ON UPDATE CASCADE
+)
+
+CREATE TABLE IF NO EXISTS DeseaTemp(
+    Año_Publicación_Disco TEXT ,
+    Título_Disco TEXT ,
+    Nombre_Usuario TEXT ,
+    CONSTRAINT Desea_PK PRIMARY KEY (Año_Publicación_Disco, Título_Disco, Nombre_Usuario)
+    CONSTRAINT DiscoUsuario_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco, Nombre_Usuario) REFERENCES  Disco(Año_Publicacion), Disco(Título_Disco), Usuario(Nombre_Usuario) MATCH FULL
+)
+
+CREATE TABLE IF NO EXISTS TieneTemp(
+    Formato_Edición TEXT ,
+    Año_Edición TEXT ,
+    Nombre_Usuario TEXT ,
+    Estado TEXT ,
+    CONSTRAINT Tiene_PK PRIMARY KEY (Formato_Edición, Año_Edición, Nombre_Usuario)
+    CONSTRAINT EdiciónUsuario_FK FOREIGN KEY (Formato_Edición, Año_Edición, Nombre_Usuario) REFERENCES Edición(Formato), Edición(Año_Edición), Usuario(Nombre_Usuario) MATCH FULL
+    ON DELETE RESTRICT ON UPDATE CASCADE
+)
+
+CREATE TABLE IF NO EXISTS GénerosTemp(
+    Año_Publicación_Disco TEXT ,
+    Género TEXT ,
+    Título_Disco TEXT ,
+    CONSTRAINT Géneros_PK PRIMARY KEY (Año_Publicación_Disco, Título_Disco, Género)
+    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
+    ON DELETE RESTRICT ON UPDATE CASCADE
+)
 
 
 SET search_path='nombre del esquema o esquemas utilizados';

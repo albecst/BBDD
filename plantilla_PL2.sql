@@ -60,10 +60,13 @@ CREATE TABLE IF NO EXISTS Desea(
 CREATE TABLE IF NO EXISTS Tiene(
     Formato_Edición TEXT NOT NULL,
     Año_Edición TEXT NOT NULL,
+    País_Edición TEXT NOT NULL,
+    Año_Publicación_Disco TEXT NOT NULL,
+    Título_Disco TEXT NOT NULL,
     Nombre_Usuario TEXT NOT NULL,
     Estado TEXT NOT NULL,
-    CONSTRAINT Tiene_PK PRIMARY KEY (Formato_Edición, Año_Edición, Nombre_Usuario)
-    CONSTRAINT EdiciónUsuario_FK FOREIGN KEY (Formato_Edición, Año_Edición, Nombre_Usuario) REFERENCES Edición(Formato), Edición(Año_Edición), Usuario(Nombre_Usuario) MATCH FULL
+    CONSTRAINT Tiene_PK PRIMARY KEY (Formato_Edición, Año_Edición, Nombre_Usuario, País_Edición, Año_Publicación_Disco, Título_Disco)
+    CONSTRAINT EdiciónUsuario_FK FOREIGN KEY (Formato_Edición, Año_Edición, Nombre_Usuario, País_Edición, Año_Publicación_Disco, Título_Disco) REFERENCES Edición(Formato), Edición(Año_Edición), Usuario(Nombre_Usuario), Edición(País), Disco(Año_Publicacion), Disco(Título) MATCH FULL
     ON DELETE RESTRICT ON UPDATE CASCADE
 )
 
@@ -133,10 +136,13 @@ CREATE TABLE IF NO EXISTS DeseaTemp(
 CREATE TABLE IF NO EXISTS TieneTemp(
     Formato_Edición TEXT ,
     Año_Edición TEXT ,
+    País_Edición TEXT ,
+    Año_Publicación_Disco TEXT ,
+    Título_Disco TEXT ,
     Nombre_Usuario TEXT ,
     Estado TEXT ,
-    CONSTRAINT Tiene_PK PRIMARY KEY (Formato_Edición, Año_Edición, Nombre_Usuario)
-    CONSTRAINT EdiciónUsuario_FK FOREIGN KEY (Formato_Edición, Año_Edición, Nombre_Usuario) REFERENCES Edición(Formato), Edición(Año_Edición), Usuario(Nombre_Usuario) MATCH FULL
+    CONSTRAINT Tiene_PK PRIMARY KEY (Formato_Edición, Año_Edición, Nombre_Usuario, País_Edición, Año_Publicación_Disco, Título_Disco)
+    CONSTRAINT EdiciónUsuario_FK FOREIGN KEY (Formato_Edición, Año_Edición, Nombre_Usuario, País_Edición, Año_Publicación_Disco, Título_Disco) REFERENCES Edición(Formato), Edición(Año_Edición), Usuario(Nombre_Usuario), Edición(País), Disco(Año_Publicacion), Disco(Título) MATCH FULL
     ON DELETE RESTRICT ON UPDATE CASCADE
 )
 

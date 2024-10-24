@@ -4,161 +4,187 @@ SET client_encoding = 'UTF8';
 
 BEGIN;
 \echo 'creando el esquema para la BBDD de discos'
-CREATE TABLE IF NO EXISTS Disco(
-    Año_Publicacion TEXT NOT NULL,
-    Título TEXT NOT NULL,
-    Url_Portada TEXT NOT NULL,
-    Nombre_Grupo TEXT NOT NULL,
-    CONSTRAINT Disco_PK PRIMARY KEY (Año_Publicacion, Título)
-    CONSTRAINT Grupo_FK FOREIGN KEY (Nombre_Grupo) REFERENCES Grupo(Nombre) MATCH FULL
-    ON DELETE RESTRICT ON UPDATE CASCADE
-)
 
-CREATE TABLE IF NO EXISTS Grupo(
+CREATE TABLE IF NOT EXISTS Grupo(
     Nombre TEXT NOT NULL,
     URL_Grupo TEXT NOT NULL,
     CONSTRAINT Nombre_PK PRIMARY KEY (Nombre)
-)
+);
 
-CREATE TABLE IF NO EXISTS Usuario(
+CREATE TABLE IF NOT EXISTS Disco(
+    Ano_Publicacion TEXT NOT NULL,
+    Titulo_Disco TEXT NOT NULL,
+    Url_Portada TEXT,
+    Nombre_Grupo TEXT NOT NULL,
+    CONSTRAINT Disco_PK PRIMARY KEY (Ano_Publicacion, Titulo_Disco),
+    CONSTRAINT Grupo_FK FOREIGN KEY (Nombre_Grupo) REFERENCES Grupo(Nombre) MATCH FULL 
+    ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+
+CREATE TABLE IF NOT EXISTS Usuario(
     Nombre_Usuario TEXT NOT NULL,
     Nombre TEXT NOT NULL,
     Email TEXT NOT NULL,
-    Contraseña TEXT NOT NULL,
+    Contrasena TEXT NOT NULL,
     CONSTRAINT Usuario_PK PRIMARY KEY (Nombre_Usuario)
-)
+);
 
-CREATE TABLE IF NO EXISTS Canción(
-    Título TEXT NOT NULL,
-    Duración TIME NOT NULL,
-    Título_Disco TEXT NOT NULL,
-    Año_Publicación_Disco TEXT NOT NULL,
-    CONSTRAINT Canción_PK PRIMARY KEY (Título, Año_Publicación_Disco, Título_Disco)
-    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
+CREATE TABLE IF NOT EXISTS Cancion(
+    Titulo_Cancion TEXT NOT NULL,
+    Duracion TIME NOT NULL,
+    Titulo_Disco TEXT NOT NULL,
+    Ano_Publicacion_Disco TEXT NOT NULL,
+    CONSTRAINT Cancion_PK PRIMARY KEY (Titulo_Cancion, Ano_Publicacion_Disco, Titulo_Disco),
+    CONSTRAINT Disco_FK FOREIGN KEY (Ano_Publicacion_Disco, Titulo_Disco) REFERENCES Disco(Ano_Publicacion, Titulo_Disco) MATCH FULL
     ON DELETE RESTRICT ON UPDATE CASCADE
-)
+);
 
-CREATE TABLE IF NO EXISTS Edición(
+CREATE TABLE IF NOT EXISTS Edicion(
     Formato TEXT NOT NULL,
-    Año_Edición TEXT NOT NULL,
-    País TEXT NOT NULL,
-    Año_Publicación_Disco TEXT NOT NULL,
-    Título_Disco TEXT NOT NULL,
-    CONSTRAINT Edición_PK PRIMARY KEY (Formato, Año_Edición, País, Año_Publicación_Disco, Título_Disco)
-    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
+    Ano_Edicion TEXT NOT NULL,
+    Pais TEXT NOT NULL,
+    Ano_Publicacion_Disco TEXT NOT NULL,
+    Titulo_Disco TEXT NOT NULL,
+    CONSTRAINT Edicion_PK PRIMARY KEY (Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco),
+    CONSTRAINT Disco_FK FOREIGN KEY (Ano_Publicacion_Disco, Titulo_Disco) REFERENCES Disco(Ano_Publicacion, Titulo_Disco) MATCH FULL
     ON DELETE RESTRICT ON UPDATE CASCADE
-)
+);
 
-CREATE TABLE IF NO EXISTS Desea(
-    Año_Publicación_Disco TEXT NOT NULL,
-    Título_Disco TEXT NOT NULL,
+CREATE TABLE IF NOT EXISTS Desea(
+    Ano_Publicacion_Disco TEXT NOT NULL,
+    Titulo_Disco TEXT NOT NULL,
     Nombre_Usuario TEXT NOT NULL,
-    CONSTRAINT Desea_PK PRIMARY KEY (Año_Publicación_Disco, Título_Disco, Nombre_Usuario)
-    CONSTRAINT DiscoUsuario_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco, Nombre_Usuario) REFERENCES  Disco(Año_Publicacion), Disco(Título_Disco), Usuario(Nombre_Usuario) MATCH FULL
-)
+    CONSTRAINT Desea_PK PRIMARY KEY (Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario),
+    CONSTRAINT Disco_FK FOREIGN KEY (Ano_Publicacion_Disco, Titulo_Disco) REFERENCES Disco(Ano_Publicacion, Titulo_Disco) MATCH FULL
+    ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT Usuario_FK FOREIGN KEY (Nombre_Usuario) REFERENCES Usuario(Nombre_Usuario) MATCH FULL
+    ON DELETE RESTRICT ON UPDATE CASCADE
+);
 
-CREATE TABLE IF NO EXISTS Tiene(
-    Formato_Edición TEXT NOT NULL,
-    Año_Edición TEXT NOT NULL,
-    País_Edición TEXT NOT NULL,
-    Año_Publicación_Disco TEXT NOT NULL,
-    Título_Disco TEXT NOT NULL,
+CREATE TABLE IF NOT EXISTS Tiene(
+    Formato_Edicion TEXT NOT NULL,
+    Ano_Edicion TEXT NOT NULL,
+    Pais_Edicion TEXT NOT NULL,
+    Ano_Publicacion_Disco TEXT NOT NULL,
+    Titulo_Disco TEXT NOT NULL,
     Nombre_Usuario TEXT NOT NULL,
     Estado TEXT NOT NULL,
-    CONSTRAINT Tiene_PK PRIMARY KEY (Formato_Edición, Año_Edición, Nombre_Usuario, País_Edición, Año_Publicación_Disco, Título_Disco)
-    CONSTRAINT EdiciónUsuario_FK FOREIGN KEY (Formato_Edición, Año_Edición, Nombre_Usuario, País_Edición, Año_Publicación_Disco, Título_Disco) REFERENCES Edición(Formato), Edición(Año_Edición), Usuario(Nombre_Usuario), Edición(País), Disco(Año_Publicacion), Disco(Título) MATCH FULL
+    CONSTRAINT Tiene_PK PRIMARY KEY (Formato_Edicion, Ano_Edicion, Nombre_Usuario, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco),
+    CONSTRAINT EdicionUsuario_FK FOREIGN KEY (Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco) REFERENCES Edicion(Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco) MATCH FULL
+    ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT Usuario_FK FOREIGN KEY (Nombre_Usuario) REFERENCES Usuario(Nombre_Usuario) MATCH FULL
     ON DELETE RESTRICT ON UPDATE CASCADE
-)
+);
 
-CREATE TABLE IF NO EXISTS Géneros(
-    Año_Publicación_Disco TEXT NOT NULL,
+CREATE TABLE IF NOT EXISTS Géneros(
+    Ano_Publicacion_Disco TEXT NOT NULL,
     Género TEXT NOT NULL,
-    Título_Disco TEXT NOT NULL,
-    CONSTRAINT Géneros_PK PRIMARY KEY (Año_Publicación_Disco, Título_Disco, Género)
-    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
+    Titulo_Disco TEXT NOT NULL,
+    CONSTRAINT Géneros_PK PRIMARY KEY (Ano_Publicacion_Disco, Titulo_Disco, Género),
+    CONSTRAINT Disco_FK FOREIGN KEY (Ano_Publicacion_Disco, Titulo_Disco) REFERENCES Disco(Ano_Publicacion, Titulo_Disco) MATCH FULL
     ON DELETE RESTRICT ON UPDATE CASCADE
-)
+);
 
-\echo 'creando un esquema temporal'
-CREATE TABLE IF NO EXISTS DiscoTemp(
+\echo 'Creando un esquema temporal'
+CREATE TABLE IF NOT EXISTS DiscoTemp(
     id_disco TEXT,
-    Título TEXT ,
-    Año_Publicacion TEXT ,
+    Titulo TEXT ,
+    Ano_Publicacion TEXT ,
     id_grupo TEXT,
     Nombre_Grupo TEXT ,
     URL_Grupo TEXT,
-    Géneros TEXT ,
-    Url_Portada TEXT ,
-)
+    Generos TEXT ,
+    Url_Portada TEXT 
+);
 
 
-CREATE TABLE IF NO EXISTS UsuarioTemp(
+CREATE TABLE IF NOT EXISTS UsuarioTemp(
     Nombre_Completo TEXT ,
     Nombre_Usuario TEXT ,
     Email TEXT ,
-    Contraseña TEXT ,
-)
+    Contrasena TEXT 
+);
 
-CREATE TABLE IF NO EXISTS CanciónTemp(
-    id_disco TEXT;
-    Título TEXT ,
-    Duración TEXT ,
-)
-
-CREATE TABLE IF NO EXISTS EdiciónTemp(
+CREATE TABLE IF NOT EXISTS CancionTemp(
     id_disco TEXT,
-    Año_Edición TEXT,
-    País TEXT,
-    Formato TEXT,
-)
+    Titulo TEXT ,
+    Duracion TEXT 
+);
 
-CREATE TABLE IF NO EXISTS DeseaTemp(
+CREATE TABLE IF NOT EXISTS EdicionTemp(
+    id_disco TEXT,
+    Ano_Edicion TEXT,
+    Pais TEXT,
+    Formato TEXT
+);
+
+CREATE TABLE IF NOT EXISTS DeseaTemp(
     
     Nombre_Usuario TEXT ,
-    Título_Disco TEXT ,
-    Año_Edición TEXT,
-)
+    Titulo_Disco TEXT ,
+    Ano_Edicion TEXT
+);
 
-CREATE TABLE IF NO EXISTS TieneTemp(
+CREATE TABLE IF NOT EXISTS TieneTemp(
     Nombre_Usuario TEXT,
-    Titulo_disco TEXT,
-    Año_Publicacion_Disco TEXT,
-    Año_Edición TEXT,
-    País TEXT,
+    Titulo_Disco TEXT,
+    Ano_Publicacion_Disco TEXT,
+    Ano_Edicion TEXT,
+    Pais TEXT,
     Formato TEXT,
-    Estado TEXT,
-)
+    Estado TEXT
+);
 
 
-SET search_path='nombre del esquema o esquemas utilizados';
+--SET search_path='nombre del esquema o esquemas utilizados';
 
 \echo 'Cargando datos'
-\copy (DiscoTemp) FROM 'csv/discos.csv' DELIMITER ';' CSV HEADER;
-\copy (UsuarioTemp) FROM 'csv/usuarios.csv' DELIMITER ';' CSV HEADER;
-\copy (CanciónTemp) FROM 'csv/canciones.csv' DELIMITER ';' CSV HEADER;
-\copy (EdiciónTemp) FROM 'csv/ediciones.csv' DELIMITER ';' CSV HEADER;
-\copy (DeseaTemp) FROM 'csv/usuario_desea_disco.csv' DELIMITER ';' CSV HEADER;
-\copy (TieneTemp) FROM 'csv/usuario_tiene_edicion.csv' DELIMITER ';' CSV HEADER;
+\copy DiscoTemp FROM 'csv/discos.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8' NULL 'NULL'; --por si hay un null en el csv
+\copy UsuarioTemp FROM 'csv/usuarios.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8' NULL 'NULL';
+\copy CancionTemp FROM 'csv/canciones.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8' NULL 'NULL';
+\copy EdicionTemp FROM 'csv/ediciones.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8' NULL 'NULL';
+\copy DeseaTemp FROM 'csv/usuario_desea_disco.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8' NULL 'NULL';
+\copy TieneTemp FROM 'csv/usuario_tiene_edicion.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8' NULL 'NULL';
 
 
+\echo '\nInsertando datos en el esquema final'
+
+INSERT INTO Grupo (Nombre, URL_Grupo) SELECT DISTINCT Nombre_Grupo, URL_Grupo FROM DiscoTemp;
+
+INSERT INTO Usuario (Nombre_Usuario,Nombre,Email,Contrasena) SELECT DISTINCT Nombre_Completo, Nombre_Usuario, Email, Contrasena FROM UsuarioTemp;
+
+INSERT INTO Disco (Ano_Publicacion, Titulo_Disco, Url_Portada, Nombre_Grupo)
+SELECT DISTINCT Ano_Publicacion, Titulo, Url_Portada, Nombre_Grupo
+FROM DiscoTemp
+ON CONFLICT (Ano_Publicacion, Titulo_Disco) DO NOTHING;
+
+SELECT * FROM Disco
+WHERE Nombre_Grupo = 'Michael Jackson'
+LIMIT 10;
+
+/*
+INSERT INTO Tiene (Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario, Estado) SELECT Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario, Estado FROM TieneTemp;
+
+
+
+SELECT * FROM Tiene;
+LIMIT 10;*/
+
+--'insert into Disco values (Titulo, Ano_Publicacion, URL_Grupo, Url_Portada, Nombre_Grupo);'
 
 
 /*
-\echo insertando datos en el esquema final
-\ejemplo: insert into Disco values (Título, Año_Publicacion, URL_Grupo, Url_Portada, Nombre_Grupo);
-
-
-
 \echo Consulta 1: texto de la consulta
-\ej: SELECT Título, Año_Publicacion FROM Disco WHERE Nombre_Grupo = 'The Beatles';
+\ej: SELECT Titulo, Ano_Publicacion FROM Disco WHERE Nombre_Grupo = 'The Beatles';
 
 \echo 'Insertando géneros en la tabla Géneros'
-INSERT INTO GénerosTemp (Año_Publicación_Disco, Título_Disco, Género)
-SELECT Año_Publicacion, Título, regexp_split_to_table(trim(both '[]' from Géneros), ',\s*')
+INSERT INTO GénerosTemp (Ano_Publicacion_Disco, Titulo_Disco, Género)
+SELECT Ano_Publicacion, Titulo, regexp_split_to_table(trim(both '[]' from Géneros), ',\s*')
 FROM DiscoTemp;
 
 
 \echo Consulta n:
-
 */
+
 ROLLBACK;                       -- importante! permite correr el script multiples veces...p

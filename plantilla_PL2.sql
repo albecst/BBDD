@@ -30,7 +30,7 @@ CREATE TABLE IF NO EXISTS Usuario(
 
 CREATE TABLE IF NO EXISTS Canción(
     Título TEXT NOT NULL,
-    Duración TEXT NOT NULL,
+    Duración TIME NOT NULL,
     Título_Disco TEXT NOT NULL,
     Año_Publicación_Disco TEXT NOT NULL,
     CONSTRAINT Canción_PK PRIMARY KEY (Título, Año_Publicación_Disco, Título_Disco)
@@ -81,91 +81,84 @@ CREATE TABLE IF NO EXISTS Géneros(
 
 \echo 'creando un esquema temporal'
 CREATE TABLE IF NO EXISTS DiscoTemp(
-    Año_Publicacion TEXT ,
+    id_disco TEXT,
     Título TEXT ,
-    Url_Portada TEXT ,
+    Año_Publicacion TEXT ,
+    id_grupo TEXT,
     Nombre_Grupo TEXT ,
-    CONSTRAINT Disco_PK PRIMARY KEY (Año_Publicacion, Título)
-    CONSTRAINT Grupo_FK FOREIGN KEY (Nombre_Grupo) REFERENCES Grupo(Nombre) MATCH FULL
-    ON DELETE RESTRICT ON UPDATE CASCADE
+    URL_Grupo TEXT,
+    Géneros TEXT ,
+    Url_Portada TEXT ,
 )
 
-CREATE TABLE IF NO EXISTS GrupoTemp(
-    Nombre TEXT ,
-    URL_Grupo TEXT ,
-    CONSTRAINT Nombre_PK PRIMARY KEY (Nombre)
-)
 
 CREATE TABLE IF NO EXISTS UsuarioTemp(
+    Nombre_Completo TEXT ,
     Nombre_Usuario TEXT ,
-    Nombre TEXT ,
     Email TEXT ,
     Contraseña TEXT ,
-    CONSTRAINT Usuario_PK PRIMARY KEY (Nombre_Usuario)
 )
 
 CREATE TABLE IF NO EXISTS CanciónTemp(
+    id_disco TEXT;
     Título TEXT ,
     Duración TEXT ,
-    Título_Disco TEXT ,
-    Año_Publicación_Disco TEXT ,
-    CONSTRAINT Canción_PK PRIMARY KEY (Título, Año_Publicación_Disco, Título_Disco)
-    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
-    ON DELETE RESTRICT ON UPDATE CASCADE
 )
 
 CREATE TABLE IF NO EXISTS EdiciónTemp(
-    Formato TEXT ,
-    Año_Edición TEXT ,
-    País TEXT ,
-    Año_Publicación_Disco TEXT ,
-    Título_Disco TEXT ,
-    CONSTRAINT Edición_PK PRIMARY KEY (Formato, Año_Edición, País, Año_Publicación_Disco, Título_Disco)
-    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
-    ON DELETE RESTRICT ON UPDATE CASCADE
+    id_disco TEXT,
+    Año_Edición TEXT,
+    País TEXT,
+    Formato TEXT,
 )
 
 CREATE TABLE IF NO EXISTS DeseaTemp(
-    Año_Publicación_Disco TEXT ,
-    Título_Disco TEXT ,
+    
     Nombre_Usuario TEXT ,
-    CONSTRAINT Desea_PK PRIMARY KEY (Año_Publicación_Disco, Título_Disco, Nombre_Usuario)
-    CONSTRAINT DiscoUsuario_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco, Nombre_Usuario) REFERENCES  Disco(Año_Publicacion), Disco(Título_Disco), Usuario(Nombre_Usuario) MATCH FULL
+    Título_Disco TEXT ,
+    Año_Edición TEXT,
 )
 
 CREATE TABLE IF NO EXISTS TieneTemp(
-    Formato_Edición TEXT ,
-    Año_Edición TEXT ,
-    País_Edición TEXT ,
-    Año_Publicación_Disco TEXT ,
-    Título_Disco TEXT ,
-    Nombre_Usuario TEXT ,
-    Estado TEXT ,
-    CONSTRAINT Tiene_PK PRIMARY KEY (Formato_Edición, Año_Edición, Nombre_Usuario, País_Edición, Año_Publicación_Disco, Título_Disco)
-    CONSTRAINT EdiciónUsuario_FK FOREIGN KEY (Formato_Edición, Año_Edición, Nombre_Usuario, País_Edición, Año_Publicación_Disco, Título_Disco) REFERENCES Edición(Formato), Edición(Año_Edición), Usuario(Nombre_Usuario), Edición(País), Disco(Año_Publicacion), Disco(Título) MATCH FULL
-    ON DELETE RESTRICT ON UPDATE CASCADE
-)
-
-CREATE TABLE IF NO EXISTS GénerosTemp(
-    Año_Publicación_Disco TEXT ,
-    Género TEXT ,
-    Título_Disco TEXT ,
-    CONSTRAINT Géneros_PK PRIMARY KEY (Año_Publicación_Disco, Título_Disco, Género)
-    CONSTRAINT Disco_FK FOREIGN KEY (Año_Publicación_Disco, Título_Disco) REFERENCES Disco(Año_Publicacion), Disco(Título_Disco) MATCH FULL
-    ON DELETE RESTRICT ON UPDATE CASCADE
+    Nombre_Usuario TEXT,
+    Titulo_disco TEXT,
+    Año_Publicacion_Disco TEXT,
+    Año_Edición TEXT,
+    País TEXT,
+    Formato TEXT,
+    Estado TEXT,
 )
 
 
 SET search_path='nombre del esquema o esquemas utilizados';
 
 \echo 'Cargando datos'
+\copy (DiscoTemp) FROM 'csv/discos.csv' DELIMITER ';' CSV HEADER;
+\copy (UsuarioTemp) FROM 'csv/usuarios.csv' DELIMITER ';' CSV HEADER;
+\copy (CanciónTemp) FROM 'csv/canciones.csv' DELIMITER ';' CSV HEADER;
+\copy (EdiciónTemp) FROM 'csv/ediciones.csv' DELIMITER ';' CSV HEADER;
+\copy (DeseaTemp) FROM 'csv/usuario_desea_disco.csv' DELIMITER ';' CSV HEADER;
+\copy (TieneTemp) FROM 'csv/usuario_tiene_edicion.csv' DELIMITER ';' CSV HEADER;
 
 
+
+
+/*
 \echo insertando datos en el esquema final
+\ejemplo: insert into Disco values (Título, Año_Publicacion, URL_Grupo, Url_Portada, Nombre_Grupo);
+
+
 
 \echo Consulta 1: texto de la consulta
+\ej: SELECT Título, Año_Publicacion FROM Disco WHERE Nombre_Grupo = 'The Beatles';
+
+\echo 'Insertando géneros en la tabla Géneros'
+INSERT INTO GénerosTemp (Año_Publicación_Disco, Título_Disco, Género)
+SELECT Año_Publicacion, Título, regexp_split_to_table(trim(both '[]' from Géneros), ',\s*')
+FROM DiscoTemp;
+
 
 \echo Consulta n:
 
-
+*/
 ROLLBACK;                       -- importante! permite correr el script multiples veces...p

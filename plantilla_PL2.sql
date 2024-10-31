@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS Usuario(
 
 CREATE TABLE IF NOT EXISTS Cancion(
     Titulo_Cancion TEXT NOT NULL,
-    Duracion TIME NOT NULL,
+    Duracion TEXT , --será TIME
     Titulo_Disco TEXT NOT NULL,
     Ano_Publicacion_Disco TEXT NOT NULL,
     CONSTRAINT Cancion_PK PRIMARY KEY (Titulo_Cancion, Ano_Publicacion_Disco, Titulo_Disco),
@@ -150,26 +150,45 @@ CREATE TABLE IF NOT EXISTS TieneTemp(
 
 \echo '\nInsertando datos en el esquema final'
 
-INSERT INTO Grupo (Nombre, URL_Grupo) SELECT DISTINCT Nombre_Grupo, URL_Grupo FROM DiscoTemp;
+INSERT INTO Grupo (Nombre, URL_Grupo) 
+SELECT DISTINCT Nombre_Grupo, URL_Grupo 
+FROM DiscoTemp;
 
-INSERT INTO Usuario (Nombre_Usuario,Nombre,Email,Contrasena) SELECT DISTINCT Nombre_Completo, Nombre_Usuario, Email, Contrasena FROM UsuarioTemp;
+INSERT INTO Usuario (Nombre_Usuario,Nombre,Email,Contrasena) 
+SELECT DISTINCT Nombre_Completo, Nombre_Usuario, Email, Contrasena 
+FROM UsuarioTemp;
 
 INSERT INTO Disco (Ano_Publicacion, Titulo_Disco, Url_Portada, Nombre_Grupo)
 SELECT DISTINCT Ano_Publicacion, Titulo, Url_Portada, Nombre_Grupo
 FROM DiscoTemp
 ON CONFLICT (Ano_Publicacion, Titulo_Disco) DO NOTHING;
 
-SELECT * FROM Disco
-WHERE Nombre_Grupo = 'Michael Jackson'
-LIMIT 10;
+INSERT INTO Cancion (Titulo_Cancion, Duracion, Titulo_Disco, Ano_Publicacion_Disco)
+SELECT CancionTemp.Titulo, CancionTemp.Duracion, DiscoTemp.Titulo, DiscoTemp.Ano_Publicacion
+FROM CancionTemp
+JOIN DiscoTemp ON CancionTemp.id_disco = DiscoTemp.id_disco
+ON CONFLICT (Titulo_Cancion, Ano_Publicacion_Disco, Titulo_Disco) DO NOTHING; --por si hay canciones repetidas, para que no se incluyan
+
+INSERT INTO Edicion (Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco)
+SELECT DISTINCT Formato, Ano_Edicion, Pais, DiscoTemp.Ano_Publicacion, DiscoTemp.Titulo
+FROM EdicionTemp
+JOIN DiscoTemp ON EdicionTemp.id_disco = DiscoTemp.id_disco
+ON CONFLICT (Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco) DO NOTHING;
+
+
+INSERT INTO Desea (Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario)
+SELECT DeseaTemp.Ano_Edicion, DeseaTemp.Titulo_Disco, DeseaTemp.Nombre_Usuario
+FROM DeseaTemp
+ON CONFLICT (Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario) DO NOTHING;
+
+
+
 
 /*
-INSERT INTO Tiene (Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario, Estado) SELECT Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario, Estado FROM TieneTemp;
+SELECT DISTINCT * 
+FROM DeseaTemp
+INNER JOIN DiscoTemp ON DeseaTemp.Titulo_Disco = Titulo;*/
 
-
-
-SELECT * FROM Tiene;
-LIMIT 10;*/
 
 --'insert into Disco values (Titulo, Ano_Publicacion, URL_Grupo, Url_Portada, Nombre_Grupo);'
 

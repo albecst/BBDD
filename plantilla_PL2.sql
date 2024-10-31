@@ -155,7 +155,7 @@ SELECT DISTINCT Nombre_Grupo, URL_Grupo
 FROM DiscoTemp;
 
 INSERT INTO Usuario (Nombre_Usuario,Nombre,Email,Contrasena) 
-SELECT DISTINCT Nombre_Completo, Nombre_Usuario, Email, Contrasena 
+SELECT DISTINCT Nombre_Usuario, Nombre_Completo, Email, Contrasena 
 FROM UsuarioTemp;
 
 INSERT INTO Disco (Ano_Publicacion, Titulo_Disco, Url_Portada, Nombre_Grupo)
@@ -175,12 +175,15 @@ FROM EdicionTemp
 JOIN DiscoTemp ON EdicionTemp.id_disco = DiscoTemp.id_disco
 ON CONFLICT (Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco) DO NOTHING;
 
-
+/*
 INSERT INTO Desea (Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario)
-SELECT DeseaTemp.Ano_Edicion, DeseaTemp.Titulo_Disco, DeseaTemp.Nombre_Usuario
+SELECT Ano_Edicion, Titulo_Disco, Nombre_Usuario
 FROM DeseaTemp
 ON CONFLICT (Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario) DO NOTHING;
+*/
+SELECT * FROM Usuario WHERE Nombre_Usuario='juangomez';
 
+SELECT * FROM Usuario WHERE Nombre_Usuario='davidmartínez';
 
 
 

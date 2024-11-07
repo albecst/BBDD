@@ -1,0 +1,55 @@
+SET
+BEGIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+COPY 966
+COPY 20
+COPY 7536
+COPY 2449
+COPY 206
+COPY 362
+INSERT 0 932
+INSERT 0 20
+INSERT 0 965
+INSERT 0 7370
+INSERT 0 2098
+INSERT 0 162
+INSERT 0 288
+INSERT 0 1459
+ nombre_usuario  |          nombre          |            email            |  contrasena  
+-----------------+--------------------------+-----------------------------+--------------
+ lucíapérez1     | Lucía Pérez López        | lucíapérez@example.com      | vh4^,dpR
+ davidmartínez1  | David Martínez Moreno    | davidmartínez1@example.com  | (<=w@Tn!
+ pedrolópez      | Pedro López Pérez        | pedrolópez@example.com      | 4g3Rhy]e
+ sergiofernández | Sergio Fernández Moreno  | sergiofernández@example.com | Z=#L%Nad
+ javierfernández | Javier Fernández Moreno  | javierfernández@example.com | r8q_WF_-
+ martadíaz       | Marta Díaz Moreno        | martadíaz@example.com       | H%aVWWMA
+ analópez        | Ana López Fernández      | analópez@example.com        | kYe\+%`6
+ martalópez      | Marta López Martínez     | martalópez@example.com      | YZn`Fi5L
+ lorenasaez      | Lorena Sáez Pérez        | lorenasaez@example.com      | o64?'Y\V
+ luisgarcia      | Luis Gómez García        | luisgarcia@example.com      | q%U.uvs\
+ pedrodíaz       | Pedro Díaz Rodríguez     | pedrodíaz@example.com       | *q.w[Ssz
+ martamoreno     | Marta Moreno Díaz        | martamoreno@example.com     | 4bc'-~]r
+ maríamartínez   | María Martínez Rodríguez | maríamartínez@example.com   | >RKRbL`j
+ juangomez       | Juan García Gómez        | juangomez@example.com       | U'EJlUy9
+ pedrofernández  | Pedro Fernández Álvarez  | pedrofernández@example.com  | ^5)DsG'G
+ javiergómez     | Javier Gómez Sánchez     | javiergómez@example.com     | L*uL}SYx
+ davidmartínez2  | David Martínez Álvarez   | davidmartínez2@example.com  | 0z`I2,Mf
+ carlosfernández | Carlos Fernández López   | carlosfernández@example.com | R@nd0mP@ss4!
+ lucíapérez2     | Lucía Pérez Gómez        | lucíapérez@example.com      | D:pL$U9S
+ sergiopérez     | Sergio Pérez Moreno      | sergiopérez@example.com     | RGVVk@2a
+(20 rows)
+
+ROLLBACK

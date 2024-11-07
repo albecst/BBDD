@@ -1,0 +1,323 @@
+SET
+BEGIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+COPY 966
+COPY 20
+COPY 7536
+COPY 2449
+COPY 206
+COPY 362
+INSERT 0 932
+INSERT 0 20
+INSERT 0 965
+INSERT 0 7370
+INSERT 0 2098
+INSERT 0 162
+INSERT 0 288
+INSERT 0 1459
+ formato_edicion | ano_edicion |  pais_edicion  | ano_publicacion_disco |                                   titulo_disco                                    | nombre_usuario  | estado 
+-----------------+-------------+----------------+-----------------------+-----------------------------------------------------------------------------------+-----------------+--------
+ CD              | 1997        | US             | 1997                  | Subterranean Hitz Vol. I                                                          | juangomez       | NM
+ CD              | 2012        | Russia         | 2012                  | Lavatory                                                                          | juangomez       | VG+
+ CD              | 1996        | France         | 1996                  | Quand On N'a Que L'amour                                                          | juangomez       | G
+ Vinyl           | 1959        | Australia      | 1959                  | Your Sweet Love / Just As Much As Ever                                            | juangomez       | EX
+ Vinyl           | 1974        | Germany        | 1974                  | Legends Of Rock, Vol. 2, Rare Items                                               | juangomez       | M
+ DVD             | 2015        | UK & Europe    | 2008                  | The Time Machine Tour                                                             | juangomez       | G
+ Vinyl           | 1961        | Australia      | 1962                  | The New Star Of The Italian Radio-Television                                      | juangomez       | VG
+ Vinyl           | 2008        | US             | 2008                  | Way To Normal                                                                     | juangomez       | NM
+ Vinyl           | 0           | US             | 0                     | I'm Alright / So Near And Yet So Far                                              | juangomez       | F
+ Vinyl           | 1972        | Netherlands    | 1970                  | Old Fashioned Feeling                                                             | juangomez       | EX
+ CD              | 2004        | US             | 2004                  | All That We Let In                                                                | juangomez       | VG
+ CD              | 1992        | Europe         | 2016                  | Symphony No. 3                                                                    | juangomez       | VG
+ Vinyl           | 0           | Japan          | 0                     | Sound Of Speed Circles Vol.1                                                      | juangomez       | G
+ CD              | 1994        | UK & Ireland   | 1994                  | You Give Jews A Bad Name                                                          | juangomez       | VG+
+ Vinyl           | 2009        | Netherlands    | 2009                  | Playmobil 7 EP                                                                    | juangomez       | G
+ CD              | 1998        | US             | 2003                  | Planet Jive                                                                       | juangomez       | EX
+ CD              | 2008        | Germany        | 2008                  | Highlander / Spirit Of Darkness                                                   | juangomez       | EX
+ Cassette        | 1983        | Belgium        | 2009                  | Figures                                                                           | lorenasaez      | NM
+ Vinyl           | 1976        | Italy          | 1999                  | Il Mondo Dei Giovani Vol. 1                                                       | lorenasaez      | F
+ CD              | 1989        | Germany        | 1992                  | Bolomakoté                                                                        | lorenasaez      | G
+ CD              | 2008        | Finland        | 2008                  | Frozen Chambers                                                                   | lorenasaez      | M
+ Vinyl           | 0           | Germany        | 0                     | Eine Kleine Nachtmusik - Die Moldau - Les Préludes - Capriccio Italien            | lorenasaez      | M
+ Vinyl           | 2018        | UK             | 2018                  | If You're Into It, I'm Out Of It                                                  | lorenasaez      | M
+ Vinyl           | 1992        | Germany        | 1992                  | Raumpatrouille Orion                                                              | lorenasaez      | F
+ Vinyl           | 1977        | Japan          | 1997                  | The Japan Syndrome                                                                | lorenasaez      | F
+ Vinyl           | 1983        | US             | 2014                  | Dirk Wears White Sox                                                              | lorenasaez      | G
+ CD              | 2012        | UK             | 2012                  | Out Of The Coma                                                                   | lorenasaez      | VG
+ CD              | 1999        | US             | 1999                  | Laid Insignificant                                                                | lorenasaez      | NM
+ Vinyl           | 0           | Greece         | 0                     | A Strange Day E.P                                                                 | lorenasaez      | NM
+ CD              | 2004        | UK             | 2004                  | In Scarlet And Vile                                                               | lorenasaez      | VG
+ Vinyl           | 1984        | UK             | 1984                  | U.S.A. Remix                                                                      | lorenasaez      | NM
+ Cassette        | 1983        | US             | 1983                  | Waiting For The War                                                               | lorenasaez      | EX
+ CD              | 2020        | Poland         | 2020                  | Ominous Black                                                                     | lorenasaez      | EX
+ CD              | 2015        | US             | 2004                  | Glean                                                                             | lorenasaez      | F
+ CD              | 2004        | France         | 2004                  | Express Way                                                                       | lorenasaez      | G
+ File            | 2013        | Greece         | 2013                  | Η Καρδιά Με Πηγαίνει Εμένα                                                        | lorenasaez      | EX
+ Vinyl           | 2008        | US             | 1965                  | Google Me                                                                         | lorenasaez      | EX
+ DVD             | 2007        | US             | 0                     | Hot 'N' Heavy | Live At The Ascension Loft                                        | lorenasaez      | EX
+ Vinyl           | 1998        | UK             | 1998                  | Lost In Bass E.P.                                                                 | lorenasaez      | EX
+ Vinyl           | 1981        | US             | 1981                  | WOZ                                                                               | lorenasaez      | M
+ Vinyl           | 2012        | Netherlands    | 1983                  | Touch The Sky                                                                     | lorenasaez      | EX
+ Cassette        | 2012        | Finland        | 2012                  | Vitusti Kuolemaa...                                                               | luisgarcia      | G
+ Vinyl           | 1995        | France         | 1995                  | Dieu M'a Donné La Foi                                                             | luisgarcia      | VG+
+ Vinyl           | 2010        | Spain          | 2011                  | Herederos De Un Imperio                                                           | luisgarcia      | VG+
+ Vinyl           | 2016        | Spain          | 2016                  | Disco Pirata                                                                      | luisgarcia      | VG
+ Vinyl           | 1994        | US             | 1998                  | Dreamstate                                                                        | luisgarcia      | EX
+ Vinyl           | 1959        | US             | 1959                  | Farmer John / Big Boy Pete                                                        | luisgarcia      | NM
+ Vinyl           | 1970        | US             | 1970                  | Faron Young Sings Occasional Wife & If I Ever Fall In Love With A Honky Tonk Girl | luisgarcia      | NM
+ Vinyl           | 1962        | US             | 1962                  | Beechwood 4-5789 / Someday, Someway                                               | luisgarcia      | VG+
+ Vinyl           | 1991        | US             | 1991                  | Within My Heart                                                                   | luisgarcia      | G
+ Vinyl           | 1988        | US             | 1988                  | Magic Lady                                                                        | luisgarcia      | F
+ Vinyl           | 1981        | Germany        | 1981                  | 4                                                                                 | luisgarcia      | M
+ Vinyl           | 2014        | UK             | 2014                  | Dirk Wears White Sox                                                              | luisgarcia      | NM
+ Vinyl           | 1961        | US             | 1961                  | Pacheco Y Su Charanga                                                             | luisgarcia      | M
+ CD              | 2020        | UK             | 1965                  | When Does The Weekend?                                                            | luisgarcia      | EX
+ CD              | 2003        | UK             | 2003                  | Planet Jive                                                                       | luisgarcia      | VG
+ CDr             | 2012        | Finland        | 2011                  | Kaikki Askeleet                                                                   | luisgarcia      | F
+ CD              | 2000        | UK             | 1986                  | Penguins On The Moon                                                              | luisgarcia      | EX
+ CDr             | 2008        | US             | 2018                  | June 22 2008 - Washington, DC                                                     | luisgarcia      | VG+
+ CD              | 1992        | UK             | 1992                  | Room 19 (Sha La La La Lee)                                                        | luisgarcia      | VG
+ Vinyl           | 1965        | UK             | 1965                  | Blues With Big Bill Broonzy · Sonny Terry · Brownie McGhee                        | luisgarcia      | VG
+ Vinyl           | 1979        | Japan          | 1983                  | Pourcel Digital                                                                   | luisgarcia      | NM
+ CD              | 2014        | Norway         | 2014                  | Levande På G                                                                      | luisgarcia      | VG+
+ Vinyl           | 1982        | France         | 1983                  | Les Petites Rues De Singapour                                                     | martalópez      | G
+ Vinyl           | 2009        | Sweden         | 2009                  | Under The Pavement - The Beach                                                    | martalópez      | NM
+ Vinyl           | 1966        | Spain          | 1966                  | La Noche Del Hawayano / Amanecer Guajiro                                          | martalópez      | G
+ CD              | 2016        | Italy          | 2018                  | Nonostante Tutto                                                                  | martalópez      | EX
+ CD              | 2003        | Germany        | 1989                  | Zoopsia                                                                           | martalópez      | F
+ Vinyl           | 1979        | US             | 1979                  | Spirits Having Flown                                                              | martalópez      | G
+ Vinyl           | 2019        | Sweden         | 2019                  | Abyssal                                                                           | martalópez      | M
+ Vinyl           | 1963        | Brazil         | 2018                  | Samba Demais                                                                      | martalópez      | G
+ Vinyl           | 2013        | Germany        | 1986                  | Remix 12'                                                                         | martalópez      | VG
+ Vinyl           | 1993        | Italy          | 1993                  | Fantasy                                                                           | martalópez      | F
+ Vinyl           | 1959        | US             | 1959                  | Your Sweet Love / Just As Much As Ever                                            | martalópez      | F
+ Vinyl           | 1994        | Italy          | 1990                  | Got The Feeling                                                                   | martalópez      | NM
+ Flexi-disc      | 1989        | UK             | 1989                  | Change Your Ways                                                                  | martamoreno     | F
+ Vinyl           | 2020        | Germany        | 2009                  | Playmobil 7 EP                                                                    | martamoreno     | G
+ Shellac         | 1955        | Italy          | 1955                  | Balocchi E Profumi / Cara Piccina                                                 | martamoreno     | M
+ CD              | 1993        | Canada         | 1993                  | Struck Gold                                                                       | martamoreno     | EX
+ CD              | 2003        | UK             | 2003                  | Planet Jive                                                                       | martamoreno     | M
+ Vinyl           | 0           | Germany        | 0                     | Die Neun Sinfonien                                                                | martamoreno     | F
+ Vinyl           | 1980        | UK             | 2001                  | Zero Ambition                                                                     | martamoreno     | EX
+ Vinyl           | 2023        | US             | 2023                  | Poison                                                                            | martamoreno     | M
+ CD              | 1992        | US             | 2016                  | Symphony No. 3                                                                    | martamoreno     | VG+
+ CD              | 1999        | UK             | 1999                  | Look So Fine                                                                      | martamoreno     | VG
+ Vinyl           | 1999        | US             | 1999                  | Sweatin' To The Oldies: The Vandals Live                                          | martamoreno     | EX
+ Vinyl           | 1976        | UK             | 1976                  | Symphonies 1&8                                                                    | martamoreno     | NM
+ Vinyl           | 1994        | UK             | 2017                  | Mystical Minds                                                                    | martamoreno     | VG+
+ Vinyl           | 2001        | Germany        | 2001                  | This Time Tomorrow                                                                | martamoreno     | G
+ Vinyl           | 1954        | US             | 1952                  | Classics In Jazz                                                                  | martamoreno     | VG
+ Vinyl           | 1984        | Netherlands    | 1984                  | I Am Forever                                                                      | martamoreno     | F
+ Vinyl           | 1983        | Japan          | 1983                  | Summer Breeze                                                                     | martamoreno     | F
+ CD              | 1996        | Japan          | 1996                  | The Inner Galactic Fusion Experience                                              | martamoreno     | G
+ CD              | 1998        | US             | 2003                  | Planet Jive                                                                       | martamoreno     | G
+ CD              | 2002        | Norway         | 1986                  | Iter                                                                              | martamoreno     | VG+
+ CD              | 1998        | Hungary        | 1982                  | Szerencsejáték                                                                    | martamoreno     | M
+ Vinyl           | 2003        | France         | 1981                  | 4                                                                                 | martamoreno     | NM
+ File            | 2012        | Germany        | 2012                  | Marathon / Burnout                                                                | martadíaz       | G
+ CD              | 2011        | Denmark        | 2011                  | The Lone Descent                                                                  | martadíaz       | NM
+ Vinyl           | 2020        | US             | 2020                  | Candlelight                                                                       | martadíaz       | VG
+ Vinyl           | 1985        | US             | 1967                  | Just For You                                                                      | martadíaz       | G
+ CD              | 1999        | Netherlands    | 0                     | In Doubt '99                                                                      | martadíaz       | M
+ Vinyl           | 1981        | Italy          | 1989                  | Wallet Woman                                                                      | martadíaz       | F
+ Vinyl           | 2015        | Europe         | 1992                  | One By One                                                                        | martadíaz       | F
+ CD              | 1999        | Germany        | 0                     | Scheherazade / Capriccio Espagnol / Flight Of The Bumblebee                       | martadíaz       | EX
+ CD              | 0           | Netherlands    | 1995                  | Zondag In 't Zuiden                                                               | martadíaz       | F
+ CD              | 1989        | UK             | 1989                  | Wallet Woman                                                                      | martadíaz       | G
+ Vinyl           | 0           | Sweden         | 2010                  | The Hague '76                                                                     | martadíaz       | F
+ Vinyl           | 1992        | UK             | 1992                  | Attack                                                                            | martadíaz       | F
+ Vinyl           | 2007        | UK             | 1995                  | Right Away                                                                        | martadíaz       | NM
+ Vinyl           | 1968        | UK             | 1968                  | Indo-Jazz Fusions II                                                              | martadíaz       | VG
+ Vinyl           | 1978        | Germany        | 1978                  | The Raven / The Cask Of Amontillado                                               | martadíaz       | NM
+ Vinyl           | 2020        | Poland         | 2020                  | Ominous Black                                                                     | martadíaz       | VG
+ CD              | 2000        | US             | 2000                  | Brujerizmo                                                                        | martadíaz       | F
+ DVD             | 2008        | US             | 2008                  | The Time Machine Tour                                                             | martadíaz       | F
+ Vinyl           | 2018        | Europe         | 2018                  | Samba Demais                                                                      | martadíaz       | M
+ Vinyl           | 2019        | US             | 2010                  | For The Rest Of Us                                                                | martadíaz       | F
+ Vinyl           | 1988        | US             | 1994                  | The Madness Must End                                                              | martadíaz       | G
+ Vinyl           | 2014        | US             | 2023                  | Ultraviolence                                                                     | martadíaz       | NM
+ CD              | 1995        | UK             | 2019                  | Young Baby Father                                                                 | martadíaz       | NM
+ Vinyl           | 1993        | UK             | 1993                  | Fuk Dat                                                                           | martadíaz       | VG+
+ Vinyl           | 1979        | UK             | 1986                  | Bela Lugosi's Dead                                                                | martadíaz       | M
+ Vinyl           | 1993        | Italy          | 1993                  | Fantasy                                                                           | martadíaz       | F
+ CD              | 2005        | Germany        | 1998                  | Suavemente                                                                        | martadíaz       | NM
+ Vinyl           | 0           | US             | 2012                  | In Concert - Tel Aviv and Jerusalem - 1969                                        | martadíaz       | G
+ Vinyl           | 2020        | Denmark        | 2003                  | Emptiness                                                                         | martadíaz       | VG
+ Vinyl           | 0           | Netherlands    | 0                     | In Doubt '99                                                                      | martadíaz       | M
+ Vinyl           | 1999        | Canada         | 1997                  | Surface EP                                                                        | sergiofernández | VG
+ Vinyl           | 1987        | Spain          | 1978                  | The Raven / The Cask Of Amontillado                                               | sergiofernández | M
+ DVD             | 2015        | Germany        | 2015                  | Who's Gonna Make The Dance Ram / Twinkle Little Star                              | sergiofernández | M
+ Vinyl           | 1999        | UK             | 1999                  | Look So Fine                                                                      | sergiofernández | VG
+ Vinyl           | 1974        | Canada         | 1974                  | Early Strawbs                                                                     | sergiofernández | M
+ Vinyl           | 2021        | UK             | 2011                  | All We Have Is Now                                                                | analópez        | NM
+ Vinyl           | 1984        | Jamaica        | 2003                  | The Fire Below                                                                    | analópez        | G
+ Vinyl           | 1984        | USSR           | 1984                  | Лунная Рапсодия                                                                   | analópez        | VG+
+ Vinyl           | 2014        | US             | 2014                  | Stranger Songs                                                                    | analópez        | VG+
+ Vinyl           | 1972        | France         | 1972                  | Theodorakis Dirige Theodorakis, Vol 2                                             | analópez        | VG
+ File            | 2011        | US             | 2004                  | In Scarlet And Vile                                                               | analópez        | VG+
+ Vinyl           | 1976        | Italy          | 1999                  | Il Mondo Dei Giovani Vol. 1                                                       | pedrolópez      | EX
+ Vinyl           | 2003        | Netherlands    | 2003                  | Pimp Soul Blister EP                                                              | pedrolópez      | EX
+ CD              | 2003        | Serbia         | 2003                  | Od Neba Do Neba                                                                   | pedrolópez      | EX
+ CD              | 1994        | France         | 2017                  | Definitive Perception                                                             | pedrolópez      | NM
+ Vinyl           | 1978        | Germany        | 1978                  | Babylon By Bus                                                                    | pedrolópez      | VG
+ Vinyl           | 1962        | US             | 1962                  | Meet Me At The Twistin' Place                                                     | pedrolópez      | F
+ Vinyl           | 1984        | UK             | 1984                  | That Summer Feeling                                                               | pedrolópez      | VG
+ Vinyl           | 0           | US             | 0                     | Unforgettable / Pretend                                                           | pedrolópez      | G
+ Vinyl           | 1986        | UK             | 1986                  | Pull Up To The Bumper                                                             | pedrolópez      | EX
+ Cassette        | 2005        | Germany        | 2005                  | ...Verendeten Blickes                                                             | pedrolópez      | F
+ Vinyl           | 1982        | France         | 2012                  | Firing Line                                                                       | pedrolópez      | EX
+ Vinyl           | 1971        | UK             | 1982                  | Andy Warhol                                                                       | pedrolópez      | G
+ Vinyl           | 2018        | Europe         | 2018                  | World Language                                                                    | pedrolópez      | VG
+ Vinyl           | 2002        | Germany        | 2002                  | Will I ?                                                                          | pedrolópez      | NM
+ CD              | 2007        | UK             | 2007                  | Hardcore Adrenaline                                                               | pedrolópez      | NM
+ Vinyl           | 1967        | US             | 1974                  | The Nearness Of You                                                               | pedrofernández  | VG
+ Vinyl           | 2007        | UK             | 2007                  | 5 Spot / Your World                                                               | pedrofernández  | G
+ DVD             | 2010        | UK             | 2010                  | Imelda May Live @ 12 Bar Club                                                     | pedrofernández  | VG+
+ Vinyl           | 1990        | UK             | 2013                  | High Tension                                                                      | pedrofernández  | NM
+ CD              | 1993        | Canada         | 1993                  | Struck Gold                                                                       | pedrofernández  | VG
+ CD              | 1999        | Europe         | 1999                  | Jazz... Has... A Sense Of Humor                                                   | pedrofernández  | F
+ Vinyl           | 1984        | US             | 1984                  | Finesse                                                                           | pedrofernández  | VG+
+ File            | 2012        | UK             | 2012                  | The Pagan Cinema                                                                  | pedrofernández  | VG+
+ Vinyl           | 1981        | Turkey         | 1981                  | Durdurun Dünyayı                                                                  | pedrofernández  | EX
+ Vinyl           | 1976        | US             | 1976                  | Gagaku & Beyond                                                                   | pedrofernández  | F
+ Vinyl           | 1979        | Nigeria        | 1979                  | Wings Of Change                                                                   | javierfernández | VG+
+ CD              | 1998        | US             | 2003                  | Planet Jive                                                                       | javierfernández | M
+ Vinyl           | 1992        | UK             | 1980                  | Passion                                                                           | javierfernández | VG
+ Vinyl           | 2009        | US             | 1997                  | Sweet Thang                                                                       | javierfernández | G
+ Vinyl           | 1962        | Australia      | 1962                  | The New Star Of The Italian Radio-Television                                      | javierfernández | VG
+ CD              | 1999        | Sweden         | 2014                  | Levande På G                                                                      | javierfernández | NM
+ Vinyl           | 1979        | Italy          | 2008                  | Broken Music                                                                      | javierfernández | NM
+ Vinyl           | 1962        | UK             | 1962                  | Meet Me At The Twistin' Place                                                     | javierfernández | VG
+ CD              | 2000        | Japan          | 2000                  | ノイ                                                                              | javierfernández | NM
+ Vinyl           | 1990        | UK             | 2013                  | High Tension                                                                      | javierfernández | M
+ CD              | 1997        | US             | 1997                  | The Japan Syndrome                                                                | javierfernández | VG+
+ CD              | 2012        | UK             | 2019                  | Lux                                                                               | maríamartínez   | VG+
+ CD              | 2014        | Germany        | 2014                  | 10 Years - Live In Iruña                                                          | maríamartínez   | EX
+ Vinyl           | 0           | France         | 1957                  | Jailhouse                                                                         | maríamartínez   | EX
+ Vinyl           | 1973        | US             | 1973                  | Public Foot The Roman                                                             | maríamartínez   | F
+ Vinyl           | 2002        | UK             | 2001                  | Contact / Descent                                                                 | maríamartínez   | F
+ Vinyl           | 2011        | France         | 2008                  | Kiev                                                                              | maríamartínez   | F
+ CD              | 1991        | US             | 1991                  | Ivy                                                                               | maríamartínez   | VG
+ CD              | 2007        | Germany        | 2007                  | Time And Time Again                                                               | maríamartínez   | G
+ Vinyl           | 2010        | US             | 1985                  | The Silent Waves                                                                  | maríamartínez   | VG+
+ Vinyl           | 1999        | Germany        | 2019                  | The Watergate EP                                                                  | maríamartínez   | EX
+ Cassette        | 1980        | Germany        | 1981                  | Durdurun Dünyayı                                                                  | maríamartínez   | F
+ Vinyl           | 0           | Germany        | 0                     | Ay! Mulata                                                                        | maríamartínez   | VG
+ Vinyl           | 0           | US             | 2005                  | Quartet No. 1 In A Minor / Quartet No. 2 In A Minor                               | maríamartínez   | VG
+ Vinyl           | 1987        | UK             | 2000                  | Time Trouble And Money (Live At The 100 Club)                                     | maríamartínez   | EX
+ Vinyl           | 2019        | Canada         | 2020                  | Judgement Time / Version                                                          | maríamartínez   | VG+
+ Vinyl           | 1985        | Canada         | 1985                  | Chief Inspector / Novela Das Nove                                                 | maríamartínez   | VG
+ Cassette        | 2012        | Finland        | 2012                  | Vitusti Kuolemaa...                                                               | maríamartínez   | VG+
+ Vinyl           | 1984        | Czechoslovakia | 1984                  | Mluví K Vám Robot                                                                 | maríamartínez   | F
+ Vinyl           | 2015        | US             | 2015                  | Good Shape                                                                        | maríamartínez   | VG+
+ Vinyl           | 1971        | Yugoslavia     | 1971                  | Obećanje / Klik-Klak                                                              | maríamartínez   | F
+ Vinyl           | 1996        | US             | 1996                  | Cypher                                                                            | maríamartínez   | EX
+ Vinyl           | 1963        | Brazil         | 2018                  | Samba Demais                                                                      | maríamartínez   | VG
+ Vinyl           | 1995        | UK             | 1995                  | Energy Trax                                                                       | maríamartínez   | NM
+ Vinyl           | 1993        | Spain          | 1993                  | A Brighter Day                                                                    | maríamartínez   | NM
+ CD              | 2005        | US             | 1996                  | Let's Talk It Over / Love Attack                                                  | maríamartínez   | G
+ Vinyl           | 1966        | UK             | 1966                  | (You Got) The Power Of Love                                                       | maríamartínez   | VG+
+ Vinyl           | 1991        | UK             | 1991                  | Raging E.P.                                                                       | maríamartínez   | EX
+ Vinyl           | 1988        | France         | 1989                  | La Fete A Manu                                                                    | maríamartínez   | VG+
+ Vinyl           | 2014        | US             | 1995                  | Party Plates                                                                      | maríamartínez   | G
+ CD              | 1998        | US             | 2007                  | Twilight Of Legends                                                               | maríamartínez   | VG
+ CD              | 2015        | Canada         | 2015                  | 20 Years: The Best of Jacob Moon                                                  | pedrodíaz       | M
+ CD              | 1995        | Sweden         | 1995                  | More Out Of Today                                                                 | pedrodíaz       | F
+ Vinyl           | 1966        | Yugoslavia     | 1966                  | Omer I Merima                                                                     | pedrodíaz       | EX
+ CD              | 2011        | Greece         | 2003                  | Το Τραγούδι Του Νεκρού Αδελφού - Λιποτάκτες                                       | pedrodíaz       | VG+
+ Vinyl           | 1967        | US             | 1967                  | You Are The Man / Hard To Get                                                     | pedrodíaz       | EX
+ Vinyl           | 1987        | Spain          | 1978                  | The Raven / The Cask Of Amontillado                                               | pedrodíaz       | NM
+ Vinyl           | 1995        | UK             | 2019                  | Business Free Music                                                               | pedrodíaz       | F
+ Vinyl           | 1983        | US             | 1983                  | Pride And Joy                                                                     | pedrodíaz       | VG+
+ Vinyl           | 2011        | Germany        | 2011                  | Extensive Perception E.P.                                                         | pedrodíaz       | VG
+ Vinyl           | 1992        | UK             | 1992                  | Attack                                                                            | pedrodíaz       | VG
+ CD              | 2008        | Russia         | 2008                  | Королева Зимы                                                                     | pedrodíaz       | VG
+ CD              | 2003        | Germany        | 1989                  | Zoopsia                                                                           | pedrodíaz       | VG
+ Vinyl           | 0           | UK             | 2012                  | Firing Line                                                                       | pedrodíaz       | NM
+ Vinyl           | 1981        | Czechoslovakia | 1984                  | Mluví K Vám Robot                                                                 | pedrodíaz       | VG
+ Vinyl           | 2003        | Germany        | 2003                  | Never                                                                             | pedrodíaz       | M
+ Vinyl           | 2019        | UK & US        | 2019                  | Lux                                                                               | pedrodíaz       | F
+ Vinyl           | 2014        | Italy          | 1997                  | Nerorgasmo                                                                        | pedrodíaz       | EX
+ Vinyl           | 1982        | UK             | 1982                  | The Meaning Of Love                                                               | pedrodíaz       | G
+ Vinyl           | 2006        | Germany        | 2006                  | Live It Out                                                                       | javiergómez     | M
+ CD              | 2008        | Finland        | 2008                  | Frozen Chambers                                                                   | javiergómez     | VG+
+ Vinyl           | 2002        | UK             | 1981                  | Not Guilty                                                                        | javiergómez     | VG
+ CD              | 1994        | Finland        | 1994                  | Toivon                                                                            | javiergómez     | NM
+ Vinyl           | 2016        | Europe         | 2016                  | Nobody But Me                                                                     | javiergómez     | VG
+ Vinyl           | 2013        | UK             | 2013                  | Tour 2013 EP                                                                      | javiergómez     | EX
+ CD              | 2010        | Europe         | 2010                  | No Tears To Cry / Wake Up The Nation                                              | javiergómez     | VG+
+ Cassette        | 1988        | Finland        | 1988                  | Turakaisten Paratiisi                                                             | javiergómez     | G
+ Vinyl           | 1975        | Germany        | 1984                  | Lady                                                                              | javiergómez     | VG
+ Vinyl           | 1977        | US             | 1965                  | A Charlie Brown Christmas                                                         | javiergómez     | VG+
+ Vinyl           | 1961        | US             | 1961                  | Pacheco Y Su Charanga                                                             | javiergómez     | F
+ Vinyl           | 1983        | France         | 2013                  | Hit You                                                                           | javiergómez     | VG
+ Vinyl           | 2023        | UK             | 2022                  | Thulcandra                                                                        | javiergómez     | G
+ Vinyl           | 1991        | UK             | 1989                  | Live At The Roxy Club                                                             | javiergómez     | F
+ Vinyl           | 2018        | Germany        | 2018                  | The Other Side                                                                    | javiergómez     | G
+ CD              | 1996        | Greece         | 1996                  | Άσε Με Φίλε Να Μεθύσω                                                             | javiergómez     | EX
+ Vinyl           | 2023        | Worldwide      | 1998                  | Reunion                                                                           | javiergómez     | M
+ Vinyl           | 1969        | US             | 1969                  | Miracles Take Time                                                                | javiergómez     | VG
+ Vinyl           | 1980        | US             | 1980                  | Anyplace, Anywhere, Anytime                                                       | javiergómez     | VG
+ Vinyl           | 1980        | US             | 1980                  | Light The Flame Of Love                                                           | javiergómez     | M
+ CD              | 1990        | US             | 1990                  | Make Way For The Ocean Floor To Fall To The Surface                               | javiergómez     | M
+ Vinyl           | 2006        | Switzerland    | 2007                  | Karasu                                                                            | javiergómez     | VG
+ File            | 2011        | US             | 2011                  | Split W/ Condensed Flesh                                                          | javiergómez     | EX
+ CD              | 0           | Russia         | 0                     | Spy.der Mix                                                                       | javiergómez     | F
+ Vinyl           | 1982        | France         | 1983                  | Les Petites Rues De Singapour                                                     | javiergómez     | F
+ Vinyl           | 2014        | Germany        | 2014                  | In A Mirror Darkly                                                                | sergiopérez     | G
+ Vinyl           | 2009        | US             | 2009                  | Figures                                                                           | sergiopérez     | F
+ Vinyl           | 0           | Finland        | 1969                  | Suomi 50 - Runoja Ja Lauluja                                                      | sergiopérez     | VG+
+ Vinyl           | 1981        | Italy          | 1975                  | Fabrizio De André                                                                 | sergiopérez     | G
+ Vinyl           | 1965        | US             | 0                     | Plays Solo Piano                                                                  | sergiopérez     | F
+ Vinyl           | 2003        | Italy          | 1975                  | My Will To Survive                                                                | sergiopérez     | M
+ Vinyl           | 1992        | US             | 1992                  | Get 'Em Down                                                                      | sergiopérez     | M
+ CD              | 2012        | Turkey         | 1981                  | Durdurun Dünyayı                                                                  | sergiopérez     | G
+ Vinyl           | 2012        | Germany        | 2016                  | G.O.D. EP - The Remixes                                                           | sergiopérez     | M
+ Vinyl           | 1990        | Europe         | 1990                  | The Abyss                                                                         | sergiopérez     | NM
+ CD              | 1992        | US             | 1992                  | I Am A Dope Fiend                                                                 | sergiopérez     | VG
+ Vinyl           | 1981        | Canada         | 1981                  | 4                                                                                 | sergiopérez     | NM
+ Vinyl           | 2011        | Germany        | 2011                  | Extensive Perception E.P.                                                         | sergiopérez     | EX
+ Vinyl           | 1959        | US             | 1957                  | Mantovani Encores                                                                 | sergiopérez     | M
+ Vinyl           | 1979        | US             | 1976                  | I Love To Dance                                                                   | sergiopérez     | G
+ Vinyl           | 1998        | US             | 2014                  | Another Riot II                                                                   | sergiopérez     | NM
+ Vinyl           | 2015        | Europe         | 2020                  | Closer                                                                            | sergiopérez     | G
+ Vinyl           | 1991        | US             | 2009                  | This Jam Is Black                                                                 | sergiopérez     | VG
+ CDr             | 2008        | Germany        | 2010                  | As Slow As Apocalypse                                                             | sergiopérez     | G
+ Vinyl           | 2018        | UK             | 2018                  | If You're Into It, I'm Out Of It                                                  | sergiopérez     | VG
+ Vinyl           | 2014        | Europe         | 2014                  | Dizzy Heights                                                                     | sergiopérez     | G
+ CD              | 2004        | France         | 2004                  | Express Way                                                                       | sergiopérez     | NM
+ CD              | 2002        | Germany        | 2002                  | Governor                                                                          | sergiopérez     | F
+ Vinyl           | 2001        | US             | 1986                  | Remix 12'                                                                         | sergiopérez     | M
+ Vinyl           | 1995        | UK             | 2008                  | Highlander / Spirit Of Darkness                                                   | sergiopérez     | F
+ Vinyl           | 1976        | UK             | 2010                  | Beggars' Hill                                                                     | sergiopérez     | G
+ Vinyl           | 2021        | Netherlands    | 2005                  | Die Gefühle Haben Schweigepflicht                                                 | sergiopérez     | VG+
+ Vinyl           | 1968        | USSR           | 1968                  | Песни Г. Портнова                                                                 | sergiopérez     | F
+ CD              | 2009        | Indonesia      | 2015                  | Lipan's Kinetic                                                                   | carlosfernández | G
+ CD              | 2016        | Italy          | 2018                  | Nonostante Tutto                                                                  | carlosfernández | VG+
+ Vinyl           | 2009        | Jamaica        | 0                     | Bad Minded People                                                                 | carlosfernández | VG
+ Vinyl           | 1982        | Netherlands    | 1982                  | Shout! Shout! (Knock Yourself Out)                                                | carlosfernández | EX
+ Vinyl           | 2006        | UK             | 2006                  | Square Hole                                                                       | carlosfernández | EX
+ CD              | 2005        | US             | 1984                  | Eden's Fire                                                                       | carlosfernández | F
+ Vinyl           | 2000        | US             | 2000                  | Big Picture                                                                       | carlosfernández | VG
+ CD              | 2002        | Worldwide      | 1996                  | Cypher                                                                            | carlosfernández | VG
+ Vinyl           | 1981        | US             | 1981                  | Rock N Roll                                                                       | carlosfernández | VG+
+ Vinyl           | 2019        | US             | 1972                  | Home                                                                              | carlosfernández | M
+ Vinyl           | 2014        | Unknown        | 2014                  | Album                                                                             | carlosfernández | G
+ CD              | 2010        | US             | 2010                  | For The Rest Of Us                                                                | carlosfernández | VG+
+ Vinyl           | 1997        | UK             | 1997                  | Sweet Thang                                                                       | carlosfernández | G
+(288 rows)
+
+ROLLBACK

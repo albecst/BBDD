@@ -1,0 +1,967 @@
+SET
+BEGIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+COPY 966
+COPY 20
+COPY 7536
+COPY 2449
+COPY 206
+COPY 362
+INSERT 0 932
+INSERT 0 20
+INSERT 0 965
+INSERT 0 7370
+INSERT 0 2098
+INSERT 0 162
+INSERT 0 288
+INSERT 0 1459
+                           nombre                            |                                             url_grupo                                              
+-------------------------------------------------------------+----------------------------------------------------------------------------------------------------
+ Rodgers & Hammerstein                                       | https://www.discogs.com/artist/284099-Rodgers-Hammerstein
+ Phil Collins                                                | https://www.discogs.com/artist/101028-Phil-Collins
+ Overlord (4)                                                | https://www.discogs.com/artist/663248-Overlord-4
+ T.Power                                                     | https://www.discogs.com/artist/387-TPower
+ Carl Craig                                                  | https://www.discogs.com/artist/871-Carl-Craig
+ Creutzfeld & Jakob                                          | https://www.discogs.com/artist/235304-Creutzfeld-Jakob
+ Special Duties                                              | https://www.discogs.com/artist/321494-Special-Duties
+ Carl Meeks                                                  | https://www.discogs.com/artist/393687-Carl-Meeks
+ Dieter Zobel                                                | https://www.discogs.com/artist/684690-Dieter-Zobel
+ Tony Thomas                                                 | https://www.discogs.com/artist/3980-Tony-Thomas
+ Bee Gees                                                    | https://www.discogs.com/artist/97664-Bee-Gees
+ Imelda May                                                  | https://www.discogs.com/artist/1242200-Imelda-May
+ Tank Of Danzig                                              | https://www.discogs.com/artist/107174-Tank-Of-Danzig
+ Goldfrapp                                                   | https://www.discogs.com/artist/2720-Goldfrapp
+ Total Science                                               | https://www.discogs.com/artist/2320-Total-Science
+ Alexander ONeal                                             | https://www.discogs.com/artist/23446-Alexander-ONeal
+ Mr. Death (2)                                               | https://www.discogs.com/artist/1616512-Mr-Death-2
+ Das Süddeutsche Bläserensemble                              | https://www.discogs.com/artist/3302210-Das-Süddeutsche-Bläserensemble
+ Eugene Rhodes                                               | https://www.discogs.com/artist/3446163-Eugene-Rhodes
+ Loz Nettos Bzar                                             | https://www.discogs.com/artist/374379-Loz-Nettos-Bzar
+ Katrina And The Waves                                       | https://www.discogs.com/artist/19584-Katrina-And-The-Waves
+ Samoa Park                                                  | https://www.discogs.com/artist/27207-Samoa-Park
+ DJ Cornelius                                                | https://www.discogs.com/artist/553099-DJ-Cornelius
+ Looptroop (2)                                               | https://www.discogs.com/artist/92020-Looptroop-2
+ Worst Case Scenario (4)                                     | https://www.discogs.com/artist/961436-Worst-Case-Scenario-4
+ Dirty Bee                                                   | https://www.discogs.com/artist/1258648-Dirty-Bee
+ Party Plates                                                | https://www.discogs.com/artist/3843081-Party-Plates
+ Mondglanz                                                   | https://www.discogs.com/artist/483649-Mondglanz
+ Charlie Haden                                               | https://www.discogs.com/artist/253592-Charlie-Haden
+ The Human Beinz                                             | https://www.discogs.com/artist/252477-The-Human-Beinz
+ Wally B.                                                    | https://www.discogs.com/artist/1214904-Wally-B
+ Soul II Soul                                                | https://www.discogs.com/artist/4970-Soul-II-Soul
+ Майя Кристалинская                                          | https://www.discogs.com/artist/817250-Майя-Кристалинская
+ George Aaron                                                | https://www.discogs.com/artist/243002-George-Aaron
+ Fleshies                                                    | https://www.discogs.com/artist/492401-Fleshies
+ Soledad Bravo                                               | https://www.discogs.com/artist/1811302-Soledad-Bravo
+ Nemesi                                                      | https://www.discogs.com/artist/273162-Nemesi
+ Eugen Cicero                                                | https://www.discogs.com/artist/603837-Eugen-Cicero
+ The Rolling Stones                                          | https://www.discogs.com/artist/20991-The-Rolling-Stones
+ Elaine Delmar                                               | https://www.discogs.com/artist/723991-Elaine-Delmar
+ JB                                                          | https://www.discogs.com/artist/2171-JB
+ Sugar Dee                                                   | https://www.discogs.com/artist/1048582-Sugar-Dee
+ Tieum                                                       | https://www.discogs.com/artist/47714-Tieum
+ Glamor Cult                                                 | https://www.discogs.com/artist/1280049-Glamor-Cult
+ Milk Inc.                                                   | https://www.discogs.com/artist/25502-Milk-Inc
+ Ionic Vision                                                | https://www.discogs.com/artist/104567-Ionic-Vision
+ Omen (3)                                                    | https://www.discogs.com/artist/203605-Omen-3
+ Thievery Corporation                                        | https://www.discogs.com/artist/1035-Thievery-Corporation
+ Wham                                                        | https://www.discogs.com/artist/146632-Wham
+ Submachine                                                  | https://www.discogs.com/artist/265211-Submachine
+ Colin Potter                                                | https://www.discogs.com/artist/84023-Colin-Potter
+ Lou & The Hollywood Bananas                                 | https://www.discogs.com/artist/234725-Lou-The-Hollywood-Bananas
+ Christoph De Babalon                                        | https://www.discogs.com/artist/3084-Christoph-De-Babalon
+ Da Rock                                                     | https://www.discogs.com/artist/69131-Da-Rock
+ Dan Hicks                                                   | https://www.discogs.com/artist/431746-Dan-Hicks
+ King Diamond                                                | https://www.discogs.com/artist/252162-King-Diamond
+ Orfanado                                                    | https://www.discogs.com/artist/1544314-Orfanado
+ Reggie Capers                                               | https://www.discogs.com/artist/1145815-Reggie-Capers
+ Larry Gus                                                   | https://www.discogs.com/artist/1466372-Larry-Gus
+ Daniel Lui                                                  | https://www.discogs.com/artist/53619-Daniel-Lui
+ Beastellabeast                                              | https://www.discogs.com/artist/244212-Beastellabeast
+ Inez And Charlie Foxx                                       | https://www.discogs.com/artist/398238-Inez-And-Charlie-Foxx
+ Stefan Gubatz                                               | https://www.discogs.com/artist/123199-Stefan-Gubatz
+ Karolina (26)                                               | https://www.discogs.com/artist/11296262-Karolina-26
+ Marco Di Marco                                              | https://www.discogs.com/artist/230788-Marco-Di-Marco
+ Mariposa (3)                                                | https://www.discogs.com/artist/1080057-Mariposa-3
+ Was (Not Was)                                               | https://www.discogs.com/artist/30093-Was-Not-Was
+ 23 Skidoo                                                   | https://www.discogs.com/artist/21148-23-Skidoo
+ The Wibbley Brothers                                        | https://www.discogs.com/artist/644095-The-Wibbley-Brothers
+ Dinosaur Jr.                                                | https://www.discogs.com/artist/55965-Dinosaur-Jr
+ Lucky & Easy                                                | https://www.discogs.com/artist/2999-Lucky-Easy
+ Captain Sensible                                            | https://www.discogs.com/artist/52509-Captain-Sensible
+ Lou Reed                                                    | https://www.discogs.com/artist/11879-Lou-Reed
+ DJ Hazard                                                   | https://www.discogs.com/artist/24698-DJ-Hazard
+ Billie Holiday                                              | https://www.discogs.com/artist/33589-Billie-Holiday
+ Herb Alpert & The Tijuana Brass                             | https://www.discogs.com/artist/275002-Herb-Alpert-The-Tijuana-Brass
+ Live                                                        | https://www.discogs.com/artist/137516-Live
+ Denis Wetterwald                                            | https://www.discogs.com/artist/1676443-Denis-Wetterwald
+ The Coasters                                                | https://www.discogs.com/artist/136172-The-Coasters
+ Miguel Bosé                                                 | https://www.discogs.com/artist/247278-Miguel-Bosé
+ The Grandmothers                                            | https://www.discogs.com/artist/1663374-The-Grandmothers
+ Ferry Corsten                                               | https://www.discogs.com/artist/4223-Ferry-Corsten
+ Tonight Alive                                               | https://www.discogs.com/artist/2615391-Tonight-Alive
+ Loren X                                                     | https://www.discogs.com/artist/54756-Loren-X
+ The Fall                                                    | https://www.discogs.com/artist/2228-The-Fall
+ Crystal Clear (2)                                           | https://www.discogs.com/artist/190146-Crystal-Clear-2
+ Andrea Berg                                                 | https://www.discogs.com/artist/590788-Andrea-Berg
+ Серёга                                                      | https://www.discogs.com/artist/644912-Серёга
+ Reggaella                                                   | https://www.discogs.com/artist/1188780-Reggaella
+ Drumsound & Simon Bassline Smith                            | https://www.discogs.com/artist/35148-Drumsound-Simon-Bassline-Smith
+ Hermh                                                       | https://www.discogs.com/artist/254320-Hermh
+ Curtis Mayfield                                             | https://www.discogs.com/artist/17589-Curtis-Mayfield
+ Nicholas Gunn                                               | https://www.discogs.com/artist/509392-Nicholas-Gunn
+ Caribbean Dandee                                            | https://www.discogs.com/artist/6052738-Caribbean-Dandee
+ Lamb                                                        | https://www.discogs.com/artist/655-Lamb
+ Giuseppe Verdi                                              | https://www.discogs.com/artist/192327-Giuseppe-Verdi
+ Vince Watson                                                | https://www.discogs.com/artist/3225-Vince-Watson
+ Arctic Monkeys                                              | https://www.discogs.com/artist/391170-Arctic-Monkeys
+ Teddy Reno                                                  | https://www.discogs.com/artist/926969-Teddy-Reno
+ 3Ds                                                         | https://www.discogs.com/artist/261389-3Ds
+ C.O.D.                                                      | https://www.discogs.com/artist/3290-COD
+ Frankie Goes To Hollywood                                   | https://www.discogs.com/artist/6273-Frankie-Goes-To-Hollywood
+ Dulac (3)                                                   | https://www.discogs.com/artist/3160442-Dulac-3
+ Deportees                                                   | https://www.discogs.com/artist/552092-Deportees
+ Gori Ussi Winnetou                                          | https://www.discogs.com/artist/611913-Gori-Ussi-Winnetou
+ Milivoje - Mujo Nikčević                                    | https://www.discogs.com/artist/3213902-Milivoje-Mujo-Nikčević
+ Dan Fogelberg                                               | https://www.discogs.com/artist/361424-Dan-Fogelberg
+ The Hollies                                                 | https://www.discogs.com/artist/109509-The-Hollies
+ Alexander Goldscheider                                      | https://www.discogs.com/artist/1039405-Alexander-Goldscheider
+ Royal Blood (6)                                             | https://www.discogs.com/artist/3605179-Royal-Blood-6
+ Figures In Distortion                                       | https://www.discogs.com/artist/257622-Figures-In-Distortion
+ The Ill Saint                                               | https://www.discogs.com/artist/79880-The-Ill-Saint
+ Barry Brown                                                 | https://www.discogs.com/artist/119546-Barry-Brown
+ Brat Farrar                                                 | https://www.discogs.com/artist/2267096-Brat-Farrar
+ Rövsvett                                                    | https://www.discogs.com/artist/275298-Rövsvett
+ Franz Schubert                                              | https://www.discogs.com/artist/283469-Franz-Schubert
+ Ludwig van Beethoven                                        | https://www.discogs.com/artist/95544-Ludwig-van-Beethoven
+ LÂme Immortelle                                             | https://www.discogs.com/artist/38434-LÂme-Immortelle
+ Outlaws                                                     | https://www.discogs.com/artist/508629-Outlaws
+ Upper Astral                                                | https://www.discogs.com/artist/651299-Upper-Astral
+ Simon                                                       | https://www.discogs.com/artist/3876-Simon
+ Discolazer                                                  | https://www.discogs.com/artist/2895537-Discolazer
+ Magic Lady                                                  | https://www.discogs.com/artist/139979-Magic-Lady
+ Caboladies                                                  | https://www.discogs.com/artist/1020918-Caboladies
+ Desired State                                               | https://www.discogs.com/artist/2170-Desired-State
+ Ferdi Tayfur                                                | https://www.discogs.com/artist/2148255-Ferdi-Tayfur
+ Seals & Crofts                                              | https://www.discogs.com/artist/160904-Seals-Crofts
+ Nova deViator                                               | https://www.discogs.com/artist/2123609-Nova-deViator
+ Who Is Behind The Mask?                                     | https://www.discogs.com/artist/131191-Who-Is-Behind-The-Mask
+ Big Bill Broonzy                                            | https://www.discogs.com/artist/307270-Big-Bill-Broonzy
+ Dave Grusin                                                 | https://www.discogs.com/artist/37730-Dave-Grusin
+ Stengte Dører                                               | https://www.discogs.com/artist/565313-Stengte-Dører
+ Tigerskin                                                   | https://www.discogs.com/artist/169412-Tigerskin
+ Akheron                                                     | https://www.discogs.com/artist/3006384-Akheron
+ Creteens                                                    | https://www.discogs.com/artist/1134164-Creteens
+ Brujeria                                                    | https://www.discogs.com/artist/261540-Brujeria
+ Christos Lainas                                             | https://www.discogs.com/artist/412023-Christos-Lainas
+ Daryl Hall & John Oates                                     | https://www.discogs.com/artist/95886-Daryl-Hall-John-Oates
+ Ralph McTell                                                | https://www.discogs.com/artist/297367-Ralph-McTell
+ Dog Faced Hermans                                           | https://www.discogs.com/artist/304715-Dog-Faced-Hermans
+ Magnolia Electric Co.                                       | https://www.discogs.com/artist/364911-Magnolia-Electric-Co
+ Peret Y Sus Gitanos                                         | https://www.discogs.com/artist/1203588-Peret-Y-Sus-Gitanos
+ Victor Calderone                                            | https://www.discogs.com/artist/13734-Victor-Calderone
+ The Prodigy                                                 | https://www.discogs.com/artist/66852-The-Prodigy
+ Little Anthony & The Imperials                              | https://www.discogs.com/artist/383327-Little-Anthony-The-Imperials
+ The Echoing Green                                           | https://www.discogs.com/artist/72781-The-Echoing-Green
+ Stray Cats                                                  | https://www.discogs.com/artist/180921-Stray-Cats
+ Antonis Remos                                               | https://www.discogs.com/artist/164428-Antonis-Remos
+ Scott Grooves                                               | https://www.discogs.com/artist/7606-Scott-Grooves
+ Los Bonitos                                                 | https://www.discogs.com/artist/114960-Los-Bonitos
+ Ratos De Porão                                              | https://www.discogs.com/artist/323295-Ratos-De-Porão
+ Duane & Co.                                                 | https://www.discogs.com/artist/1947-Duane-Co
+ Fat Freddys Drop                                            | https://www.discogs.com/artist/106025-Fat-Freddys-Drop
+ Karlheinz Stockhausen                                       | https://www.discogs.com/artist/32190-Karlheinz-Stockhausen
+ The Operator (2)                                            | https://www.discogs.com/artist/55785-The-Operator-2
+ Rhythm & Sound                                              | https://www.discogs.com/artist/5137-Rhythm-Sound
+ Carrie Koo Mei                                              | https://www.discogs.com/artist/3564576-Carrie-Koo-Mei
+ Scotti Deep                                                 | https://www.discogs.com/artist/10837-Scotti-Deep
+ Marques Houston                                             | https://www.discogs.com/artist/204617-Marques-Houston
+ Dard Å Ranj Från Det Hebbershålska Samfundet                | https://www.discogs.com/artist/3325223-Dard-Å-Ranj-Från-Det-Hebbershålska-Samfundet
+ Antonín Dvořák                                              | https://www.discogs.com/artist/268272-Antonín-Dvořák
+ The Sherrys                                                 | https://www.discogs.com/artist/797173-The-Sherrys
+ Enjoy (6)                                                   | https://www.discogs.com/artist/1118272-Enjoy-6
+ Vortice Cremisi                                             | https://www.discogs.com/artist/1429416-Vortice-Cremisi
+ Tyrone Evans                                                | https://www.discogs.com/artist/139321-Tyrone-Evans
+ Trauma (10)                                                 | https://www.discogs.com/artist/441490-Trauma-10
+ Millie Jackson                                              | https://www.discogs.com/artist/94928-Millie-Jackson
+ Scorn                                                       | https://www.discogs.com/artist/658-Scorn
+ ZEV                                                         | https://www.discogs.com/artist/79684-ZEV
+ The BTX                                                     | https://www.discogs.com/artist/388605-The-BTX
+ Orchestra ansamblului „Timișul” din Timișoara               | https://www.discogs.com/artist/5076479-Orchestra-ansamblului-Timișul-din-Timișoara
+ I Am Kloot                                                  | https://www.discogs.com/artist/83086-I-Am-Kloot
+ Ernst Schultz                                               | https://www.discogs.com/artist/443025-Ernst-Schultz
+ Comus                                                       | https://www.discogs.com/artist/325432-Comus
+ Roxette                                                     | https://www.discogs.com/artist/100405-Roxette
+ Στέλιος Καζαντζίδης                                         | https://www.discogs.com/artist/939410-Στέλιος-Καζαντζίδης
+ The Jimmy Giuffre Trio                                      | https://www.discogs.com/artist/330153-The-Jimmy-Giuffre-Trio
+ Ame Lorain                                                  | https://www.discogs.com/artist/237141-Ame-Lorain
+ Rocky Sharpe & The Replays                                  | https://www.discogs.com/artist/180940-Rocky-Sharpe-The-Replays
+ Teyana Taylor                                               | https://www.discogs.com/artist/1301110-Teyana-Taylor
+ The New Colony Six                                          | https://www.discogs.com/artist/304462-The-New-Colony-Six
+ Joe Sullivan                                                | https://www.discogs.com/artist/307255-Joe-Sullivan
+ Subvert                                                     | https://www.discogs.com/artist/346312-Subvert
+ Car Bomb                                                    | https://www.discogs.com/artist/56366-Car-Bomb
+ Alex Calver                                                 | https://www.discogs.com/artist/119743-Alex-Calver
+ Beres Hammond                                               | https://www.discogs.com/artist/195106-Beres-Hammond
+ Kingpin Skinny Pimp                                         | https://www.discogs.com/artist/321010-Kingpin-Skinny-Pimp
+ Roy Ayers                                                   | https://www.discogs.com/artist/2265-Roy-Ayers
+ Marvin Brooks                                               | https://www.discogs.com/artist/896001-Marvin-Brooks
+ Florent Pagny                                               | https://www.discogs.com/artist/239099-Florent-Pagny
+ Die Sterne                                                  | https://www.discogs.com/artist/3327-Die-Sterne
+ Supernichts                                                 | https://www.discogs.com/artist/641546-Supernichts
+ Stylophonic                                                 | https://www.discogs.com/artist/52654-Stylophonic
+ The Intelligent Jungalist                                   | https://www.discogs.com/artist/61146-The-Intelligent-Jungalist
+ Third Head                                                  | https://www.discogs.com/artist/387834-Third-Head
+ Tina Arena                                                  | https://www.discogs.com/artist/87361-Tina-Arena
+ Everly Brothers                                             | https://www.discogs.com/artist/145071-Everly-Brothers
+ Satarial                                                    | https://www.discogs.com/artist/438904-Satarial
+ Benny Waters                                                | https://www.discogs.com/artist/287527-Benny-Waters
+ Marcella Bella                                              | https://www.discogs.com/artist/503123-Marcella-Bella
+ Project X                                                   | https://www.discogs.com/artist/11665-Project-X
+ Barry White                                                 | https://www.discogs.com/artist/18978-Barry-White
+ A Poor Excuse                                               | https://www.discogs.com/artist/269921-A-Poor-Excuse
+ Logic (27)                                                  | https://www.discogs.com/artist/3283864-Logic-27
+ The Courteeners                                             | https://www.discogs.com/artist/971940-The-Courteeners
+ Al Foster                                                   | https://www.discogs.com/artist/271001-Al-Foster
+ Brunner & Brunner                                           | https://www.discogs.com/artist/503410-Brunner-Brunner
+ Ольга Арефьева                                              | https://www.discogs.com/artist/1566245-Ольга-Арефьева
+ Advisory                                                    | https://www.discogs.com/artist/555417-Advisory
+ ...And Oceans                                               | https://www.discogs.com/artist/282528-And-Oceans
+ Taghut                                                      | https://www.discogs.com/artist/2337043-Taghut
+ Tommy Ekman                                                 | https://www.discogs.com/artist/123628-Tommy-Ekman
+ The Hitchikers                                              | https://www.discogs.com/artist/3949575-The-Hitchikers
+ REQ                                                         | https://www.discogs.com/artist/9662-REQ
+ Great Lake Swimmers                                         | https://www.discogs.com/artist/350714-Great-Lake-Swimmers
+ Wisdom-Dee                                                  | https://www.discogs.com/artist/2896906-Wisdom-Dee
+ Studio 1                                                    | https://www.discogs.com/artist/8320-Studio-1
+ T-White                                                     | https://www.discogs.com/artist/3948166-T-White
+ Cavity (3)                                                  | https://www.discogs.com/artist/605620-Cavity-3
+  Bo Bellow                                                  | https://www.discogs.com/artist/225293-Bo-Bellow
+ Grant & Forsyth                                             | https://www.discogs.com/artist/519179-Grant-Forsyth
+ The Matadors (10)                                           | https://www.discogs.com/artist/3948408-The-Matadors-10
+ The Salsoul Orchestra                                       | https://www.discogs.com/artist/3470-The-Salsoul-Orchestra
+ Marcia Hines                                                | https://www.discogs.com/artist/33322-Marcia-Hines
+ Kick-OH!                                                    | https://www.discogs.com/artist/1943261-Kick-OH!
+ The Guana Batz                                              | https://www.discogs.com/artist/270783-The-Guana-Batz
+ Sleep                                                       | https://www.discogs.com/artist/57916-Sleep
+ Depeche Mode                                                | https://www.discogs.com/artist/2725-Depeche-Mode
+ Phil Blunts                                                 | https://www.discogs.com/artist/309020-Phil-Blunts
+ Fred Asp                                                    | https://www.discogs.com/artist/301211-Fred-Asp
+ Tim Karr                                                    | https://www.discogs.com/artist/967846-Tim-Karr
+ The Rave Doctor                                             | https://www.discogs.com/artist/162815-The-Rave-Doctor
+ The Beyond (3)                                              | https://www.discogs.com/artist/1365000-The-Beyond-3
+ Slayer                                                      | https://www.discogs.com/artist/18845-Slayer
+ Hellkrusher                                                 | https://www.discogs.com/artist/750373-Hellkrusher
+ Alexi Delano                                                | https://www.discogs.com/artist/26-Alexi-Delano
+ Morrissey                                                   | https://www.discogs.com/artist/92577-Morrissey
+ Bijelo Dugme                                                | https://www.discogs.com/artist/488253-Bijelo-Dugme
+ Tony Rebel                                                  | https://www.discogs.com/artist/124592-Tony-Rebel
+ The Joe Harriott Double Quintet                             | https://www.discogs.com/artist/699772-The-Joe-Harriott-Double-Quintet
+ BeBe Winans                                                 | https://www.discogs.com/artist/14212-BeBe-Winans
+ Scorpyo                                                     | https://www.discogs.com/artist/1979364-Scorpyo
+ Piero Umiliani                                              | https://www.discogs.com/artist/8722-Piero-Umiliani
+ Let (2)                                                     | https://www.discogs.com/artist/4018128-Let-2
+ Östen Warnerbring                                           | https://www.discogs.com/artist/577100-Östen-Warnerbring
+ The Marvelettes                                             | https://www.discogs.com/artist/86097-The-Marvelettes
+ Adriano Celentano                                           | https://www.discogs.com/artist/36543-Adriano-Celentano
+ Mantovani And His Orchestra                                 | https://www.discogs.com/artist/367959-Mantovani-And-His-Orchestra
+ Junior Delgado                                              | https://www.discogs.com/artist/18085-Junior-Delgado
+ Bill Haley                                                  | https://www.discogs.com/artist/135191-Bill-Haley
+ The Meteors (2)                                             | https://www.discogs.com/artist/266591-The-Meteors-2
+ Be Bop Deluxe                                               | https://www.discogs.com/artist/129615-Be-Bop-Deluxe
+ King Curtis & The Kingpins                                  | https://www.discogs.com/artist/572666-King-Curtis-The-Kingpins
+ Black Attack                                                | https://www.discogs.com/artist/17902-Black-Attack
+ Billy Strings                                               | https://www.discogs.com/artist/4039795-Billy-Strings
+ Joe Bataan                                                  | https://www.discogs.com/artist/19600-Joe-Bataan
+ No Assembly Required                                        | https://www.discogs.com/artist/98106-No-Assembly-Required
+ Waldo De Los Rios                                           | https://www.discogs.com/artist/140042-Waldo-De-Los-Rios
+ DJ Spy.der                                                  | https://www.discogs.com/artist/516736-DJ-Spyder
+ Ansambl Urošević                                            | https://www.discogs.com/artist/1406201-Ansambl-Urošević
+ Danyel Gérard                                               | https://www.discogs.com/artist/468105-Danyel-Gérard
+ Asgærd                                                      | https://www.discogs.com/artist/3363612-Asgærd
+ Magic Fly                                                   | https://www.discogs.com/artist/74715-Magic-Fly
+ Chemical Frequency                                          | https://www.discogs.com/artist/95994-Chemical-Frequency
+ Kate Bush                                                   | https://www.discogs.com/artist/85929-Kate-Bush
+ Model 500                                                   | https://www.discogs.com/artist/1141-Model-500
+ Silent Witness                                              | https://www.discogs.com/artist/18088-Silent-Witness
+ Byrne & Barnes                                              | https://www.discogs.com/artist/3334875-Byrne-Barnes
+ The Beatles                                                 | https://www.discogs.com/artist/82730-The-Beatles
+ Christ.                                                     | https://www.discogs.com/artist/31633-Christ
+ Sagat                                                       | https://www.discogs.com/artist/11915-Sagat
+ Ultra-Takkyu vs. Mijk-o-zilla                               | https://www.discogs.com/artist/142171-Ultra-Takkyu-vs-Mijk-o-zilla
+ Jack Wall                                                   | https://www.discogs.com/artist/538989-Jack-Wall
+ Mort Garson & His Orchestra                                 | https://www.discogs.com/artist/880731-Mort-Garson-His-Orchestra
+ Bob Geldof                                                  | https://www.discogs.com/artist/149246-Bob-Geldof
+ Onkunde                                                     | https://www.discogs.com/artist/2057478-Onkunde
+ Cliff Martinez                                              | https://www.discogs.com/artist/130861-Cliff-Martinez
+ Mekong Delta                                                | https://www.discogs.com/artist/450149-Mekong-Delta
+ Keith Jarrett                                               | https://www.discogs.com/artist/145273-Keith-Jarrett
+ Eric Prydz                                                  | https://www.discogs.com/artist/16619-Eric-Prydz
+ Ansel Cridland                                              | https://www.discogs.com/artist/2681439-Ansel-Cridland
+ Kermit Ruffins                                              | https://www.discogs.com/artist/306009-Kermit-Ruffins
+ Mikis Theodorakis                                           | https://www.discogs.com/artist/164808-Mikis-Theodorakis
+ Biosphere                                                   | https://www.discogs.com/artist/3956-Biosphere
+ Paddy Goes To Holyhead                                      | https://www.discogs.com/artist/254284-Paddy-Goes-To-Holyhead
+ Shantel                                                     | https://www.discogs.com/artist/2489-Shantel
+ Salamandra (2)                                              | https://www.discogs.com/artist/1707219-Salamandra-2
+ Warren Zevon                                                | https://www.discogs.com/artist/273411-Warren-Zevon
+ Veikko Sinisalo                                             | https://www.discogs.com/artist/1426025-Veikko-Sinisalo
+ Sungod                                                      | https://www.discogs.com/artist/102872-Sungod
+ Buzz Off!                                                   | https://www.discogs.com/artist/3938373-Buzz-Off!
+ Phill & Company                                             | https://www.discogs.com/artist/759680-Phill-Company
+ Wildside                                                    | https://www.discogs.com/artist/164613-Wildside
+ Brass Construction                                          | https://www.discogs.com/artist/64791-Brass-Construction
+ Archie Shepp                                                | https://www.discogs.com/artist/10514-Archie-Shepp
+ James Brown                                                 | https://www.discogs.com/artist/12596-James-Brown
+ Al Bano & Romina Power                                      | https://www.discogs.com/artist/303666-Al-Bano-Romina-Power
+ Alden Tyrell                                                | https://www.discogs.com/artist/8201-Alden-Tyrell
+ Aquilia                                                     | https://www.discogs.com/artist/26209-Aquilia
+ Anna Vissi                                                  | https://www.discogs.com/artist/124307-Anna-Vissi
+ LArc~en~Ciel                                                | https://www.discogs.com/artist/289556-LArc~en~Ciel
+ The Bones                                                   | https://www.discogs.com/artist/345538-The-Bones
+ George Jones (2)                                            | https://www.discogs.com/artist/357982-George-Jones-2
+ Impact (11)                                                 | https://www.discogs.com/artist/275547-Impact-11
+ Klax-On                                                     | https://www.discogs.com/artist/134346-Klax-On
+ Jonestown                                                   | https://www.discogs.com/artist/49940-Jonestown
+ Reijo Kallio                                                | https://www.discogs.com/artist/602874-Reijo-Kallio
+ Pascal Danel                                                | https://www.discogs.com/artist/310814-Pascal-Danel
+ Sam & Kirk McGee                                            | https://www.discogs.com/artist/3502847-Sam-Kirk-McGee
+ Young Lay                                                   | https://www.discogs.com/artist/184154-Young-Lay
+ Jennifer Rush                                               | https://www.discogs.com/artist/223196-Jennifer-Rush
+ Los Rodriguez                                               | https://www.discogs.com/artist/1125622-Los-Rodriguez
+ Quarion                                                     | https://www.discogs.com/artist/659045-Quarion
+ Glenn Morrison                                              | https://www.discogs.com/artist/894169-Glenn-Morrison
+ Julien Clerc                                                | https://www.discogs.com/artist/420011-Julien-Clerc
+ Spencer Wiggins                                             | https://www.discogs.com/artist/1099467-Spencer-Wiggins
+ Akustik Research                                            | https://www.discogs.com/artist/248227-Akustik-Research
+ Miles Davis                                                 | https://www.discogs.com/artist/23755-Miles-Davis
+ Zarpa                                                       | https://www.discogs.com/artist/2055004-Zarpa
+ Neil Diamond                                                | https://www.discogs.com/artist/271516-Neil-Diamond
+ Robert Babicz                                               | https://www.discogs.com/artist/40977-Robert-Babicz
+ Paul Weller                                                 | https://www.discogs.com/artist/14906-Paul-Weller
+ Bauhaus                                                     | https://www.discogs.com/artist/85897-Bauhaus
+ Joy Division                                                | https://www.discogs.com/artist/3898-Joy-Division
+ Mora Träsk                                                  | https://www.discogs.com/artist/1034283-Mora-Träsk
+ Danceclass                                                  | https://www.discogs.com/artist/1349753-Danceclass
+ Grace Jones                                                 | https://www.discogs.com/artist/13932-Grace-Jones
+ Horace Silver                                               | https://www.discogs.com/artist/29973-Horace-Silver
+ Vampyric Blood                                              | https://www.discogs.com/artist/2901428-Vampyric-Blood
+ Captain Hollywood                                           | https://www.discogs.com/artist/31937-Captain-Hollywood
+ Θανάσης Πολυκανδριώτης                                      | https://www.discogs.com/artist/1022152-Θανάσης-Πολυκανδριώτης
+ Kim Wilde                                                   | https://www.discogs.com/artist/71081-Kim-Wilde
+ Evelyn King                                                 | https://www.discogs.com/artist/73202-Evelyn-King
+ Iron Butterfly                                              | https://www.discogs.com/artist/48412-Iron-Butterfly
+ Morenas                                                     | https://www.discogs.com/artist/27487-Morenas
+ Neu!                                                        | https://www.discogs.com/artist/12636-Neu!
+ Arno (2)                                                    | https://www.discogs.com/artist/263667-Arno-2
+ Zap Mama                                                    | https://www.discogs.com/artist/12467-Zap-Mama
+ Wombbath                                                    | https://www.discogs.com/artist/1386255-Wombbath
+ K. Barré                                                    | https://www.discogs.com/artist/138093-K-Barré
+ Bless (3)                                                   | https://www.discogs.com/artist/321144-Bless-3
+ Doves                                                       | https://www.discogs.com/artist/3855-Doves
+ Familjen                                                    | https://www.discogs.com/artist/774088-Familjen
+ Jellybabe                                                   | https://www.discogs.com/artist/170193-Jellybabe
+ Gene Autry                                                  | https://www.discogs.com/artist/352665-Gene-Autry
+ Stu Allan                                                   | https://www.discogs.com/artist/66882-Stu-Allan
+ AC Slater                                                   | https://www.discogs.com/artist/157972-AC-Slater
+ Green & Waters                                              | https://www.discogs.com/artist/2141120-Green-Waters
+ No Good But So Good                                         | https://www.discogs.com/artist/133640-No-Good-But-So-Good
+ S.P.Y. & Total Science                                      | https://www.discogs.com/artist/2663824-SPY-Total-Science
+ Black Sabbath                                               | https://www.discogs.com/artist/144998-Black-Sabbath
+ Cal Tjader Quartet                                          | https://www.discogs.com/artist/995512-Cal-Tjader-Quartet
+ Stylóo                                                      | https://www.discogs.com/artist/459446-Stylóo
+ Ashanti Waugh                                               | https://www.discogs.com/artist/210430-Ashanti-Waugh
+ The Band                                                    | https://www.discogs.com/artist/254199-The-Band
+ Cazwell And Amanda Lepore                                   | https://www.discogs.com/artist/6320873-Cazwell-And-Amanda-Lepore
+ Blue Maxx                                                   | https://www.discogs.com/artist/4601-Blue-Maxx
+ Pearl Jam                                                   | https://www.discogs.com/artist/175395-Pearl-Jam
+ Talco                                                       | https://www.discogs.com/artist/1033069-Talco
+ Mijangos                                                    | https://www.discogs.com/artist/38752-Mijangos
+ Garbage                                                     | https://www.discogs.com/artist/12332-Garbage
+ Black Messiah                                               | https://www.discogs.com/artist/489900-Black-Messiah
+ The Classics (4)                                            | https://www.discogs.com/artist/1229013-The-Classics-4
+ PinkPantheress                                              | https://www.discogs.com/artist/9528559-PinkPantheress
+ Georgia Kelly                                               | https://www.discogs.com/artist/18802-Georgia-Kelly
+ Rowwen Hèze                                                 | https://www.discogs.com/artist/350265-Rowwen-Hèze
+ Northward (4)                                               | https://www.discogs.com/artist/6781039-Northward-4
+ Deaf Wish                                                   | https://www.discogs.com/artist/1777800-Deaf-Wish
+ The Boyz Dem From Booby Trap                                | https://www.discogs.com/artist/158829-The-Boyz-Dem-From-Booby-Trap
+ Wagon Christ                                                | https://www.discogs.com/artist/163-Wagon-Christ
+ Skydiver (2)                                                | https://www.discogs.com/artist/77438-Skydiver-2
+ Tony Borders                                                | https://www.discogs.com/artist/1277296-Tony-Borders
+ The Wailers                                                 | https://www.discogs.com/artist/52145-The-Wailers
+ Mel Tillis                                                  | https://www.discogs.com/artist/693015-Mel-Tillis
+ Manu Dibango                                                | https://www.discogs.com/artist/20560-Manu-Dibango
+ Mary Goes Round                                             | https://www.discogs.com/artist/265959-Mary-Goes-Round
+ Hans-Joachim Roedelius                                      | https://www.discogs.com/artist/105272-Hans-Joachim-Roedelius
+ Esham                                                       | https://www.discogs.com/artist/261609-Esham
+ Parasense                                                   | https://www.discogs.com/artist/43263-Parasense
+ Mirage (12)                                                 | https://www.discogs.com/artist/31964-Mirage-12
+ Odz Manouk                                                  | https://www.discogs.com/artist/2010828-Odz-Manouk
+ LMDS                                                        | https://www.discogs.com/artist/4243987-LMDS
+ Malo Macht Musik.                                           | https://www.discogs.com/artist/4951228-Malo-Macht-Musik
+ Ronny Jordan                                                | https://www.discogs.com/artist/7449-Ronny-Jordan
+ Too Much (3)                                                | https://www.discogs.com/artist/916962-Too-Much-3
+ Johnnie Morisette                                           | https://www.discogs.com/artist/61513-Johnnie-Morisette
+ The Tony Oxley Alan davie Duo                               | https://www.discogs.com/artist/1137481-The-Tony-Oxley-Alan-davie-Duo
+ Space                                                       | https://www.discogs.com/artist/5705-Space
+ Duo Acropolis                                               | https://www.discogs.com/artist/640069-Duo-Acropolis
+ Philharmonia Orchestra                                      | https://www.discogs.com/artist/454293-Philharmonia-Orchestra
+ Rosko                                                       | https://www.discogs.com/artist/250691-Rosko
+ George Jones & Melba Montgomery                             | https://www.discogs.com/artist/3131849-George-Jones-Melba-Montgomery
+ D.H.S.S.                                                    | https://www.discogs.com/artist/177783-DHSS
+ Southern Sons (2)                                           | https://www.discogs.com/artist/783596-Southern-Sons-2
+ Mirabela Dauer                                              | https://www.discogs.com/artist/1002333-Mirabela-Dauer
+ The Kasenetz-Katz Singing Orchestral Circus                 | https://www.discogs.com/artist/423265-The-Kasenetz-Katz-Singing-Orchestral-Circus
+ Awesome Dré                                                 | https://www.discogs.com/artist/195526-Awesome-Dré
+ Abband                                                      | https://www.discogs.com/artist/855091-Abband
+ Etienne Daho                                                | https://www.discogs.com/artist/18700-Etienne-Daho
+ Divlje Jagode                                               | https://www.discogs.com/artist/846484-Divlje-Jagode
+ Pacheco Y Su Charanga                                       | https://www.discogs.com/artist/2103956-Pacheco-Y-Su-Charanga
+ Mr. Chop                                                    | https://www.discogs.com/artist/140689-Mr-Chop
+ Alex Harvey (2)                                             | https://www.discogs.com/artist/434848-Alex-Harvey-2
+ Foreigner                                                   | https://www.discogs.com/artist/174890-Foreigner
+ Big Maybelle                                                | https://www.discogs.com/artist/412899-Big-Maybelle
+ Sigma Fay                                                   | https://www.discogs.com/artist/1228216-Sigma-Fay
+ Thin Lizzy                                                  | https://www.discogs.com/artist/136188-Thin-Lizzy
+ Eddie Cleanhead Vinson                                      | https://www.discogs.com/artist/911933-Eddie-Cleanhead-Vinson
+ Sade                                                        | https://www.discogs.com/artist/19731-Sade
+ DJ Shadow                                                   | https://www.discogs.com/artist/4478-DJ-Shadow
+ The Hellacopters                                            | https://www.discogs.com/artist/261426-The-Hellacopters
+ Meco Monardo                                                | https://www.discogs.com/artist/286787-Meco-Monardo
+ Big L                                                       | https://www.discogs.com/artist/39956-Big-L
+ Barry McGuire                                               | https://www.discogs.com/artist/292542-Barry-McGuire
+ Neil Richardson And His Orchestra                           | https://www.discogs.com/artist/662984-Neil-Richardson-And-His-Orchestra
+ Hamad Kalkaba                                               | https://www.discogs.com/artist/670563-Hamad-Kalkaba
+ Aretha Franklin                                             | https://www.discogs.com/artist/38863-Aretha-Franklin
+ The Heptones                                                | https://www.discogs.com/artist/94500-The-Heptones
+ Frànçois And The Atlas Mountains                            | https://www.discogs.com/artist/1598887-Frànçois-And-The-Atlas-Mountains
+ Brother And Brother                                         | https://www.discogs.com/artist/1450705-Brother-And-Brother
+ John Coltrane                                               | https://www.discogs.com/artist/97545-John-Coltrane
+ Cher                                                        | https://www.discogs.com/artist/17961-Cher
+ Gregory Porter                                              | https://www.discogs.com/artist/202275-Gregory-Porter
+ Elvis Costello & The Attractions                            | https://www.discogs.com/artist/254761-Elvis-Costello-The-Attractions
+ Daddy-O                                                     | https://www.discogs.com/artist/26996-Daddy-O
+ Ilian                                                       | https://www.discogs.com/artist/3369613-Ilian
+ Andrew McLauchlan                                           | https://www.discogs.com/artist/1525-Andrew-McLauchlan
+ Aqualung                                                    | https://www.discogs.com/artist/87185-Aqualung
+ Faith (3)                                                   | https://www.discogs.com/artist/309576-Faith-3
+ G.C. Cameron                                                | https://www.discogs.com/artist/393163-GC-Cameron
+ Roland Kaiser                                               | https://www.discogs.com/artist/345413-Roland-Kaiser
+ Charlie Chaplin (2)                                         | https://www.discogs.com/artist/363673-Charlie-Chaplin-2
+ Ed Geinss Car                                               | https://www.discogs.com/artist/1730995-Ed-Geins-Car
+ Big Miller                                                  | https://www.discogs.com/artist/2454984-Big-Miller
+ UKO                                                         | https://www.discogs.com/artist/3962-UKO
+ Roy Harper                                                  | https://www.discogs.com/artist/252756-Roy-Harper
+ E-Life                                                      | https://www.discogs.com/artist/64323-E-Life
+ Mario Lanza                                                 | https://www.discogs.com/artist/454852-Mario-Lanza
+ Stinky Fingers                                              | https://www.discogs.com/artist/2675493-Stinky-Fingers
+ Joseph Canteloube                                           | https://www.discogs.com/artist/805611-Joseph-Canteloube
+ Bong-Ra                                                     | https://www.discogs.com/artist/17417-Bong-Ra
+ Strawbs                                                     | https://www.discogs.com/artist/260456-Strawbs
+ Tuff Sherm                                                  | https://www.discogs.com/artist/2690213-Tuff-Sherm
+ Kleeer                                                      | https://www.discogs.com/artist/55590-Kleeer
+ SL2                                                         | https://www.discogs.com/artist/7470-SL2
+ P.M. Dawn                                                   | https://www.discogs.com/artist/13606-PM-Dawn
+ Jacques Brel                                                | https://www.discogs.com/artist/164263-Jacques-Brel
+ Fastgraph                                                   | https://www.discogs.com/artist/20211-Fastgraph
+ Spread                                                      | https://www.discogs.com/artist/253277-Spread
+ Maria Bethânia                                              | https://www.discogs.com/artist/465367-Maria-Bethânia
+ Rick Nelson & The Stone Canyon Band                         | https://www.discogs.com/artist/2281963-Rick-Nelson-The-Stone-Canyon-Band
+ RMS                                                         | https://www.discogs.com/artist/16914-RMS
+ Μιχάλης Δημητριάδης                                         | https://www.discogs.com/artist/1636167-Μιχάλης-Δημητριάδης
+ Curt Smith                                                  | https://www.discogs.com/artist/466467-Curt-Smith
+ X-Form (2)                                                  | https://www.discogs.com/artist/164533-X-Form-2
+ Safire                                                      | https://www.discogs.com/artist/67964-Safire
+ Harold Melvin And The Blue Notes                            | https://www.discogs.com/artist/30144-Harold-Melvin-And-The-Blue-Notes
+ Bruce Hornsby And The Range                                 | https://www.discogs.com/artist/254410-Bruce-Hornsby-And-The-Range
+ Fee Romero                                                  | https://www.discogs.com/artist/1068370-Fee-Romero
+ Vincent Geminiani                                           | https://www.discogs.com/artist/15504-Vincent-Geminiani
+ Eleanore Mills                                              | https://www.discogs.com/artist/50892-Eleanore-Mills
+ Michael Jackson                                             | https://www.discogs.com/artist/15885-Michael-Jackson
+ WaWuWe                                                      | https://www.discogs.com/artist/3874233-WaWuWe
+ Beggars Hill                                                | https://www.discogs.com/artist/2964997-Beggars-Hill
+ Tileface                                                    | https://www.discogs.com/artist/527030-Tileface
+ Johnny Colón                                                | https://www.discogs.com/artist/437730-Johnny-Colón
+ Altered Images                                              | https://www.discogs.com/artist/90494-Altered-Images
+ Sérgio-Mendes-Brasil-66                                     | https://www.discogs.com/artist/58353-Sérgio-Mendes-Brasil-66
+ Jean-Pierre Rampal                                          | https://www.discogs.com/artist/379816-Jean-Pierre-Rampal
+ Ride                                                        | https://www.discogs.com/artist/10138-Ride
+ Latidos                                                     | https://www.discogs.com/artist/3184142-Latidos
+ Crazy Loop                                                  | https://www.discogs.com/artist/1038924-Crazy-Loop
+ Tar...Feathers                                              | https://www.discogs.com/artist/902910-TarFeathers
+ Nikola Parov                                                | https://www.discogs.com/artist/1161648-Nikola-Parov
+ Pimentola                                                   | https://www.discogs.com/artist/236835-Pimentola
+ Cliff Richard & The Shadows                                 | https://www.discogs.com/artist/1290833-Cliff-Richard-The-Shadows
+ Angie Care                                                  | https://www.discogs.com/artist/98622-Angie-Care
+ Johnny Hallyday                                             | https://www.discogs.com/artist/282489-Johnny-Hallyday
+ The Cranberries                                             | https://www.discogs.com/artist/155833-The-Cranberries
+ Stephen Brown                                               | https://www.discogs.com/artist/1702-Stephen-Brown
+ Mylo                                                        | https://www.discogs.com/artist/105042-Mylo
+ DJ Tomekk                                                   | https://www.discogs.com/artist/81419-DJ-Tomekk
+ Novembers Doom                                              | https://www.discogs.com/artist/144852-Novembers-Doom
+ Macho Man Randy Savage                                      | https://www.discogs.com/artist/1869609-Macho-Man-Randy-Savage
+ Jay Lumen                                                   | https://www.discogs.com/artist/638466-Jay-Lumen
+ Георгий Портнов                                             | https://www.discogs.com/artist/1409259-Георгий-Портнов
+ Metric                                                      | https://www.discogs.com/artist/251798-Metric
+ Milva                                                       | https://www.discogs.com/artist/299967-Milva
+ Grand Puba                                                  | https://www.discogs.com/artist/29059-Grand-Puba
+ 4 II Soul                                                   | https://www.discogs.com/artist/325240-4-II-Soul
+ Amanda Lear                                                 | https://www.discogs.com/artist/51229-Amanda-Lear
+ Jeff Phillips (7)                                           | https://www.discogs.com/artist/1957779-Jeff-Phillips-7
+  Makin Time                                                 | https://www.discogs.com/artist/254781-Makin-Time
+ Lady (14)                                                   | https://www.discogs.com/artist/3210105-Lady-14
+ Benjamin Britten                                            | https://www.discogs.com/artist/598601-Benjamin-Britten
+ Smokey Bastard                                              | https://www.discogs.com/artist/2750140-Smokey-Bastard
+ The Monkees                                                 | https://www.discogs.com/artist/132927-The-Monkees
+ Wibi Soerjadi                                               | https://www.discogs.com/artist/413245-Wibi-Soerjadi
+ Avalanche (8)                                               | https://www.discogs.com/artist/317167-Avalanche-8
+ The Jive Aces                                               | https://www.discogs.com/artist/1969841-The-Jive-Aces
+ Gentleman                                                   | https://www.discogs.com/artist/49312-Gentleman
+ X-Ray Spex                                                  | https://www.discogs.com/artist/263825-X-Ray-Spex
+ Dinky                                                       | https://www.discogs.com/artist/84336-Dinky
+ Factor Xs                                                   | https://www.discogs.com/artist/725426-Factor-Xs
+ Нехама Лифшицайте                                           | https://www.discogs.com/artist/1838246-Нехама-Лифшицайте
+ Mini (3)                                                    | https://www.discogs.com/artist/355876-Mini-3
+ Hate Unit                                                   | https://www.discogs.com/artist/1749424-Hate-Unit
+ Theo Parrish                                                | https://www.discogs.com/artist/149-Theo-Parrish
+ The Roolettes                                               | https://www.discogs.com/artist/1935846-The-Roolettes
+ The Notorious Cherry Bombs                                  | https://www.discogs.com/artist/1778657-The-Notorious-Cherry-Bombs
+ Steve Poindexter                                            | https://www.discogs.com/artist/869-Steve-Poindexter
+ R.E.M.                                                      | https://www.discogs.com/artist/74500-REM
+ Dr. Manhattan                                               | https://www.discogs.com/artist/44001-Dr-Manhattan
+ Jonathan Richman & The Modern Lovers                        | https://www.discogs.com/artist/259774-Jonathan-Richman-The-Modern-Lovers
+ Matthew Fisher                                              | https://www.discogs.com/artist/297541-Matthew-Fisher
+ Sir Michael Tippett                                         | https://www.discogs.com/artist/729646-Sir-Michael-Tippett
+ The Lady Supreme                                            | https://www.discogs.com/artist/90919-The-Lady-Supreme
+ John Barry                                                  | https://www.discogs.com/artist/19502-John-Barry
+ Citizen Kain                                                | https://www.discogs.com/artist/367090-Citizen-Kain
+ Johannes Heil                                               | https://www.discogs.com/artist/4-Johannes-Heil
+ The Hep Stars                                               | https://www.discogs.com/artist/1079274-The-Hep-Stars
+ Wally Badarou                                               | https://www.discogs.com/artist/9051-Wally-Badarou
+ Lee Jones                                                   | https://www.discogs.com/artist/57216-Lee-Jones
+ The Allman Brothers Band                                    | https://www.discogs.com/artist/110253-The-Allman-Brothers-Band
+ Claudio Villa                                               | https://www.discogs.com/artist/781235-Claudio-Villa
+ Spectrasoul                                                 | https://www.discogs.com/artist/631637-Spectrasoul
+ Frank Eddie (2)                                             | https://www.discogs.com/artist/2565646-Frank-Eddie-2
+ 4D                                                          | https://www.discogs.com/artist/26990-4D
+ Иосиф Кобзон                                                | https://www.discogs.com/artist/716097-Иосиф-Кобзон
+ The Buddy Odor Stop                                         | https://www.discogs.com/artist/380677-The-Buddy-Odor-Stop
+ UB40                                                        | https://www.discogs.com/artist/21767-UB40
+ Sub-Stance                                                  | https://www.discogs.com/artist/19187-Sub-Stance
+ Larry McNeely                                               | https://www.discogs.com/artist/802757-Larry-McNeely
+ SouthGang                                                   | https://www.discogs.com/artist/1822962-SouthGang
+ Владимир Рубашевский                                        | https://www.discogs.com/artist/1385010-Владимир-Рубашевский
+ Alexandru Andrieș                                           | https://www.discogs.com/artist/2004050-Alexandru-Andrieș
+ Carola Pisaturo                                             | https://www.discogs.com/artist/223510-Carola-Pisaturo
+ 5000 Volts                                                  | https://www.discogs.com/artist/80123-5000-Volts
+ Unfit Association                                           | https://www.discogs.com/artist/3569765-Unfit-Association
+ Lobo (3)                                                    | https://www.discogs.com/artist/286926-Lobo-3
+ :Of The Wand & The Moon:                                    | https://www.discogs.com/artist/39343-Of-The-Wand-The-Moon
+ Hazel-OConnor                                               | https://www.discogs.com/artist/112584-Hazel-OConnor
+ Barry Mann                                                  | https://www.discogs.com/artist/288092-Barry-Mann
+ Smokey Robinson                                             | https://www.discogs.com/artist/86094-Smokey-Robinson
+ Mr. Fingers                                                 | https://www.discogs.com/artist/2446-Mr-Fingers
+ Pavarotti & Friends                                         | https://www.discogs.com/artist/2541770-Pavarotti-Friends
+ The Wolfgang Press                                          | https://www.discogs.com/artist/211771-The-Wolfgang-Press
+ Alan Silvestri                                              | https://www.discogs.com/artist/253412-Alan-Silvestri
+ Elvis Crespo                                                | https://www.discogs.com/artist/119538-Elvis-Crespo
+ Doctor Rockit                                               | https://www.discogs.com/artist/1325-Doctor-Rockit
+ Gat Decor                                                   | https://www.discogs.com/artist/7243-Gat-Decor
+ Sleepy Sleepers                                             | https://www.discogs.com/artist/581999-Sleepy-Sleepers
+ 3 Chairs                                                    | https://www.discogs.com/artist/110308-3-Chairs
+ Unknown Mortal Orchestra                                    | https://www.discogs.com/artist/2102143-Unknown-Mortal-Orchestra
+ The Cramps                                                  | https://www.discogs.com/artist/39779-The-Cramps
+ Chuck Mangione                                              | https://www.discogs.com/artist/92051-Chuck-Mangione
+ Decap Organ Antwerp                                         | https://www.discogs.com/artist/1101378-Decap-Organ-Antwerp
+ Fantasy UFO                                                 | https://www.discogs.com/artist/24808-Fantasy-UFO
+ Vince Guaraldi Trio                                         | https://www.discogs.com/artist/271051-Vince-Guaraldi-Trio
+ Audio Maze                                                  | https://www.discogs.com/artist/209937-Audio-Maze
+ Georges Moustaki                                            | https://www.discogs.com/artist/286159-Georges-Moustaki
+ Queensrÿche                                                 | https://www.discogs.com/artist/255363-Queensrÿche
+ Crazy Leggs                                                 | https://www.discogs.com/artist/357282-Crazy-Leggs
+ Ahmad Jamal Trio                                            | https://www.discogs.com/artist/276214-Ahmad-Jamal-Trio
+ Revolting Cocks                                             | https://www.discogs.com/artist/21350-Revolting-Cocks
+ Falsalarma                                                  | https://www.discogs.com/artist/1278412-Falsalarma
+ Sonia Pisze Piosenki                                        | https://www.discogs.com/artist/3973179-Sonia-Pisze-Piosenki
+ Eugene Chadbourne                                           | https://www.discogs.com/artist/181485-Eugene-Chadbourne
+ MC Duke                                                     | https://www.discogs.com/artist/39740-MC-Duke
+ The Vandals                                                 | https://www.discogs.com/artist/253313-The-Vandals
+ Shine (20)                                                  | https://www.discogs.com/artist/1093851-Shine-20
+ Natan Marques                                               | https://www.discogs.com/artist/1009155-Natan-Marques
+ Teebee                                                      | https://www.discogs.com/artist/22979-Teebee
+ Bit-Tuner                                                   | https://www.discogs.com/artist/234201-Bit-Tuner
+ Starr Crew                                                  | https://www.discogs.com/artist/108436-Starr-Crew
+ Magica                                                      | https://www.discogs.com/artist/12680-Magica
+ Toad The Wet Sprocket                                       | https://www.discogs.com/artist/285693-Toad-The-Wet-Sprocket
+ The Seekers                                                 | https://www.discogs.com/artist/325082-The-Seekers
+ Repeat Offender (4)                                         | https://www.discogs.com/artist/7951697-Repeat-Offender-4
+ Kevin Lear                                                  | https://www.discogs.com/artist/1181219-Kevin-Lear
+ Miley Cyrus                                                 | https://www.discogs.com/artist/676432-Miley-Cyrus
+ Los Rebeldes Del Rock                                       | https://www.discogs.com/artist/2157326-Los-Rebeldes-Del-Rock
+ The Hacker                                                  | https://www.discogs.com/artist/1737-The-Hacker
+ Mystes                                                      | https://www.discogs.com/artist/796642-Mystes
+ Bryan Adams                                                 | https://www.discogs.com/artist/10933-Bryan-Adams
+ Tommy And The Terrors                                       | https://www.discogs.com/artist/1395036-Tommy-And-The-Terrors
+ Relic (32)                                                  | https://www.discogs.com/artist/7675146-Relic-32
+ Casey Kasem                                                 | https://www.discogs.com/artist/449855-Casey-Kasem
+ Girls (5)                                                   | https://www.discogs.com/artist/1572552-Girls-5
+ Old & In The Way                                            | https://www.discogs.com/artist/976525-Old-In-The-Way
+ Broadcast                                                   | https://www.discogs.com/artist/955-Broadcast
+ Nicole Russo                                                | https://www.discogs.com/artist/260257-Nicole-Russo
+ La Playa Sextet                                             | https://www.discogs.com/artist/1044987-La-Playa-Sextet
+ Entrisch Ebual                                              | https://www.discogs.com/artist/4073292-Entrisch-Ebual
+ The Ganja Kru                                               | https://www.discogs.com/artist/6920-The-Ganja-Kru
+ Team USA                                                    | https://www.discogs.com/artist/1062601-Team-USA
+ Indigo Girls                                                | https://www.discogs.com/artist/213484-Indigo-Girls
+ Donkey                                                      | https://www.discogs.com/artist/291956-Donkey
+ Lietuvos Televizijos Ir Radijo Lengvosios Muzikos Orkestras | https://www.discogs.com/artist/1443057-Lietuvos-Televizijos-Ir-Radijo-Lengvosios-Muzikos-Orkestras
+ Marta Ren                                                   | https://www.discogs.com/artist/997552-Marta-Ren
+ Mai Tai                                                     | https://www.discogs.com/artist/100118-Mai-Tai
+ Lana Del Rey                                                | https://www.discogs.com/artist/2445772-Lana-Del-Rey
+ Crown Heights Affair                                        | https://www.discogs.com/artist/17958-Crown-Heights-Affair
+ Lightwave                                                   | https://www.discogs.com/artist/81290-Lightwave
+ Sticky Fingaz                                               | https://www.discogs.com/artist/109830-Sticky-Fingaz
+ Yes                                                         | https://www.discogs.com/artist/50263-Yes
+ Smith & Mighty                                              | https://www.discogs.com/artist/3300-Smith-Mighty
+ Kyle Emerson                                                | https://www.discogs.com/artist/379622-Kyle-Emerson
+ Force Majeure (4)                                           | https://www.discogs.com/artist/1295182-Force-Majeure-4
+ Edoardo Bennato                                             | https://www.discogs.com/artist/53807-Edoardo-Bennato
+ Peter Berry And The Shake Set                               | https://www.discogs.com/artist/1913115-Peter-Berry-And-The-Shake-Set
+ Wendy Bagwell And The Sunliters                             | https://www.discogs.com/artist/2245523-Wendy-Bagwell-And-The-Sunliters
+ Rika Zaraï                                                  | https://www.discogs.com/artist/324558-Rika-Zaraï
+ Chet Atkins                                                 | https://www.discogs.com/artist/257464-Chet-Atkins
+ John Lennon                                                 | https://www.discogs.com/artist/46481-John-Lennon
+ Conjunto Folklorico Prodimuve                               | https://www.discogs.com/artist/3312886-Conjunto-Folklorico-Prodimuve
+ Seduction                                                   | https://www.discogs.com/artist/32429-Seduction
+ Africans With Mainframes                                    | https://www.discogs.com/artist/165187-Africans-With-Mainframes
+ Black Countess                                              | https://www.discogs.com/artist/2760260-Black-Countess
+ Tina Moore                                                  | https://www.discogs.com/artist/19301-Tina-Moore
+ Helen Schneider                                             | https://www.discogs.com/artist/310727-Helen-Schneider
+ Bob Beckham                                                 | https://www.discogs.com/artist/1401875-Bob-Beckham
+ Don And Dewey And Their Band                                | https://www.discogs.com/artist/3816093-Don-And-Dewey-And-Their-Band
+ Валентина Толкунова                                         | https://www.discogs.com/artist/1522603-Валентина-Толкунова
+ Frank Sinatra                                               | https://www.discogs.com/artist/52833-Frank-Sinatra
+ Chris Energy                                                | https://www.discogs.com/artist/5234-Chris-Energy
+ Richard Strauss                                             | https://www.discogs.com/artist/108439-Richard-Strauss
+ Dunkelziffer                                                | https://www.discogs.com/artist/372658-Dunkelziffer
+ Joe South                                                   | https://www.discogs.com/artist/325103-Joe-South
+ Alex Albrecht                                               | https://www.discogs.com/artist/4668760-Alex-Albrecht
+ Héroes Del Silencio                                         | https://www.discogs.com/artist/282520-Héroes-Del-Silencio
+ Alexi Murdoch                                               | https://www.discogs.com/artist/281297-Alexi-Murdoch
+ Slim Smith                                                  | https://www.discogs.com/artist/106651-Slim-Smith
+ Bob Marley & The Wailers                                    | https://www.discogs.com/artist/21764-Bob-Marley-The-Wailers
+ James Iha                                                   | https://www.discogs.com/artist/242804-James-Iha
+ Time (16)                                                   | https://www.discogs.com/artist/2059918-Time-16
+ Black Joe Lewis & Cool Breeze                               | https://www.discogs.com/artist/3306489-Black-Joe-Lewis-Cool-Breeze
+ Ian Van Dahl                                                | https://www.discogs.com/artist/12789-Ian-Van-Dahl
+ Darren Hayes                                                | https://www.discogs.com/artist/89801-Darren-Hayes
+ Circle Jerks                                                | https://www.discogs.com/artist/253257-Circle-Jerks
+ Neoton Família                                              | https://www.discogs.com/artist/569232-Neoton-Família
+ Krzysztof Ścierański                                        | https://www.discogs.com/artist/490823-Krzysztof-Ścierański
+ Psychopoint                                                 | https://www.discogs.com/artist/952623-Psychopoint
+ Johann Sebastian Bach                                       | https://www.discogs.com/artist/95537-Johann-Sebastian-Bach
+ Dana Gillespie                                              | https://www.discogs.com/artist/127989-Dana-Gillespie
+ Junior Ross & The Spears                                    | https://www.discogs.com/artist/592557-Junior-Ross-The-Spears
+ Matia Bazar                                                 | https://www.discogs.com/artist/136886-Matia-Bazar
+ Cranial Incisored                                           | https://www.discogs.com/artist/2737741-Cranial-Incisored
+ Ben Folds                                                   | https://www.discogs.com/artist/264737-Ben-Folds
+ They Might Be Giants                                        | https://www.discogs.com/artist/159350-They-Might-Be-Giants
+ Pyramids                                                    | https://www.discogs.com/artist/1120162-Pyramids
+ Sleeper (2)                                                 | https://www.discogs.com/artist/158413-Sleeper-2
+ Candlemass                                                  | https://www.discogs.com/artist/311088-Candlemass
+ Darkthrone                                                  | https://www.discogs.com/artist/252211-Darkthrone
+ Aural Float                                                 | https://www.discogs.com/artist/10651-Aural-Float
+ Pyotr Ilyich Tchaikovsky                                    | https://www.discogs.com/artist/999914-Pyotr-Ilyich-Tchaikovsky
+ Bruno Mars                                                  | https://www.discogs.com/artist/1357693-Bruno-Mars
+ Philip Corner                                               | https://www.discogs.com/artist/165430-Philip-Corner
+ Levande Ton                                                 | https://www.discogs.com/artist/6538588-Levande-Ton
+ Gemitaiz                                                    | https://www.discogs.com/artist/2668962-Gemitaiz
+ The Winterbabies                                            | https://www.discogs.com/artist/1251061-The-Winterbabies
+ The Moondogs                                                | https://www.discogs.com/artist/1110813-The-Moondogs
+ Electric Light Orchestra                                    | https://www.discogs.com/artist/112154-Electric-Light-Orchestra
+ Roger Troutman                                              | https://www.discogs.com/artist/73142-Roger-Troutman
+ Carlos Jean                                                 | https://www.discogs.com/artist/158894-Carlos-Jean
+ Le Père Gédéon                                              | https://www.discogs.com/artist/1907081-Le-Père-Gédéon
+ Hokus Pokus                                                 | https://www.discogs.com/artist/37137-Hokus-Pokus
+ Ophélie Winter                                              | https://www.discogs.com/artist/581072-Ophélie-Winter
+ Imrat Khan                                                  | https://www.discogs.com/artist/1044192-Imrat-Khan
+ Wildchild                                                   | https://www.discogs.com/artist/6246-Wildchild
+ The Chrysanthemums                                          | https://www.discogs.com/artist/294788-The-Chrysanthemums
+ Cass Elliot                                                 | https://www.discogs.com/artist/428943-Cass-Elliot
+ Elda Viler                                                  | https://www.discogs.com/artist/1051580-Elda-Viler
+ Taylor Dayne                                                | https://www.discogs.com/artist/7702-Taylor-Dayne
+ The Righteous Flames                                        | https://www.discogs.com/artist/210432-The-Righteous-Flames
+ Dahmer                                                      | https://www.discogs.com/artist/312255-Dahmer
+ Angel Moraes                                                | https://www.discogs.com/artist/6627-Angel-Moraes
+ Στέλιος Θεοδοσίου                                           | https://www.discogs.com/artist/3052422-Στέλιος-Θεοδοσίου
+ James Fountain                                              | https://www.discogs.com/artist/382502-James-Fountain
+ Adam And The Ants                                           | https://www.discogs.com/artist/69887-Adam-And-The-Ants
+ Danny Kortchmar                                             | https://www.discogs.com/artist/252395-Danny-Kortchmar
+ Underground Movement (2)                                    | https://www.discogs.com/artist/140538-Underground-Movement-2
+ NYs Finest                                                  | https://www.discogs.com/artist/64890-NYs-Finest
+ The Castle                                                  | https://www.discogs.com/artist/69684-The-Castle
+ The Assembly                                                | https://www.discogs.com/artist/18170-The-Assembly
+ Voyce                                                       | https://www.discogs.com/artist/95972-Voyce
+ Owiny Sigoma Band                                           | https://www.discogs.com/artist/2204038-Owiny-Sigoma-Band
+ Faron Young                                                 | https://www.discogs.com/artist/106047-Faron-Young
+ Swirl People                                                | https://www.discogs.com/artist/3361-Swirl-People
+ Skinkorps                                                   | https://www.discogs.com/artist/310939-Skinkorps
+ Jean-Michel Jarre                                           | https://www.discogs.com/artist/209415-Jean-Michel-Jarre
+ Foot and Mouth Disease                                      | https://www.discogs.com/artist/528868-Foot-and-Mouth-Disease
+ Holger Czukay                                               | https://www.discogs.com/artist/3480-Holger-Czukay
+ Skeletons (2)                                               | https://www.discogs.com/artist/1307227-Skeletons-2
+ Adamo                                                       | https://www.discogs.com/artist/313665-Adamo
+ Lightning Seeds                                             | https://www.discogs.com/artist/84776-Lightning-Seeds
+ Willie Kendrick                                             | https://www.discogs.com/artist/685812-Willie-Kendrick
+ Sye (2)                                                     | https://www.discogs.com/artist/1767018-Sye-2
+ Loefah                                                      | https://www.discogs.com/artist/207974-Loefah
+ Elementz Of Noize                                           | https://www.discogs.com/artist/2632-Elementz-Of-Noize
+ Lucho Gatica                                                | https://www.discogs.com/artist/430764-Lucho-Gatica
+ Boards Of Canada                                            | https://www.discogs.com/artist/307-Boards-Of-Canada
+ Jamie Jones (2)                                             | https://www.discogs.com/artist/434183-Jamie-Jones-2
+ Antti Tuisku                                                | https://www.discogs.com/artist/415197-Antti-Tuisku
+ Chow Chow                                                   | https://www.discogs.com/artist/689225-Chow-Chow
+ Meat Loaf                                                   | https://www.discogs.com/artist/254259-Meat-Loaf
+ Béla Bartók                                                 | https://www.discogs.com/artist/304968-Béla-Bartók
+ Hum (8)                                                     | https://www.discogs.com/artist/3205739-Hum-8
+ Keel                                                        | https://www.discogs.com/artist/362397-Keel
+ Bob Dylan                                                   | https://www.discogs.com/artist/59792-Bob-Dylan
+ Ingrid Michaelson                                           | https://www.discogs.com/artist/930001-Ingrid-Michaelson
+ Raw Nerves                                                  | https://www.discogs.com/artist/1951986-Raw-Nerves
+ Donna Summer                                                | https://www.discogs.com/artist/6270-Donna-Summer
+ Stan Kenton                                                 | https://www.discogs.com/artist/212786-Stan-Kenton
+ Matthew & Peter                                             | https://www.discogs.com/artist/3527836-Matthew-Peter
+ Azymuth                                                     | https://www.discogs.com/artist/78-Azymuth
+ The Virtues                                                 | https://www.discogs.com/artist/318678-The-Virtues
+ The Hope Conspiracy                                         | https://www.discogs.com/artist/768499-The-Hope-Conspiracy
+ The Mastersons                                              | https://www.discogs.com/artist/2916650-The-Mastersons
+ Rhoda Dakar                                                 | https://www.discogs.com/artist/220541-Rhoda-Dakar
+ Blank Banshee                                               | https://www.discogs.com/artist/2986623-Blank-Banshee
+ Richie Kotzen                                               | https://www.discogs.com/artist/299754-Richie-Kotzen
+ Donovan                                                     | https://www.discogs.com/artist/179038-Donovan
+ Tav Falcos Panther Burns                                    | https://www.discogs.com/artist/267158-Tav-Falcos-Panther-Burns
+ The Mellotones                                              | https://www.discogs.com/artist/119620-The-Mellotones
+ Wish List                                                   | https://www.discogs.com/artist/4044628-Wish-List
+ Willy DeVille                                               | https://www.discogs.com/artist/260258-Willy-DeVille
+ Category 7                                                  | https://www.discogs.com/artist/14889373-Category-7
+ Demi Lovato                                                 | https://www.discogs.com/artist/1181524-Demi-Lovato
+ Foo Fighters                                                | https://www.discogs.com/artist/198282-Foo-Fighters
+ Vanja Radonjić                                              | https://www.discogs.com/artist/3666193-Vanja-Radonjić
+ T.O.U.                                                      | https://www.discogs.com/artist/2286806-TOU
+ Branka Šćepanović                                           | https://www.discogs.com/artist/2364489-Branka-Šćepanović
+ Leslie Vaughn                                               | https://www.discogs.com/artist/945996-Leslie-Vaughn
+ Jamie XX                                                    | https://www.discogs.com/artist/2109856-Jamie-XX
+ Franck Pourcel                                              | https://www.discogs.com/artist/281455-Franck-Pourcel
+ The Hillside Singers                                        | https://www.discogs.com/artist/1107964-The-Hillside-Singers
+ Herbie Mann                                                 | https://www.discogs.com/artist/30721-Herbie-Mann
+ Geomatic                                                    | https://www.discogs.com/artist/34903-Geomatic
+ Chris Rea                                                   | https://www.discogs.com/artist/25767-Chris-Rea
+ Claude Debussy                                              | https://www.discogs.com/artist/96123-Claude-Debussy
+ Sack Trick                                                  | https://www.discogs.com/artist/776511-Sack-Trick
+ Brighter Death Now                                          | https://www.discogs.com/artist/24658-Brighter-Death-Now
+ The Opposites                                               | https://www.discogs.com/artist/477401-The-Opposites
+ Faithless                                                   | https://www.discogs.com/artist/4118-Faithless
+ Pee Wee Bluesgang                                           | https://www.discogs.com/artist/2444780-Pee-Wee-Bluesgang
+ Le Tigre                                                    | https://www.discogs.com/artist/40310-Le-Tigre
+ Ethnic Heritage Ensemble                                    | https://www.discogs.com/artist/222935-Ethnic-Heritage-Ensemble
+ Harry James And His Orchestra                               | https://www.discogs.com/artist/265635-Harry-James-And-His-Orchestra
+ Afrotrance                                                  | https://www.discogs.com/artist/1346-Afrotrance
+ Ran Blake                                                   | https://www.discogs.com/artist/65706-Ran-Blake
+ Fairuz                                                      | https://www.discogs.com/artist/726742-Fairuz
+ Freddie Robinson                                            | https://www.discogs.com/artist/136142-Freddie-Robinson
+ Johann Nepomuk Hummel                                       | https://www.discogs.com/artist/842308-Johann-Nepomuk-Hummel
+ 59 Times The Pain                                           | https://www.discogs.com/artist/253138-59-Times-The-Pain
+ Leeway                                                      | https://www.discogs.com/artist/305736-Leeway
+ Howard Carpendale                                           | https://www.discogs.com/artist/281519-Howard-Carpendale
+ New Goblin                                                  | https://www.discogs.com/artist/2914436-New-Goblin
+ Watergate                                                   | https://www.discogs.com/artist/8096-Watergate
+ The Jennings Brothers                                       | https://www.discogs.com/artist/2514609-The-Jennings-Brothers
+ Dolly Parton                                                | https://www.discogs.com/artist/39776-Dolly-Parton
+ The Stylistics                                              | https://www.discogs.com/artist/504145-The-Stylistics
+ Peter Thomas Sound Orchestra                                | https://www.discogs.com/artist/77521-Peter-Thomas-Sound-Orchestra
+ King Mastino                                                | https://www.discogs.com/artist/2464719-King-Mastino
+ Gilbert Montagné                                            | https://www.discogs.com/artist/158946-Gilbert-Montagné
+ Jacob Moon                                                  | https://www.discogs.com/artist/3231897-Jacob-Moon
+ Skuff (2)                                                   | https://www.discogs.com/artist/183543-Skuff-2
+ Korda György                                                | https://www.discogs.com/artist/1001911-Korda-György
+ Humanitys Last Breath                                       | https://www.discogs.com/artist/3836067-Humanitys-Last-Breath
+ Nino Rota                                                   | https://www.discogs.com/artist/235382-Nino-Rota
+ El Hombre Trajeado                                          | https://www.discogs.com/artist/63565-El-Hombre-Trajeado
+ Gabrielle (8)                                               | https://www.discogs.com/artist/2694675-Gabrielle-8
+ Will Smith                                                  | https://www.discogs.com/artist/74169-Will-Smith
+ Ramlord                                                     | https://www.discogs.com/artist/2433385-Ramlord
+ RLP                                                         | https://www.discogs.com/artist/197384-RLP
+ The Peddlers                                                | https://www.discogs.com/artist/189920-The-Peddlers
+ Cenotaph (3)                                                | https://www.discogs.com/artist/1211829-Cenotaph-3
+ Mr. Tophat                                                  | https://www.discogs.com/artist/2173259-Mr-Tophat
+ David Newman                                                | https://www.discogs.com/artist/421866-David-Newman
+ Chayanne                                                    | https://www.discogs.com/artist/384914-Chayanne
+ Sulfurex                                                    | https://www.discogs.com/artist/25518-Sulfurex
+ Black Out (13)                                              | https://www.discogs.com/artist/2999639-Black-Out-13
+ Jouem                                                       | https://www.discogs.com/artist/1568679-Jouem
+ Jon & Vangelis                                              | https://www.discogs.com/artist/95452-Jon-Vangelis
+ Willie Henderson                                            | https://www.discogs.com/artist/224488-Willie-Henderson
+ Loverboy                                                    | https://www.discogs.com/artist/132069-Loverboy
+ Someone Still Loves You Boris Yeltsin                       | https://www.discogs.com/artist/430258-Someone-Still-Loves-You-Boris-Yeltsin
+ Manual Scan                                                 | https://www.discogs.com/artist/1220921-Manual-Scan
+ Lawrence Welk                                               | https://www.discogs.com/artist/439532-Lawrence-Welk
+ Meat Puppets                                                | https://www.discogs.com/artist/88468-Meat-Puppets
+ Nicolas De Angelis                                          | https://www.discogs.com/artist/1068751-Nicolas-De-Angelis
+ Soggy                                                       | https://www.discogs.com/artist/1959350-Soggy
+ Wolfgang Amadeus Mozart                                     | https://www.discogs.com/artist/95546-Wolfgang-Amadeus-Mozart
+ Decrepit Birth                                              | https://www.discogs.com/artist/1316856-Decrepit-Birth
+ Bobby Russell                                               | https://www.discogs.com/artist/566437-Bobby-Russell
+ Deana Carter                                                | https://www.discogs.com/artist/545541-Deana-Carter
+ Eden Ahbez                                                  | https://www.discogs.com/artist/45876-Eden-Ahbez
+ Richard & Linda Thompson                                    | https://www.discogs.com/artist/306685-Richard-Linda-Thompson
+ Miami Sound Machine                                         | https://www.discogs.com/artist/48245-Miami-Sound-Machine
+ Marcos Valle                                                | https://www.discogs.com/artist/3756-Marcos-Valle
+ Jonny Chingas                                               | https://www.discogs.com/artist/582398-Jonny-Chingas
+ Blair French                                                | https://www.discogs.com/artist/3019966-Blair-French
+ Mark Richardson                                             | https://www.discogs.com/artist/27372-Mark-Richardson
+ Ex-Cult                                                     | https://www.discogs.com/artist/3059709-Ex-Cult
+ Nat King Cole                                               | https://www.discogs.com/artist/145288-Nat-King-Cole
+ Elin Furubotn                                               | https://www.discogs.com/artist/791967-Elin-Furubotn
+ Primal Scream                                               | https://www.discogs.com/artist/3852-Primal-Scream
+ Black Spirals                                               | https://www.discogs.com/artist/2258748-Black-Spirals
+ UnderNova                                                   | https://www.discogs.com/artist/2693397-UnderNova
+ Tomaz vs. Filterheadz                                       | https://www.discogs.com/artist/12944-Tomaz-vs-Filterheadz
+ Earl Cunningham                                             | https://www.discogs.com/artist/444939-Earl-Cunningham
+ Mahalia Jackson                                             | https://www.discogs.com/artist/265667-Mahalia-Jackson
+ Ahmad Nawab                                                 | https://www.discogs.com/artist/2326639-Ahmad-Nawab
+ Johanna Kurkela                                             | https://www.discogs.com/artist/916845-Johanna-Kurkela
+ Wizzard Of Wax                                              | https://www.discogs.com/artist/64818-Wizzard-Of-Wax
+ Parasiitti                                                  | https://www.discogs.com/artist/3764207-Parasiitti
+ Maurice Ravel                                               | https://www.discogs.com/artist/216140-Maurice-Ravel
+ X Stress                                                    | https://www.discogs.com/artist/389877-X-Stress
+ Maxim                                                       | https://www.discogs.com/artist/11538-Maxim
+ DuC                                                         | https://www.discogs.com/artist/556641-DuC
+ The Product (6)                                             | https://www.discogs.com/artist/2468243-The-Product-6
+ Danny Johnson (2)                                           | https://www.discogs.com/artist/455000-Danny-Johnson-2
+ Tito Puente And His Orchestra                               | https://www.discogs.com/artist/402077-Tito-Puente-And-His-Orchestra
+ Wink Martindale                                             | https://www.discogs.com/artist/834853-Wink-Martindale
+ Elton John                                                  | https://www.discogs.com/artist/57103-Elton-John
+ Lois Johnson (2)                                            | https://www.discogs.com/artist/2200584-Lois-Johnson-2
+ Paul Blackout                                               | https://www.discogs.com/artist/26379-Paul-Blackout
+ Ken Parker                                                  | https://www.discogs.com/artist/145590-Ken-Parker
+ Andrew Paul                                                 | https://www.discogs.com/artist/203726-Andrew-Paul
+ Milan Knížák                                                | https://www.discogs.com/artist/987684-Milan-Knížák
+ Nü Sensae                                                   | https://www.discogs.com/artist/1624864-Nü-Sensae
+ Kate Carr                                                   | https://www.discogs.com/artist/779182-Kate-Carr
+ Wilson Pickett                                              | https://www.discogs.com/artist/83396-Wilson-Pickett
+ Jimi Hendrix                                                | https://www.discogs.com/artist/110593-Jimi-Hendrix
+ Sergio Cammariere                                           | https://www.discogs.com/artist/1350545-Sergio-Cammariere
+ Петр Лещенко                                                | https://www.discogs.com/artist/1036934-Петр-Лещенко
+ The Provenance                                              | https://www.discogs.com/artist/260845-The-Provenance
+ Garage Lopez                                                | https://www.discogs.com/artist/896277-Garage-Lopez
+ Tyler Turner                                                | https://www.discogs.com/artist/2516155-Tyler-Turner
+ Franz Ferdinand                                             | https://www.discogs.com/artist/170994-Franz-Ferdinand
+ The Mohawks                                                 | https://www.discogs.com/artist/48395-The-Mohawks
+ Chuck Berry                                                 | https://www.discogs.com/artist/180119-Chuck-Berry
+ Sinéad OConnor                                              | https://www.discogs.com/artist/42895-Sinéad-OConnor
+ Moonbase                                                    | https://www.discogs.com/artist/73350-Moonbase
+ Paul Van Vliet (2)                                          | https://www.discogs.com/artist/570903-Paul-Van-Vliet-2
+ Mary Wilson                                                 | https://www.discogs.com/artist/385189-Mary-Wilson
+ Ben Sims                                                    | https://www.discogs.com/artist/3947-Ben-Sims
+ Fenton Weills                                               | https://www.discogs.com/artist/278436-Fenton-Weills
+ Back Seat Romeos                                            | https://www.discogs.com/artist/1749829-Back-Seat-Romeos
+ B.T. Express                                                | https://www.discogs.com/artist/170575-BT-Express
+ Fabrizio De André                                           | https://www.discogs.com/artist/660740-Fabrizio-De-André
+ Jad Fair                                                    | https://www.discogs.com/artist/65623-Jad-Fair
+ Cheech & Chong                                              | https://www.discogs.com/artist/272936-Cheech-Chong
+ Farafina                                                    | https://www.discogs.com/artist/214380-Farafina
+ Mystic-Force                                                | https://www.discogs.com/artist/281676-Mystic-Force
+ Charlie Rich                                                | https://www.discogs.com/artist/368542-Charlie-Rich
+ The Sadies                                                  | https://www.discogs.com/artist/322984-The-Sadies
+ Nena (20)                                                   | https://www.discogs.com/artist/9259834-Nena-20
+ Alyona Alyona                                               | https://www.discogs.com/artist/7180688-Alyona-Alyona
+ Gil Scott-Heron                                             | https://www.discogs.com/artist/16533-Gil-Scott-Heron
+ Spirit                                                      | https://www.discogs.com/artist/2160-Spirit
+ Paul Simon                                                  | https://www.discogs.com/artist/106474-Paul-Simon
+ Peter Nero                                                  | https://www.discogs.com/artist/367936-Peter-Nero
+ Brian Eno                                                   | https://www.discogs.com/artist/634-Brian-Eno
+ Sublevel                                                    | https://www.discogs.com/artist/44796-Sublevel
+ Marshall Jefferson                                          | https://www.discogs.com/artist/1104-Marshall-Jefferson
+ Dwight Yoakam                                               | https://www.discogs.com/artist/273410-Dwight-Yoakam
+ The Housemartins                                            | https://www.discogs.com/artist/245780-The-Housemartins
+ SE62                                                        | https://www.discogs.com/artist/1648512-SE62
+ Nalin & Kane                                                | https://www.discogs.com/artist/1046-Nalin-Kane
+ Taivaantemppeli                                             | https://www.discogs.com/artist/4993003-Taivaantemppeli
+ Dada Life                                                   | https://www.discogs.com/artist/509192-Dada-Life
+ Muddy Waters                                                | https://www.discogs.com/artist/59246-Muddy-Waters
+ Nerorgasmo                                                  | https://www.discogs.com/artist/469133-Nerorgasmo
+ Elvis Presley                                               | https://www.discogs.com/artist/27518-Elvis-Presley
+ Stanislav Tolkachev                                         | https://www.discogs.com/artist/342739-Stanislav-Tolkachev
+ Ljupka Dimitrovska                                          | https://www.discogs.com/artist/367179-Ljupka-Dimitrovska
+ Eddie Palmieri                                              | https://www.discogs.com/artist/10590-Eddie-Palmieri
+ Goo Goo Dolls                                               | https://www.discogs.com/artist/252661-Goo-Goo-Dolls
+ Smyglyssna                                                  | https://www.discogs.com/artist/10814-Smyglyssna
+ Common                                                      | https://www.discogs.com/artist/14014-Common
+ Soldat Louis                                                | https://www.discogs.com/artist/500991-Soldat-Louis
+ Taana Gardner                                               | https://www.discogs.com/artist/10592-Taana-Gardner
+ Nikolai Rimsky-Korsakov                                     | https://www.discogs.com/artist/115466-Nikolai-Rimsky-Korsakov
+ Juice Newton                                                | https://www.discogs.com/artist/375460-Juice-Newton
+ Die Form                                                    | https://www.discogs.com/artist/15569-Die-Form
+ Troy Dodds                                                  | https://www.discogs.com/artist/1802925-Troy-Dodds
+ Die Prinzen                                                 | https://www.discogs.com/artist/233755-Die-Prinzen
+ Apocalyptica                                                | https://www.discogs.com/artist/17482-Apocalyptica
+ Cass Cutbush                                                | https://www.discogs.com/artist/475812-Cass-Cutbush
+ Jag Offs                                                    | https://www.discogs.com/artist/2458221-Jag-Offs
+ Public Foot The Roman                                       | https://www.discogs.com/artist/2168638-Public-Foot-The-Roman
+ White & Torch                                               | https://www.discogs.com/artist/109369-White-Torch
+ Graeme Bell & His Skiffle Gang                              | https://www.discogs.com/artist/5102879-Graeme-Bell-His-Skiffle-Gang
+ Patsy Cline                                                 | https://www.discogs.com/artist/227842-Patsy-Cline
+ Mark Hawkins                                                | https://www.discogs.com/artist/6370-Mark-Hawkins
+ Party Hats                                                  | https://www.discogs.com/artist/2074325-Party-Hats
+ Todesstoß                                                   | https://www.discogs.com/artist/263155-Todesstoß
+ Melted Cassettes                                            | https://www.discogs.com/artist/1314867-Melted-Cassettes
+ The Alan Parsons Project                                    | https://www.discogs.com/artist/66916-The-Alan-Parsons-Project
+ Sex Prisoner                                                | https://www.discogs.com/artist/1985719-Sex-Prisoner
+ Judit Szűcs                                                 | https://www.discogs.com/artist/895234-Judit-Szűcs
+ Venus & The Razorblades                                     | https://www.discogs.com/artist/533557-Venus-The-Razorblades
+ Άντζελα Δημητρίου                                           | https://www.discogs.com/artist/1974190-Άντζελα-Δημητρίου
+ Benassi Bros.                                               | https://www.discogs.com/artist/171187-Benassi-Bros
+ The Blue Van                                                | https://www.discogs.com/artist/444766-The-Blue-Van
+ Awol One                                                    | https://www.discogs.com/artist/57509-Awol-One
+ Chris Duarte Group                                          | https://www.discogs.com/artist/1061823-Chris-Duarte-Group
+ Henryk Górecki                                              | https://www.discogs.com/artist/216138-Henryk-Górecki
+ Grave Maker                                                 | https://www.discogs.com/artist/1971252-Grave-Maker
+ Johnnie Taylor                                              | https://www.discogs.com/artist/158399-Johnnie-Taylor
+ Otis Redding                                                | https://www.discogs.com/artist/132136-Otis-Redding
+ Nocturnal Breed                                             | https://www.discogs.com/artist/259921-Nocturnal-Breed
+ Summerbreeze                                                | https://www.discogs.com/artist/41251-Summerbreeze
+ Novemthree                                                  | https://www.discogs.com/artist/1008268-Novemthree
+ Brutus (23)                                                 | https://www.discogs.com/artist/4222279-Brutus-23
+ Eric Charden                                                | https://www.discogs.com/artist/282490-Eric-Charden
+ Brooks & Dunn                                               | https://www.discogs.com/artist/545542-Brooks-Dunn
+ Samhara                                                     | https://www.discogs.com/artist/3694763-Samhara
+ Marilyn Manson                                              | https://www.discogs.com/artist/12208-Marilyn-Manson
+ Spargo                                                      | https://www.discogs.com/artist/153020-Spargo
+ Beta 2 & Zero Tolerance                                     | https://www.discogs.com/artist/18748-Beta-2-Zero-Tolerance
+ Mason Proffit                                               | https://www.discogs.com/artist/1229965-Mason-Proffit
+ K-Psula                                                     | https://www.discogs.com/artist/148775-K-Psula
+ Troublemakers                                               | https://www.discogs.com/artist/210271-Troublemakers
+ Stephen Mallinder                                           | https://www.discogs.com/artist/24050-Stephen-Mallinder
+ Stardelay                                                   | https://www.discogs.com/artist/1472084-Stardelay
+ Tortured Soul                                               | https://www.discogs.com/artist/50872-Tortured-Soul
+ Mental Power                                                | https://www.discogs.com/artist/4253-Mental-Power
+ Brina (3)                                                   | https://www.discogs.com/artist/5027161-Brina-3
+ Shades Of Blue (3)                                          | https://www.discogs.com/artist/425364-Shades-Of-Blue-3
+ Manolo Escobar                                              | https://www.discogs.com/artist/517872-Manolo-Escobar
+(932 rows)
+
+ROLLBACK

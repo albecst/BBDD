@@ -1,197 +1,169 @@
-SET
-BEGIN
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-COPY 966
-COPY 20
-COPY 7536
-COPY 2449
-COPY 206
-COPY 362
-INSERT 0 932
-INSERT 0 20
-INSERT 0 965
-INSERT 0 7370
-INSERT 0 2098
-INSERT 0 162
-INSERT 0 288
-INSERT 0 1459
  ano_publicacion_disco |                             titulo_disco                             | nombre_usuario  
 -----------------------+----------------------------------------------------------------------+-----------------
- 1973                  | Kootch                                                               | juangomez
- 1972                  | The World Of Donovan                                                 | juangomez
- 2015                  | The Town Where a Star Falls                                          | juangomez
- 2012                  | Demo 2009                                                            | juangomez
- 1970                  | Home To You                                                          | juangomez
- 2008                  | Way To Normal                                                        | juangomez
- 2015                  | VI                                                                   | juangomez
- 1994                  | Drum Tango                                                           | juangomez
- 2000                  | Tonight Or Never                                                     | juangomez
- 2009                  | Mais... C'est Pas Dieu Possible !!!!!                                | juangomez
- 1961                  | Calcutta!                                                            | juangomez
- 1989                  | Rubbin' Me The Right Way                                             | juangomez
- 2001                  | Spundae Presents Interpretations II                                  | juangomez
- 2017                  | Neon Music                                                           | luisgarcia
- 0                     | A Strange Day E.P                                                    | luisgarcia
- 2013                  | Tant Pis Pour Eux !                                                  | luisgarcia
- 1979                  | Till Then / P.S. I Love You                                          | luisgarcia
- 1984                  | Mluví K Vám Robot                                                    | luisgarcia
- 2003                  | The Fire Below                                                       | luisgarcia
- 1983                  | В Танцевальных Ритмах                                                | luisgarcia
- 2008                  | Broken Music                                                         | luisgarcia
- 2009                  | Fire (Burning) / Breakdown (2009 Re-Lick)                            | luisgarcia
- 1979                  | Walk On... / Travelling                                              | luisgarcia
- 1984                  | Piano Concerto In A Major Op.85 / Rondo Brillant In A Major Op.56    | luisgarcia
- 1971                  | Un Grand Amour                                                       | luisgarcia
- 0                     | غيره \ وقف يا أسمر = Ghira / Wakef Ya Asmar                          | luisgarcia
- 1957                  | Mantovani Encores                                                    | martalópez
- 2015                  | II                                                                   | martamoreno
- 1991                  | Ivy                                                                  | martamoreno
- 1995                  | Tranzient / Da Muzik                                                 | martamoreno
- 1998                  | Too Much                                                             | martamoreno
- 1992                  | Attack                                                               | martamoreno
- 1995                  | The Music Of The Grand Canyon                                        | martamoreno
- 1975                  | Mestrud                                                              | martamoreno
- 1990                  | Starring In...Standing In A Monkey Sea                               | martamoreno
- 1978                  | Hot! Hot!                                                            | martamoreno
- 1989                  | Little Flecks Of Foam Around Barking                                 | martamoreno
- 1983                  | Les Petites Rues De Singapour                                        | martamoreno
- 2019                  | Young Baby Father                                                    | martamoreno
- 2003                  | Pop That Booty                                                       | martamoreno
- 2001                  | Ballin’ Boy                                                          | martamoreno
- 1970                  | Home To You                                                          | martamoreno
- 2007                  | Shine                                                                | martamoreno
- 1991                  | The Rhythm                                                           | martadíaz
- 2001                  | Live Young Die Fast E.P.                                             | martadíaz
- 1966                  | Spiritual Gospel                                                     | martadíaz
- 1998                  | Lost In Bass E.P.                                                    | martadíaz
- 2015                  | House Shoes & Street Corner Music Present: The Gift Vol. 5!          | martadíaz
- 1980                  | Passion                                                              | martadíaz
- 2013                  | Play Boy / Your Love                                                 | martadíaz
- 2002                  | Useless / Relentless                                                 | martadíaz
- 1977                  | Magic Fly                                                            | martadíaz
- 1974                  | Legends Of Rock, Vol. 2, Rare Items                                  | martadíaz
- 2000                  | Live At The Palace                                                   | martadíaz
- 0                     | Hot 'N' Heavy | Live At The Ascension Loft                           | martadíaz
- 2014                  | Dirk Wears White Sox                                                 | martadíaz
- 1998                  | I Want To Spend My Lifetime Loving You                               | martadíaz
- 0                     | A. Decap - Sound Non-Stop Dancing Volume 7                           | martadíaz
- 2016                  | ATXTA E.P.                                                           | martadíaz
- 2003                  | The Alan Davie Music Workshop 005                                    | sergiofernández
- 1974                  | Legends Of Rock, Vol. 2, Rare Items                                  | sergiofernández
- 1987                  | Single Women                                                         | sergiofernández
- 1973                  | Полынь / Верба-Вербочка / Взрослые Дочери / Подкова                  | sergiofernández
- 1989                  | Teil 1                                                               | sergiofernández
- 1961                  | Calcutta!                                                            | sergiofernández
- 2012                  | Demo 2009                                                            | sergiofernández
- 1972                  | Rockfish Crossing                                                    | sergiofernández
- 1991                  | Ivy                                                                  | sergiofernández
- 1996                  | Cleanhead Blues                                                      | sergiofernández
- 1985                  | Evil Game                                                            | sergiofernández
- 1995                  | West Coast Girl                                                      | sergiofernández
- 2019                  | Είμαι Το Σήμερα Κι Είσαι Το Χθες                                     | sergiofernández
- 1999                  | Rotation (Spirit Remix)                                              | sergiofernández
- 2016                  | G.O.D. EP - The Remixes                                              | sergiofernández
- 2016                  | Jazz-Liisa 2                                                         | analópez
- 1977                  | Live! In The Air Age                                                 | analópez
- 2018                  | Relic                                                                | analópez
- 1978                  | Suspect                                                              | analópez
- 0                     | Rougher Yet                                                          | analópez
- 2015                  | Deathkult Sutra                                                      | analópez
- 2006                  | For Pete's Sake                                                      | pedrolópez
- 1987                  | Assassin Of Love                                                     | pedrolópez
- 1987                  | Народни Бисери                                                       | pedrolópez
- 2001                  | Sincerely Yours - Part Three Of 5                                    | pedrolópez
- 1984                  | Finesse                                                              | pedrolópez
- 2012                  | Raw Nerves                                                           | pedrolópez
- 2004                  | Strength In Numbers EP                                               | pedrolópez
- 1995                  | Are You Coming Home Today?                                           | pedrolópez
- 1976                  | Gagaku & Beyond                                                      | pedrolópez
- 1995                  | More Out Of Today                                                    | pedrolópez
- 1991                  | Un Hommage De Quatre Chansons A Jacques Tati                         | pedrolópez
- 2002                  | Mega                                                                 | pedrolópez
- 1982                  | Shout! Shout! (Knock Yourself Out)                                   | pedrolópez
- 2001                  | Thank You                                                            | pedrolópez
- 1965                  | Taste Of Honey / 3rd Man Theme                                       | pedrolópez
- 1988                  | Hand In Hand                                                         | pedrofernández
- 1993                  | Blue Waters                                                          | pedrofernández
- 1999                  | Il Faudrait Leur Dire...                                             | pedrofernández
- 2002                  | Birds Fly South                                                      | pedrofernández
- 1977                  | Femmina                                                              | pedrofernández
- 1952                  | Classics In Jazz                                                     | pedrofernández
- 2012                  | Stay Another Day / White Heit                                        | pedrofernández
- 0                     | You Make Me Feel Brand New / I Can't Give You Anything (But My Love) | javierfernández
- 1994                  | On The Attack                                                        | javierfernández
- 1987                  | Live Across Australia                                                | javierfernández
- 1988                  | Affair                                                               | javierfernández
- 1994                  | I Like It (I Like How You're Lov'in Me)                              | javierfernández
- 2014                  | Absurd Reality / Flagging Water                                      | javierfernández
- 2007                  | 5 Spot / Your World                                                  | javierfernández
- 1997                  | Surface EP                                                           | javierfernández
- 1994                  | Heterogenial                                                         | javierfernández
- 2005                  | ...Verendeten Blickes                                                | javierfernández
- 1977                  | Goin' To L.A.                                                        | javierfernández
- 2011                  | Brown Flag                                                           | javierfernández
- 1988                  | Listen To Your Heart                                                 | javierfernández
- 1988                  | Jump In The River                                                    | javierfernández
- 2001                  | Contact / Descent                                                    | javierfernández
- 1999                  | The Awakening                                                        | javierfernández
- 2008                  | Boot Scootin' Boogie / Lost And Found                                | javierfernández
- 2009                  | Under The Pavement - The Beach                                       | pedrodíaz
- 1992                  | Fathoms                                                              | pedrodíaz
- 2004                  | Sea Of Faces                                                         | pedrodíaz
- 2015                  | Rhoda Dakar Sings The Bodysnatchers                                  | pedrodíaz
- 2013                  | Blackbird                                                            | pedrodíaz
- 1978                  | Howard Carpendale - Die LP Zur Tournee                               | pedrodíaz
- 2016                  | Mount Zion                                                           | pedrodíaz
- 1995                  | In Montreal                                                          | pedrodíaz
- 1995                  | Tranzient / Da Muzik                                                 | pedrodíaz
- 1994                  | Aquarius                                                             | pedrodíaz
- 1968                  | Песни Г. Портнова                                                    | pedrodíaz
- 1996                  | Cypher                                                               | pedrodíaz
- 1989                  | Teil 1                                                               | pedrodíaz
- 1998                  | A New Day                                                            | pedrodíaz
- 1977                  | Raw Meat                                                             | pedrodíaz
- 1969                  | Miracles Take Time                                                   | pedrodíaz
- 2013                  | Hit You                                                              | pedrodíaz
- 1980                  | Matthew Fisher                                                       | pedrodíaz
- 2003                  | I Am Kloot                                                           | javiergómez
- 1986                  | The Oak Tree Rapp                                                    | javiergómez
- 1961                  | Calcutta!                                                            | javiergómez
- 1967                  | Kilimandjaro / Les Trois Dernières Minutes                           | javiergómez
- 1969                  | Snart Blir Det Sommar Igen / Krama Mej                               | javiergómez
- 0                     | The Best Of The EMI Years                                            | javiergómez
- 2017                  | 1533 St. Philip Street                                               | javiergómez
- 2014                  | Dirk Wears White Sox                                                 | javiergómez
- 1988                  | Years Not Living                                                     | javiergómez
- 2002                  | Birds Fly South                                                      | javiergómez
- 2022                  | Trials & Errors                                                      | javiergómez
- 1985                  | Wake Up                                                              | javiergómez
- 2018                  | The Dark Side Of The Mün                                             | sergiopérez
- 1994                  | Adult Crash                                                          | sergiopérez
- 1973                  | Public Foot The Roman                                                | sergiopérez
- 1969                  | Lay Lady Lay                                                         | sergiopérez
- 2017                  | Prove Your Love                                                      | sergiopérez
- 2015                  | Do You Want                                                          | sergiopérez
- 1959                  | Farmer John / Big Boy Pete                                           | sergiopérez
- 1995                  | Dreams On Long Play                                                  | sergiopérez
- 1997                  | Plan Of Action                                                       | sergiopérez
- 2019                  | Business Free Music                                                  | sergiopérez
- 2003                  | Znaeš Kolku Vredam                                                   | sergiopérez
- 1967                  | Treat Her Groovy / Rap-A-Tap                                         | carlosfernández
- 2015                  | Two Headed Dog / Song For A Deadly Mermaid                           | carlosfernández
+                  2013 | Hit You                                                              | pedrodíaz
+                  1977 | Magic Fly                                                            | martadíaz
+                  1995 | More Out Of Today                                                    | pedrolópez
+                  2009 | Under The Pavement - The Beach                                       | pedrodíaz
+                  2017 | 1533 St. Philip Street                                               | javiergómez
+                  2003 | Znaeš Kolku Vredam                                                   | sergiopérez
+                  1993 | Blue Waters                                                          | pedrofernández
+                  1994 | Aquarius                                                             | pedrodíaz
+                  2015 | Do You Want                                                          | sergiopérez
+                  1978 | Howard Carpendale - Die LP Zur Tournee                               | pedrodíaz
+                  1980 | Matthew Fisher                                                       | pedrodíaz
+                  1983 | Les Petites Rues De Singapour                                        | martamoreno
+                  2015 | House Shoes & Street Corner Music Present: The Gift Vol. 5!          | martadíaz
+                  1991 | Un Hommage De Quatre Chansons A Jacques Tati                         | pedrolópez
+                  1952 | Classics In Jazz                                                     | pedrofernández
+                     0 | The Best Of The EMI Years                                            | javiergómez
+                  2001 | Contact / Descent                                                    | javierfernández
+                  1991 | Ivy                                                                  | sergiofernández
+                  1991 | Ivy                                                                  | martamoreno
+                     0 | You Make Me Feel Brand New / I Can't Give You Anything (But My Love) | javierfernández
+                  1998 | Lost In Bass E.P.                                                    | martadíaz
+                  1992 | Fathoms                                                              | pedrodíaz
+                  2003 | The Alan Davie Music Workshop 005                                    | sergiofernández
+                  2013 | Blackbird                                                            | pedrodíaz
+                  2007 | Shine                                                                | martamoreno
+                  2002 | Useless / Relentless                                                 | martadíaz
+                  1999 | The Awakening                                                        | javierfernández
+                  1995 | Are You Coming Home Today?                                           | pedrolópez
+                  2009 | Mais... C'est Pas Dieu Possible !!!!!                                | juangomez
+                  2008 | Broken Music                                                         | luisgarcia
+                  2004 | Strength In Numbers EP                                               | pedrolópez
+                  1980 | Passion                                                              | martadíaz
+                  1973 | Public Foot The Roman                                                | sergiopérez
+                  2003 | Pop That Booty                                                       | martamoreno
+                  2001 | Sincerely Yours - Part Three Of 5                                    | pedrolópez
+                  1967 | Treat Her Groovy / Rap-A-Tap                                         | carlosfernández
+                  1975 | Mestrud                                                              | martamoreno
+                  1994 | Heterogenial                                                         | javierfernández
+                  1989 | Teil 1                                                               | pedrodíaz
+                  1989 | Teil 1                                                               | sergiofernández
+                  2006 | For Pete's Sake                                                      | pedrolópez
+                  1959 | Farmer John / Big Boy Pete                                           | sergiopérez
+                  1984 | Piano Concerto In A Major Op.85 / Rondo Brillant In A Major Op.56    | luisgarcia
+                  1977 | Femmina                                                              | pedrofernández
+                  2015 | Rhoda Dakar Sings The Bodysnatchers                                  | pedrodíaz
+                  1988 | Listen To Your Heart                                                 | javierfernández
+                  1998 | I Want To Spend My Lifetime Loving You                               | martadíaz
+                  1969 | Snart Blir Det Sommar Igen / Krama Mej                               | javiergómez
+                  2019 | Είμαι Το Σήμερα Κι Είσαι Το Χθες                                     | sergiofernández
+                  1969 | Miracles Take Time                                                   | pedrodíaz
+                  1995 | In Montreal                                                          | pedrodíaz
+                  1988 | Jump In The River                                                    | javierfernández
+                  1995 | Tranzient / Da Muzik                                                 | pedrodíaz
+                  1995 | Tranzient / Da Muzik                                                 | martamoreno
+                  1965 | Taste Of Honey / 3rd Man Theme                                       | pedrolópez
+                  1966 | Spiritual Gospel                                                     | martadíaz
+                  2014 | Dirk Wears White Sox                                                 | javiergómez
+                  2014 | Dirk Wears White Sox                                                 | martadíaz
+                  1957 | Mantovani Encores                                                    | martalópez
+                  1996 | Cypher                                                               | pedrodíaz
+                  1988 | Hand In Hand                                                         | pedrofernández
+                  1973 | Полынь / Верба-Вербочка / Взрослые Дочери / Подкова                  | sergiofernández
+                  2016 | G.O.D. EP - The Remixes                                              | sergiofernández
+                     0 | A Strange Day E.P                                                    | luisgarcia
+                  2019 | Business Free Music                                                  | sergiopérez
+                  1987 | Live Across Australia                                                | javierfernández
+                  1990 | Starring In...Standing In A Monkey Sea                               | martamoreno
+                  1972 | The World Of Donovan                                                 | juangomez
+                  1961 | Calcutta!                                                            | javiergómez
+                  1961 | Calcutta!                                                            | sergiofernández
+                  1961 | Calcutta!                                                            | juangomez
+                  1984 | Mluví K Vám Robot                                                    | luisgarcia
+                  2015 | Two Headed Dog / Song For A Deadly Mermaid                           | carlosfernández
+                     0 | غيره \ وقف يا أسمر = Ghira / Wakef Ya Asmar                          | luisgarcia
+                  1999 | Rotation (Spirit Remix)                                              | sergiofernández
+                  2013 | Tant Pis Pour Eux !                                                  | luisgarcia
+                  1989 | Rubbin' Me The Right Way                                             | juangomez
+                  2002 | Birds Fly South                                                      | javiergómez
+                  2002 | Birds Fly South                                                      | pedrofernández
+                  2018 | The Dark Side Of The Mün                                             | sergiopérez
+                  2001 | Thank You                                                            | pedrolópez
+                  1995 | Dreams On Long Play                                                  | sergiopérez
+                  1968 | Песни Г. Портнова                                                    | pedrodíaz
+                  2001 | Live Young Die Fast E.P.                                             | martadíaz
+                  1987 | Single Women                                                         | sergiofernández
+                  2012 | Stay Another Day / White Heit                                        | pedrofernández
+                  2012 | Demo 2009                                                            | sergiofernández
+                  2012 | Demo 2009                                                            | juangomez
+                     0 | Hot 'N' Heavy | Live At The Ascension Loft                           | martadíaz
+                  1985 | Evil Game                                                            | sergiofernández
+                  1995 | West Coast Girl                                                      | sergiofernández
+                  2012 | Raw Nerves                                                           | pedrolópez
+                  2022 | Trials & Errors                                                      | javiergómez
+                  1971 | Un Grand Amour                                                       | luisgarcia
+                  2009 | Fire (Burning) / Breakdown (2009 Re-Lick)                            | luisgarcia
+                  2003 | The Fire Below                                                       | luisgarcia
+                  1994 | Drum Tango                                                           | juangomez
+                  1994 | On The Attack                                                        | javierfernández
+                  1991 | The Rhythm                                                           | martadíaz
+                     0 | Rougher Yet                                                          | analópez
+                  1977 | Live! In The Air Age                                                 | analópez
+                  1972 | Rockfish Crossing                                                    | sergiofernández
+                  2019 | Young Baby Father                                                    | martamoreno
+                  2004 | Sea Of Faces                                                         | pedrodíaz
+                  1989 | Little Flecks Of Foam Around Barking                                 | martamoreno
+                  1979 | Till Then / P.S. I Love You                                          | luisgarcia
+                  1974 | Legends Of Rock, Vol. 2, Rare Items                                  | sergiofernández
+                  1974 | Legends Of Rock, Vol. 2, Rare Items                                  | martadíaz
+                  2018 | Relic                                                                | analópez
+                  1994 | I Like It (I Like How You're Lov'in Me)                              | javierfernández
+                  1976 | Gagaku & Beyond                                                      | pedrolópez
+                  2008 | Way To Normal                                                        | juangomez
+                  2007 | 5 Spot / Your World                                                  | javierfernández
+                  1969 | Lay Lady Lay                                                         | sergiopérez
+                  2014 | Absurd Reality / Flagging Water                                      | javierfernández
+                  1983 | В Танцевальных Ритмах                                                | luisgarcia
+                  2017 | Prove Your Love                                                      | sergiopérez
+                  1997 | Plan Of Action                                                       | sergiopérez
+                  1979 | Walk On... / Travelling                                              | luisgarcia
+                  2016 | ATXTA E.P.                                                           | martadíaz
+                  1986 | The Oak Tree Rapp                                                    | javiergómez
+                  2015 | VI                                                                   | juangomez
+                  2015 | II                                                                   | martamoreno
+                  1978 | Suspect                                                              | analópez
+                  1982 | Shout! Shout! (Knock Yourself Out)                                   | pedrolópez
+                     0 | A. Decap - Sound Non-Stop Dancing Volume 7                           | martadíaz
+                  2003 | I Am Kloot                                                           | javiergómez
+                  1998 | A New Day                                                            | pedrodíaz
+                  1995 | The Music Of The Grand Canyon                                        | martamoreno
+                  2015 | Deathkult Sutra                                                      | analópez
+                  2015 | The Town Where a Star Falls                                          | juangomez
+                  2001 | Spundae Presents Interpretations II                                  | juangomez
+                  2008 | Boot Scootin' Boogie / Lost And Found                                | javierfernández
+                  2005 | ...Verendeten Blickes                                                | javierfernández
+                  1977 | Goin' To L.A.                                                        | javierfernández
+                  1988 | Affair                                                               | javierfernández
+                  1987 | Assassin Of Love                                                     | pedrolópez
+                  1985 | Wake Up                                                              | javiergómez
+                  2000 | Tonight Or Never                                                     | juangomez
+                  1967 | Kilimandjaro / Les Trois Dernières Minutes                           | javiergómez
+                  2011 | Brown Flag                                                           | javierfernández
+                  2000 | Live At The Palace                                                   | martadíaz
+                  1998 | Too Much                                                             | martamoreno
+                  1977 | Raw Meat                                                             | pedrodíaz
+                  1978 | Hot! Hot!                                                            | martamoreno
+                  1996 | Cleanhead Blues                                                      | sergiofernández
+                  1988 | Years Not Living                                                     | javiergómez
+                  1984 | Finesse                                                              | pedrolópez
+                  1999 | Il Faudrait Leur Dire...                                             | pedrofernández
+                  1994 | Adult Crash                                                          | sergiopérez
+                  2016 | Mount Zion                                                           | pedrodíaz
+                  1987 | Народни Бисери                                                       | pedrolópez
+                  2002 | Mega                                                                 | pedrolópez
+                  1970 | Home To You                                                          | martamoreno
+                  1970 | Home To You                                                          | juangomez
+                  2016 | Jazz-Liisa 2                                                         | analópez
+                  2013 | Play Boy / Your Love                                                 | martadíaz
+                  1997 | Surface EP                                                           | javierfernández
+                  1992 | Attack                                                               | martamoreno
+                  2001 | Ballin’ Boy                                                          | martamoreno
+                  1973 | Kootch                                                               | juangomez
+                  2017 | Neon Music                                                           | luisgarcia
 (162 rows)
 
+INSERT 0 288
+INSERT 0 1459
 ROLLBACK

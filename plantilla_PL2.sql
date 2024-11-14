@@ -198,7 +198,7 @@ FROM DiscoTemp;
 SELECT Titulo_Disco FROM Disco WHERE (SELECT COUNT(*) FROM Cancion WHERE Disco.Ano_Publicacion = Cancion.Ano_Publicacion_Disco AND Disco.Titulo_Disco = Cancion.Titulo_Disco) > 5;
 
 \echo Consulta 2: Mostrar los vinilos que tiene el usuario Juan García Gómez junto con el título del disco, y el país y año de edición del mismo 
-SELECT Titulo_Disco, Pais,   
+  
 
 \echo Consulta 3: Disco con mayor duración de la colección.
 

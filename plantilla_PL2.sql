@@ -203,46 +203,72 @@ SELECT DISTINCT Ano_Publicacion::INTEGER, regexp_split_to_table(trim(both '[]' f
 FROM DiscoTemp;
 
 \echo Consulta 1: Mostrar los discos que tengan más de 5 canciones
-SELECT Titulo_Disco FROM Disco WHERE (SELECT COUNT(*) FROM Cancion WHERE Disco.Ano_Publicacion = Cancion.Ano_Publicacion_Disco AND Disco.Titulo_Disco = Cancion.Titulo_Disco) > 5;
+SELECT Titulo_Disco 
+FROM Disco 
+WHERE (SELECT COUNT(*) 
+FROM Cancion 
+WHERE Disco.Ano_Publicacion = Cancion.Ano_Publicacion_Disco AND Disco.Titulo_Disco = Cancion.Titulo_Disco) > 5;
 
 \echo Consulta 2: Mostrar los vinilos que tiene el usuario Juan García Gómez junto con el título del disco, y el país y año de edición del mismo 
-SELECT Titulo_Disco, Pais_Edicion, Ano_Edicion FROM Tiene JOIN Usuario ON Tiene.Nombre_Usuario = Usuario.Nombre_Usuario WHERE Usuario.Nombre = 'Juan García Gómez' AND Tiene.Formato_Edicion = 'Vinyl';
+SELECT Titulo_Disco, Pais_Edicion, Ano_Edicion 
+FROM Tiene JOIN Usuario ON Tiene.Nombre_Usuario = Usuario.Nombre_Usuario 
+WHERE Usuario.Nombre = 'Juan García Gómez' AND Tiene.Formato_Edicion = 'Vinyl';
 
 \echo Consulta 3: Disco con mayor duración de la colección.
-CREATE TABLE IF NOT EXISTS Disco2(
-    Duracion TIME,
-    Titulo_Disco TEXT NOT NULL
-);
-INSERT INTO Disco2(Duracion, Titulo_Disco) SELECT SUM(Cancion.Duracion), Disco.Titulo_Disco FROM Cancion JOIN Disco ON Disco.Titulo_Disco = Cancion.Titulo_Disco GROUP BY Disco.Titulo_Disco;
-SELECT Titulo_Disco FROM Disco2 WHERE Duracion = (SELECT MAX(Duracion) FROM Disco2);
-
+WITH DuracionDiscos (Duracion,Titulo_Disco) AS 
+(SELECT SUM(Cancion.Duracion), Disco.Titulo_Disco 
+FROM Cancion JOIN Disco ON Disco.Titulo_Disco = Cancion.Titulo_Disco 
+GROUP BY Disco.Titulo_Disco)
+SELECT Titulo_Disco, Duracion FROM DuracionDiscos WHERE Duracion = (SELECT MAX(Duracion) FROM DuracionDiscos);
 
 \echo Consulta 4: De los discos que tiene en su lista de deseos el usuario Juan García Gómez, indicar el nombre de los grupos musicales que los interpretan. 
-SELECT Nombre_Grupo FROM Disco JOIN Desea ON Disco.Ano_Publicacion = Desea.Ano_Publicacion_Disco AND Disco.Titulo_Disco = Desea.Titulo_Disco JOIN Usuario ON Desea.Nombre_Usuario = Usuario.Nombre_Usuario WHERE Usuario.Nombre = 'Juan García Gómez'; 
+SELECT Nombre_Grupo 
+FROM Disco JOIN Desea ON Disco.Ano_Publicacion = Desea.Ano_Publicacion_Disco AND Disco.Titulo_Disco = Desea.Titulo_Disco 
+JOIN Usuario ON Desea.Nombre_Usuario = Usuario.Nombre_Usuario 
+WHERE Usuario.Nombre = 'Juan García Gómez'; 
 
 \echo Consulta 5: Mostrar los discos publicados entre 1970 y 1972 junto con sus ediciones ordenados por el año de publicación. 
-SELECT Disco.Titulo_Disco, Disco.Ano_Publicacion FROM Disco JOIN Edicion ON Disco.Titulo_Disco = Edicion.Titulo_Disco WHERE Disco.Ano_Publicacion >= 1970 AND Disco.Ano_Publicacion <= 1972;
+SELECT Disco.Titulo_Disco, Disco.Ano_Publicacion 
+FROM Disco JOIN Edicion ON Disco.Titulo_Disco = Edicion.Titulo_Disco 
+WHERE Disco.Ano_Publicacion >= 1970 AND Disco.Ano_Publicacion <= 1972;
 
 \echo Consulta 6: Listar el nombre de todos los grupos que han publicado discos del género ‘Electronic’.
-SELECT DISTINCT Grupo.Nombre FROM Grupo JOIN Disco ON Grupo.Nombre = Disco.Nombre_Grupo JOIN Generos ON Disco.Titulo_Disco = Generos.Titulo_Disco WHERE Generos.Genero LIKE '%Electronic%';
+SELECT DISTINCT Grupo.Nombre
+FROM Grupo JOIN Disco ON Grupo.Nombre = Disco.Nombre_Grupo 
+JOIN Generos ON Disco.Titulo_Disco = Generos.Titulo_Disco
+ WHERE Generos.Genero LIKE '%Electronic%';
 
 \echo Consulta 7: Lista de discos con la duración total del mismo, editados antes del año 2000. 
--- Hacer
+SELECT Disco.Titulo_Disco, SUM(Cancion.Duracion)
+FROM Disco JOIN Cancion ON Disco.Titulo_Disco = Cancion.Titulo_Disco 
+WHERE Disco.Ano_Publicacion < 2000 GROUP BY Disco.Titulo_Disco;
 
 \echo Consulta 8: Lista de ediciones de discos deseados por el usuario Lorena Sáez Pérez que tiene 
-SELECT Formato, Ano_Edicion, Pais, Edicion.Ano_Publicacion_Disco, Edicion.Titulo_Disco FROM Edicion JOIN Desea ON Edicion.Ano_Publicacion_Disco = Desea.Ano_Publicacion_Disco AND Edicion.Titulo_Disco = Desea.Titulo_Disco JOIN Usuario ON Desea.Nombre_Usuario = Usuario.Nombre_Usuario WHERE Usuario.Nombre = 'Lorena Sáez Pérez';
+SELECT Formato, Ano_Edicion, Pais, Edicion.Ano_Publicacion_Disco, Edicion.Titulo_Disco 
+FROM Edicion 
+JOIN Desea ON Edicion.Ano_Publicacion_Disco = Desea.Ano_Publicacion_Disco AND Edicion.Titulo_Disco = Desea.Titulo_Disco 
+JOIN Usuario ON Desea.Nombre_Usuario = Usuario.Nombre_Usuario
+WHERE Usuario.Nombre = 'Lorena Sáez Pérez';
 -- Lorena no desea nada, no hay nada que mostrar
 
 \echo Consulta 9: Lista todas las ediciones de los discos que tiene el usuario Gómez García en un estado NM o M. 
-SELECT Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco FROM Tiene JOIN Usuario ON Tiene.Nombre_Usuario = Usuario.Nombre_Usuario WHERE Usuario.Nombre LIKE '%Gómez García' AND (Estado = 'NM' OR Estado = 'M');
+SELECT Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco
+FROM Tiene 
+JOIN Usuario ON Tiene.Nombre_Usuario = Usuario.Nombre_Usuario 
+WHERE Usuario.Nombre LIKE '%Gómez García' AND (Estado = 'NM' OR Estado = 'M');
 
 \echo Consulta 10: Listar todos los usuarios junto al número de ediciones que tiene de todos los discos junto al año de lanzamiento de su disco más antiguo, el año de lanzamiento de su disco más nuevo, y el año medio de todos sus discos de su colección
-SELECT Nombre_Usuario, COUNT(*), MIN(Ano_Edicion), MAX(Ano_Edicion), AVG(Ano_Edicion) FROM Tiene GROUP BY Nombre_Usuario;
+SELECT Nombre_Usuario, COUNT(*), MIN(Ano_Edicion), MAX(Ano_Edicion), AVG(Ano_Edicion) 
+FROM Tiene GROUP BY Nombre_Usuario;
 
 \echo Consulta 11: Listar el nombre de los grupos que tienen más de 5 ediciones de sus discos en la base de datos 
-SELECT Nombre_Grupo FROM Disco JOIN Edicion ON Disco.Ano_Publicacion = Edicion.Ano_Publicacion_Disco AND Disco.Titulo_Disco = Edicion.Titulo_Disco GROUP BY Nombre_Grupo HAVING COUNT(*) > 5;
+SELECT Nombre_Grupo 
+FROM Disco JOIN Edicion ON Disco.Ano_Publicacion = Edicion.Ano_Publicacion_Disco AND Disco.Titulo_Disco = Edicion.Titulo_Disco 
+GROUP BY Nombre_Grupo HAVING COUNT(*) > 5;
 
 \echo Consulta 12: Lista el usuario que más discos, contando todas sus ediciones tiene en la base de datos
--- Hacer
+SELECT Nombre_Usuario 
+FROM Tiene GROUP BY Nombre_Usuario 
+HAVING COUNT(*) = (SELECT MAX(NumDiscos) FROM (SELECT COUNT(*) AS NumDiscos FROM Tiene GROUP BY Nombre_Usuario) AS NumDiscos); 
 
 ROLLBACK;

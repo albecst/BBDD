@@ -196,7 +196,7 @@ FROM TieneTemp JOIN Usuario ON TieneTemp.Nombre_Usuario = Usuario.Nombre_Usuario
 INSERT INTO Generos (Ano_Publicacion_Disco, Genero, Titulo_Disco)
 SELECT DISTINCT Ano_Publicacion::INTEGER, regexp_split_to_table(trim(both '[]' from Generos), ',\s*'), Titulo
 FROM DiscoTemp;
-/*
+
 \echo Consulta 1: Mostrar los discos que tengan más de 5 canciones
 
 SELECT Titulo_Disco 
@@ -267,5 +267,5 @@ GROUP BY Nombre_Grupo HAVING COUNT(*) > 5;
 SELECT Nombre_Usuario 
 FROM Tiene GROUP BY Nombre_Usuario 
 HAVING COUNT(*) = (SELECT MAX(NumDiscos) FROM (SELECT COUNT(*) AS NumDiscos FROM Tiene GROUP BY Nombre_Usuario) AS NumDiscos); 
-*/
+
 ROLLBACK;

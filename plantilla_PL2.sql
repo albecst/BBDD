@@ -167,41 +167,36 @@ SELECT DISTINCT Nombre_Usuario, Nombre_Completo, Email, Contrasena
 FROM UsuarioTemp;
 
 INSERT INTO Disco (Ano_Publicacion, Titulo_Disco, Url_Portada, Nombre_Grupo)
-SELECT DISTINCT Ano_Publicacion::INTEGER, Titulo, Url_Portada, Nombre_Grupo
-FROM DiscoTemp
-ON CONFLICT (Ano_Publicacion, Titulo_Disco) DO NOTHING;
+SELECT DISTINCT ON (Ano_Publicacion, Titulo) Ano_Publicacion::INTEGER, Titulo, Url_Portada, Nombre_Grupo
+FROM DiscoTemp;
 
 INSERT INTO Cancion (Titulo_Cancion, Duracion, Titulo_Disco, Ano_Publicacion_Disco)
-SELECT CancionTemp.Titulo,
+SELECT DISTINCT ON (CancionTemp.Titulo, Ano_Publicacion, DiscoTemp.Titulo) CancionTemp.Titulo,
        MAKE_INTERVAL(mins => SPLIT_PART(CancionTemp.Duracion, ':', 1)::INTEGER,
                      secs => SPLIT_PART(CancionTemp.Duracion, ':', 2)::INTEGER)::TIME,
        DiscoTemp.Titulo,
        DiscoTemp.Ano_Publicacion::INTEGER
 FROM CancionTemp
-JOIN DiscoTemp ON CancionTemp.id_disco = DiscoTemp.id_disco
-ON CONFLICT (Titulo_Cancion, Ano_Publicacion_Disco, Titulo_Disco) DO NOTHING;
+JOIN DiscoTemp ON CancionTemp.id_disco = DiscoTemp.id_disco;
 
 INSERT INTO Edicion (Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco)
-SELECT DISTINCT Formato, Ano_Edicion::INTEGER, Pais, DiscoTemp.Ano_Publicacion::INTEGER, DiscoTemp.Titulo
+SELECT DISTINCT ON  (Formato, Ano_Edicion, Pais, Ano_Publicacion, Titulo)Formato, Ano_Edicion::INTEGER, Pais, DiscoTemp.Ano_Publicacion::INTEGER, DiscoTemp.Titulo
 FROM EdicionTemp
-JOIN DiscoTemp ON EdicionTemp.id_disco = DiscoTemp.id_disco
-ON CONFLICT (Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco) DO NOTHING;
+JOIN DiscoTemp ON EdicionTemp.id_disco = DiscoTemp.id_disco;
 
 INSERT INTO Desea (Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario)
-SELECT Disco.Ano_Publicacion::INTEGER, Disco.Titulo_Disco, DeseaTemp.Nombre_Usuario
-FROM DeseaTemp JOIN Usuario ON DeseaTemp.Nombre_Usuario = Usuario.Nombre_Usuario JOIN Disco ON DeseaTemp.Titulo_Disco = Disco.Titulo_Disco
-ON CONFLICT (Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario) DO NOTHING;
+SELECT DISTINCT ON (Titulo_Disco, Nombre_Usuario) Disco.Ano_Publicacion::INTEGER, Disco.Titulo_Disco, DeseaTemp.Nombre_Usuario
+FROM DeseaTemp JOIN Usuario ON DeseaTemp.Nombre_Usuario = Usuario.Nombre_Usuario JOIN Disco ON DeseaTemp.Titulo_Disco = Disco.Titulo_Disco;
 
 
 INSERT INTO Tiene (Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario, Estado)
-SELECT Formato, Ano_Edicion::INTEGER, Pais, Ano_Publicacion_Disco::INTEGER, Titulo_Disco, TieneTemp.Nombre_Usuario, Estado
-FROM TieneTemp JOIN Usuario ON TieneTemp.Nombre_Usuario = Usuario.Nombre_Usuario
-ON CONFLICT (Formato_Edicion, Ano_Edicion, Nombre_Usuario, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco) DO NOTHING;
+SELECT DISTINCT ON (Formato, Ano_Edicion, Nombre_Usuario, Pais, Ano_Publicacion_Disco, Titulo_Disco) Formato, Ano_Edicion::INTEGER, Pais, Ano_Publicacion_Disco::INTEGER, Titulo_Disco, TieneTemp.Nombre_Usuario, Estado
+FROM TieneTemp JOIN Usuario ON TieneTemp.Nombre_Usuario = Usuario.Nombre_Usuario;
 
 INSERT INTO Generos (Ano_Publicacion_Disco, Genero, Titulo_Disco)
 SELECT DISTINCT Ano_Publicacion::INTEGER, regexp_split_to_table(trim(both '[]' from Generos), ',\s*'), Titulo
 FROM DiscoTemp;
-
+/*
 \echo Consulta 1: Mostrar los discos que tengan más de 5 canciones
 
 SELECT Titulo_Disco 
@@ -272,5 +267,5 @@ GROUP BY Nombre_Grupo HAVING COUNT(*) > 5;
 SELECT Nombre_Usuario 
 FROM Tiene GROUP BY Nombre_Usuario 
 HAVING COUNT(*) = (SELECT MAX(NumDiscos) FROM (SELECT COUNT(*) AS NumDiscos FROM Tiene GROUP BY Nombre_Usuario) AS NumDiscos); 
-
+*/
 ROLLBACK;

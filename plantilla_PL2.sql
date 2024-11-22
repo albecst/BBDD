@@ -240,13 +240,19 @@ SELECT Disco.Titulo_Disco, SUM(Cancion.Duracion)
 FROM Disco JOIN Cancion ON Disco.Titulo_Disco = Cancion.Titulo_Disco 
 WHERE Disco.Ano_Publicacion < 2000 GROUP BY Disco.Titulo_Disco;
 
-\echo Consulta 8: Lista de ediciones de discos deseados por el usuario Lorena Sáez Pérez que tiene 
-SELECT Formato, Ano_Edicion, Pais, Edicion.Ano_Publicacion_Disco, Edicion.Titulo_Disco 
-FROM Edicion 
-JOIN Desea ON Edicion.Ano_Publicacion_Disco = Desea.Ano_Publicacion_Disco AND Edicion.Titulo_Disco = Desea.Titulo_Disco 
+\echo Consulta 8: Lista de ediciones de discos deseados por el usuario Lorena Sáez Pérez que tiene el usuario Juan García Gómez
+WITH Deseados_Lorena(Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco ) AS
+(SELECT Formato, Ano_Edicion, Pais, Edicion.Ano_Publicacion_Disco, Edicion.Titulo_Disco 
+FROM Desea 
 JOIN Usuario ON Desea.Nombre_Usuario = Usuario.Nombre_Usuario
-WHERE Usuario.Nombre = 'Lorena Sáez Pérez';
--- Lorena no desea nada, no hay nada que mostrar
+JOIN Edicion ON Desea.Ano_Publicacion_Disco = Edicion.Ano_Publicacion_Disco AND Desea.Titulo_Disco = Edicion.Titulo_Disco
+WHERE Desea.Nombre_Usuario = 'Lorena Sáez Pérez')
+
+SELECT dl.Formato, dl.Ano_Edicion, Pais, dl.Ano_Publicacion_Disco, dl.Titulo_Disco 
+FROM Tiene
+JOIN Usuario ON Tiene.Nombre_Usuario = Usuario.Nombre_Usuario
+JOIN Deseados_Lorena dl ON dl.Ano_Publicacion_Disco = Tiene.Ano_Publicacion_Disco AND dl.Titulo_Disco = Tiene.Titulo_Disco
+WHERE Tiene.Nombre_Usuario = 'Juan García Gómez';
 
 \echo Consulta 9: Lista todas las ediciones de los discos que tiene el usuario Gómez García en un estado NM o M. 
 SELECT Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco

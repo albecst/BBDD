@@ -210,7 +210,7 @@ JOIN Usuario ON Desea.Nombre_Usuario = Usuario.Nombre_Usuario
 WHERE Usuario.Nombre = 'Juan García Gómez'; 
 
 \echo Consulta 5: Mostrar los discos publicados entre 1970 y 1972 junto con sus ediciones ordenados por el año de publicación. 
-SELECT Disco.Titulo_Disco, Disco.Ano_Publicacion 
+SELECT Disco.Titulo_Disco, Disco.Ano_Publicacion, Edicion.Ano_Edicion
 FROM Disco JOIN Edicion ON Disco.Titulo_Disco = Edicion.Titulo_Disco 
 WHERE Disco.Ano_Publicacion >= 1970 AND Disco.Ano_Publicacion <= 1972
 ORDER BY Disco.Ano_Publicacion;

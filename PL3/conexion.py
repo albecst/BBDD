@@ -59,19 +59,19 @@ def main():
         try:
             (host, port, user, password, database) = ask_conn_parameters()          
             connstring = f'host={host} port={port} user={user} password={password} dbname={database}' 
-            conn = psycopg2.connect(connstring)                                  
+            conn = psycopg2.connect(connstring) 
+            print("¡Bienvenido!")                                 
         except portException:
             print("The port is not valid!")
-        except psycopg2.OperationalError:
+        except (psycopg2.OperationalError, UnicodeDecodeError) :
             print("Usuario o contraseña incorrectos")
         except KeyboardInterrupt:
             print("Program interrupted by user.")
             return
-        except UnicodeDecodeError:
-            print("Error de codificación")
         finally:
             if conn is None:
                 print("Inténtalo de nuevo.")
+    
     while opcion != '-1':
         try:
             print_options()
@@ -79,25 +79,26 @@ def main():
             
             if opcion == '1':
                 # insertar disco
-                continue
-            
-            if opcion == '2':
-                cur = conn.cursor()                                                 # instacia un cursor    
+                #continue
+                print("nada")
+
+            elif opcion == '2':
+                cur = conn.cursor() # instacia un cursor    
                 query = 'SELECT Titulo_Disco FROM base_discos.Disco WHERE (SELECT COUNT(*) FROM base_discos.Cancion WHERE base_discos.Disco.Ano_Publicacion = base_discos.Cancion.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco) > 5'
                 cur.execute(query)                                                  # ejecuta la consulta
                 for record in cur.fetchall():                                       # fetchall devuelve todas las filas de la consulta
                     print(record)                                                   # imprime las filas
-                cur.close()                                                         # cierra el cursor
+                cur.close() 
 
-            if opcion == '3':
-                cur = conn.cursor()                                                     
+            elif opcion == '3':
+                cur = conn.cursor() 
                 query = "SELECT Titulo_Disco, Pais_Edicion, Ano_Edicion FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre = 'Juan García Gómez' AND base_discos.Tiene.Formato_Edicion = 'Vinyl'"                                    
-                cur.execute(query)                                                      
+                cur.execute(query) 
                 for record in cur.fetchall():                                           
-                    print(record)                                                       
-                cur.close()                                                            
+                    print(record) 
+                cur.close()
 
-            if opcion == '4':
+            elif opcion == '4':
                 cur = conn.cursor()                                                    
                 query = 'WITH DuracionDiscos (Duracion,Titulo_Disco) AS (SELECT SUM(base_discos.Cancion.Duracion), base_discos.Disco.Titulo_Disco FROM base_discos.Cancion JOIN base_discos.Disco ON base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco GROUP BY base_discos.Disco.Titulo_Disco)SELECT Titulo_Disco, Duracion FROM DuracionDiscos WHERE Duracion = (SELECT MAX(Duracion) FROM DuracionDiscos)' 
                 cur.execute(query)                                                    
@@ -105,7 +106,7 @@ def main():
                     print(record)                                                      
                 cur.close()                                                            
 
-            if opcion == '5':
+            elif opcion == '5':
                 cur = conn.cursor()                                                  
                 query = "SELECT Nombre_Grupo FROM base_discos.Disco JOIN base_discos.Desea ON base_discos.Disco.Ano_Publicacion = base_discos.Desea.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Desea.Titulo_Disco JOIN base_discos.Usuario ON base_discos.Desea.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre = 'Juan García Gómez'"  
                 cur.execute(query)                                                  
@@ -113,7 +114,7 @@ def main():
                     print(record)                                                       
                 cur.close()                                                            
 
-            if opcion == '6':
+            elif opcion == '6':
                 cur = conn.cursor()                                                    
                 query = 'SELECT base_discos.Disco.Titulo_Disco, base_discos.Disco.Ano_Publicacion, base_discos.Edicion.Ano_Edicion FROM base_discos.Disco JOIN base_discos.Edicion ON base_discos.Disco.Titulo_Disco = base_discos.Edicion.Titulo_Disco  WHERE base_discos.Disco.Ano_Publicacion >= 1970 AND base_discos.Disco.Ano_Publicacion <= 1972 ORDER BY base_discos.Disco.Ano_Publicacion'                                        
                 cur.execute(query)                                                     
@@ -121,7 +122,7 @@ def main():
                     print(record)                                                     
                 cur.close()                                                            
 
-            if opcion == '7':
+            elif opcion == '7':
                 cur = conn.cursor()                                                  
                 query = "SELECT DISTINCT base_discos.Grupo.Nombre FROM base_discos.Grupo JOIN base_discos.Disco ON base_discos.Grupo.Nombre = base_discos.Disco.Nombre_Grupo JOIN base_discos.Generos ON base_discos.Disco.Titulo_Disco = base_discos.Generos.Titulo_Disco WHERE base_discos.Generos.Genero LIKE '%Electronic%'"                                    
                 cur.execute(query)                                                      
@@ -129,7 +130,7 @@ def main():
                     print(record)                                                     
                 cur.close()              
 
-            if opcion == '8':
+            elif opcion == '8':
                 cur = conn.cursor()                                                     
                 query = 'SELECT base_discos.Disco.Titulo_Disco, SUM(base_discos.Cancion.Duracion) FROM base_discos.Disco JOIN base_discos.Cancion ON base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco WHERE base_discos.Disco.Ano_Publicacion < 2000 GROUP BY base_discos.Disco.Titulo_Disco'                                        
                 cur.execute(query)                                                     
@@ -137,7 +138,7 @@ def main():
                     print(record)                                                       
                 cur.close()                                                            
 
-            if opcion == '9':
+            elif opcion == '9':
                 cur = conn.cursor()                                                    
                 query = "WITH Deseados_Lorena(Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco ) AS (SELECT Formato, Ano_Edicion, Pais, base_discos.Edicion.Ano_Publicacion_Disco, base_discos.Edicion.Titulo_Disco FROM base_discos.Desea JOIN base_discos.Usuario ON base_discos.Desea.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario JOIN base_discos.Edicion ON base_discos.Desea.Ano_Publicacion_Disco = base_discos.Edicion.Ano_Publicacion_Disco AND base_discos.Desea.Titulo_Disco = base_discos.Edicion.Titulo_Disco WHERE base_discos.Desea.Nombre_Usuario = 'Lorena Sáez Pérez') SELECT dl.Formato, dl.Ano_Edicion, Pais, dl.Ano_Publicacion_Disco, dl.Titulo_Disco FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario JOIN Deseados_Lorena dl ON dl.Ano_Publicacion_Disco = base_discos.Tiene.Ano_Publicacion_Disco AND dl.Titulo_Disco = base_discos.Tiene.Titulo_Disco WHERE base_discos.Tiene.Nombre_Usuario = 'Juan García Gómez'"
                 cur.execute(query)                                                     
@@ -145,7 +146,7 @@ def main():
                     print(record)                                                      
                 cur.close()                                                            
 
-            if opcion == '10':
+            elif opcion == '10':
                 cur = conn.cursor()                                                   
                 query = "SELECT Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre LIKE '%Gómez García' AND (Estado = 'NM' OR Estado = 'M')" 
                 cur.execute(query)                                                      
@@ -153,7 +154,7 @@ def main():
                     print(record)                                                       
                 cur.close()                                                               
 
-            if opcion == '11':
+            elif opcion == '11':
                 cur = conn.cursor()                                                   
                 query = "SELECT Nombre_Usuario, COUNT(*), MIN(Ano_Edicion), MAX(Ano_Edicion), AVG(Ano_Edicion) FROM base_discos.Tiene GROUP BY Nombre_Usuario"                                     
                 cur.execute(query)                                                      
@@ -161,7 +162,7 @@ def main():
                     print(record)                                                   
                 cur.close()                                                   
 
-            if opcion == '12':
+            elif opcion == '12':
                 cur = conn.cursor()                                                    
                 query = 'SELECT Nombre_Grupo FROM base_discos.Disco JOIN base_discos.Edicion ON base_discos.Disco.Ano_Publicacion = base_discos.Edicion.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Edicion.Titulo_Disco GROUP BY Nombre_Grupo HAVING COUNT(*) > 5'     
                 cur.execute(query)                                                     
@@ -169,7 +170,7 @@ def main():
                     print(record)                                                      
                 cur.close()                                                            
 
-            if opcion == '13':
+            elif opcion == '13':
                 cur = conn.cursor()                                                  
                 query = "SELECT Nombre_Usuario FROM base_discos.Tiene GROUP BY Nombre_Usuario HAVING COUNT(*) = (SELECT MAX(NumDiscos) FROM (SELECT COUNT(*) AS NumDiscos FROM base_discos.Tiene GROUP BY Nombre_Usuario) AS NumDiscos)"                                      
                 cur.execute(query)                                                  
@@ -177,16 +178,20 @@ def main():
                     print(record)                                                       
                 cur.close()                                                              
             
-            if opcion == '-1':
+            elif opcion == '-1':
                 conn.close() #cierra la conexion 
+                print("...cerrando...")
                 break
             
             else:
                 print("Opción no válida")
              
-        
         except (psycopg2.errors.InsufficientPrivilege, psycopg2.errors.InFailedSqlTransaction):
             print("El usuario actual no puede realizar esta consulta")
+        except KeyboardInterrupt:
+            print("Program interrupted by user.")
+            conn.close()
+            break
         
 
 

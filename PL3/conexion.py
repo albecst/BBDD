@@ -188,6 +188,8 @@ def main():
              
         except (psycopg2.errors.InsufficientPrivilege, psycopg2.errors.InFailedSqlTransaction):
             print("El usuario actual no puede realizar esta consulta")
+            if conn: conn.rollback() #si se realiza consulta fallida, se hace rollback para que se puedan seguir realizando más consultas
+            #recupera la conexion del estado fallido
         except KeyboardInterrupt:
             print("Program interrupted by user.")
             conn.close()

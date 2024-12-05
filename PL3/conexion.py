@@ -178,7 +178,7 @@ def main():
                 cur.close()                                                              
             
             if opcion == '-1':
-                conn.close() #cierra la conexion
+                conn.close() #cierra la conexion 
                 break
             
             else:

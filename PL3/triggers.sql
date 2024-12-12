@@ -52,8 +52,8 @@ FOR EACH ROW EXECUTE FUNCTION auditoria_funcion();
 CREATE OR REPLACE FUNCTION comprobar_lista_deseados()
 RETURNS TRIGGER AS $$
 BEGIN
-    DELETE FROM Desea
-    WHERE usuario_id = NEW.usuario_id AND disco_id = NEW.disco_id;
+    DELETE FROM base_discos.Desea
+    WHERE Nombre_Usuario = NEW.Nombre_Usuario AND Titulo_Disco = NEW.Titulo_Disco AND Ano_Publicacion_Disco = NEW.Ano_Publicacion_Disco;
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;

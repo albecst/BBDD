@@ -20,7 +20,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA base_discos TO gest
 GRANT SELECT, INSERT ON TABLE auditoria TO gestor;
 
 REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA base_discos FROM cliente;
-GRANT SELECT, INSERT ON base_discos.Tiene, base_discos.Desea, base_discos.Grupo, base_discos.Disco, base_discos.Cancion, base_discos.Edicion TO cliente;
+GRANT SELECT, DELETE, INSERT ON base_discos.Tiene, base_discos.Desea, base_discos.Grupo, base_discos.Disco, base_discos.Cancion, base_discos.Edicion TO cliente;
 GRANT SELECT, INSERT ON TABLE auditoria TO cliente;
 --se han asignado mas permisos de los que pone en el enunciado porque si no el cliente no puede insertar discos  en "Tiene" que no esten en "Disco"
 
@@ -29,5 +29,5 @@ GRANT SELECT ON base_discos.Grupo, base_discos.Disco, base_discos.Cancion TO inv
 
 GRANT EXECUTE ON FUNCTION auditoria_funcion() TO admin, gestor, cliente;
 GRANT EXECUTE ON FUNCTION comprobar_lista_deseados() TO admin, gestor, cliente;
-
+GRANT USAGE, SELECT, UPDATE ON SEQUENCE auditoria_id_seq TO admin, gestor, cliente;
 COMMIT;

@@ -49,6 +49,84 @@ def print_options():
     print("13. Lista el usuario que más discos, contando todas sus ediciones tiene en la base de datos\n")
     print()
 
+def insertar_disco_y_canciones(conn):
+    """
+    Inserta un nuevo disco, su grupo y las canciones asociadas en la base de datos.
+    """
+    try:
+        cur = conn.cursor()
+                    
+        # Solicitar detalles del disco
+        nombre_usuario = input("Introduce el nombre del usuario: ")
+        titulo_disco = input("Introduce el título del disco: ")
+        formato_edicion = input("Introduce el formato de la edición: ")
+        ano_edicion = int(input("Introduce el año de la edición: "))
+        pais_edicion = input("Introduce el país de la edición: ")
+        estado = input("Introduce el estado de la edición: ")
+        nombre_grupo = input("Introduce el nombre del grupo: ")
+        ano_publicacion = int(input("Introduce el año de publicación: "))
+        url_portada = input("Introduce la URL de la portada (opcional): ")
+        
+        # Verificar si el disco ya existe en Tiene
+        cur.execute("""
+            SELECT COUNT(*) FROM base_discos.Tiene 
+            WHERE Titulo_Disco = %s AND Ano_Publicacion_Disco = %s AND Nombre_Usuario = %s
+        """, (titulo_disco, ano_publicacion, nombre_usuario))
+        if cur.fetchone()[0] != 0:
+            print("El disco ya existe en la colección del usuario.")
+            return
+        
+        # Verificar si el disco ya existe en Disco
+        cur.execute("SELECT COUNT(*) FROM base_discos.Disco WHERE Titulo_Disco = %s AND Ano_Publicacion = %s", (titulo_disco, ano_publicacion))
+        if cur.fetchone()[0] == 0:
+            # Verificar si el grupo ya existe
+            cur.execute("SELECT COUNT(*) FROM base_discos.Grupo WHERE Nombre = %s", (nombre_grupo,))
+            if cur.fetchone()[0] == 0:
+                # Insertar el grupo si no existe
+                url_grupo = input("Introduce la URL del grupo: ")
+                cur.execute("INSERT INTO base_discos.Grupo (Nombre, URL_Grupo) VALUES (%s, %s)", (nombre_grupo, url_grupo))
+            
+            # Insertar el disco
+            cur.execute("""
+                INSERT INTO base_discos.Disco (Ano_Publicacion, Titulo_Disco, Url_Portada, Nombre_Grupo)
+                VALUES (%s, %s, %s, %s)
+            """, (ano_publicacion, titulo_disco, url_portada, nombre_grupo))
+            
+            # Solicitar detalles de las canciones
+            while True:
+                titulo_cancion = input("Introduce el título de la canción (o 'fin' para terminar): ")
+                if titulo_cancion.lower() == 'fin':
+                    break
+                duracion = input("Introduce la duración de la canción (formato HH:MM:SS): ")
+                cur.execute("""
+                    INSERT INTO base_discos.Cancion (Titulo_Cancion, Duracion, Titulo_Disco, Ano_Publicacion_Disco)
+                    VALUES (%s, %s, %s, %s)
+                """, (titulo_cancion, duracion, titulo_disco, ano_publicacion))
+        
+        #Insertar en la tabla edicion si no esta ya
+        cur.execute("SELECT COUNT(*) FROM base_discos.Edicion WHERE Formato = %s AND Ano_Edicion = %s AND Pais = %s AND Ano_Publicacion_Disco = %s AND Titulo_Disco = %s" , (formato_edicion, ano_edicion, pais_edicion, ano_publicacion, titulo_disco))
+        if cur.fetchone()[0] == 0:
+            # la edicion no existe
+            cur.execute("""
+                        INSERT INTO base_discos.Edicion (Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco) 
+                        VALUES (%s, %s, %s, %s, %s)
+                        """, (formato_edicion, ano_edicion, pais_edicion, ano_publicacion, titulo_disco))
+
+        # Insertar en la tabla Tiene
+        cur.execute("""
+            INSERT INTO base_discos.Tiene (Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco, Nombre_Usuario, Estado)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+        """, (formato_edicion, ano_edicion, pais_edicion, ano_publicacion, titulo_disco, nombre_usuario, estado))
+        
+        # Confirmar los cambios
+        conn.commit()
+        print("Disco, grupo, canciones y edición insertados correctamente.")
+    except Exception as e:
+        conn.rollback()
+        print(f"Error al insertar el disco, grupo, canciones y edición: {e}")
+    finally:
+        cur.close()
+                        
 def main():
     """
         main :: () -> IO None
@@ -78,10 +156,10 @@ def main():
             opcion = input("Introduce una opción (-1 para salir):")
             
             if opcion == '1':
-                # insertar disco
-                #continue
-                print("nada")
-
+                if user=="invitado":
+                    print("El invitado no puede insertar ningun dato a la base de datos")
+                else: insertar_disco_y_canciones(conn)
+    
             elif opcion == '2':
                 cur = conn.cursor() # instacia un cursor    
                 query = 'SELECT Titulo_Disco FROM base_discos.Disco WHERE (SELECT COUNT(*) FROM base_discos.Cancion WHERE base_discos.Disco.Ano_Publicacion = base_discos.Cancion.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco) > 5'

@@ -91,10 +91,14 @@ prueba_triggers("javierfernández","The Receiver","Vinyl","1980","US","M","Wagon
 print("\ndisco que solo existe en Disco: ")
 prueba_triggers("martamoreno","Pesadillas","CD","2018","Greece","M","Akheron","1992")
 
-print("\ndisco que no existe en la bbdd: ")
-prueba_triggers("martamoreno","inventado","CD","2024","Latvia","M","anonimo","2015")
-
 print("\nusuario que no existe: ")
 prueba_triggers("pepe","Pesadillas","CD","2018","Greece","M","Akheron","1992")
 
+print("\nEl disco ya está en tiene para el usuario: ")
+prueba_triggers("juangomez","Lavatory","CD","2012","Russia","VG+","Wombbath","2012")
 
+print("\ndisco que no existe en la bbdd: ")
+prueba_triggers("martamoreno","inventado","CD","2024","Latvia","M","anonimo","2015")
+
+print("\ndisco que no existe en la bbdd pero el grupo sí: ")
+prueba_triggers("martamoreno","inventado","CD","2024","Latvia","M","Bee Gees","2015")

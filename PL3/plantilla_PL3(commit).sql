@@ -3,7 +3,7 @@
 SET client_encoding = 'UTF8';
 
 BEGIN;
-
+/*
 DROP TABLE IF EXISTS base_discos.Generos CASCADE;
 DROP TABLE IF EXISTS base_discos.Tiene CASCADE;
 DROP TABLE IF EXISTS base_discos.Desea CASCADE;
@@ -18,7 +18,7 @@ DROP TABLE IF EXISTS temp.CancionTemp CASCADE;
 DROP TABLE IF EXISTS temp.EdicionTemp CASCADE;
 DROP TABLE IF EXISTS temp.DeseaTemp CASCADE;
 DROP TABLE IF EXISTS temp.TieneTemp CASCADE;
-DROP TABLE IF EXISTS auditoria CASCADE;
+DROP TABLE IF EXISTS auditoria CASCADE;*/
 
 
 \echo 'creando el esquema para la BBDD de discos'

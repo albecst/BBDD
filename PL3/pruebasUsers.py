@@ -29,9 +29,8 @@ def prueba_users(nombre_user, password):
         #hasta aquí llega admin
 
         query = "CREATE TABLE IF NOT EXISTS base_discos.pruebas(nombre TEXT)"                                      
-        cur.execute(query)                                                  
-        for record in cur.fetchall():                                          
-            print(record)
+        cur.execute(query)
+        print("tabla creada")
         #hasta aquí llega gestor
 
     except Exception as e:

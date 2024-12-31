@@ -126,6 +126,26 @@ def insertar_disco_y_canciones(conn):
         print(f"Error al insertar el disco, grupo, canciones y edición: {e}")
     finally:
         cur.close()
+
+def consulta(numero,conn):
+    consultas=['SELECT Titulo_Disco FROM base_discos.Disco WHERE (SELECT COUNT(*) FROM base_discos.Cancion WHERE base_discos.Disco.Ano_Publicacion = base_discos.Cancion.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco) > 5',
+               "SELECT Titulo_Disco, Pais_Edicion, Ano_Edicion FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre = 'Juan García Gómez' AND base_discos.Tiene.Formato_Edicion = 'Vinyl'",
+               'WITH DuracionDiscos (Duracion,Titulo_Disco) AS (SELECT SUM(base_discos.Cancion.Duracion), base_discos.Disco.Titulo_Disco FROM base_discos.Cancion JOIN base_discos.Disco ON base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco GROUP BY base_discos.Disco.Titulo_Disco)SELECT Titulo_Disco, Duracion FROM DuracionDiscos WHERE Duracion = (SELECT MAX(Duracion) FROM DuracionDiscos)',
+               "SELECT Nombre_Grupo FROM base_discos.Disco JOIN base_discos.Desea ON base_discos.Disco.Ano_Publicacion = base_discos.Desea.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Desea.Titulo_Disco JOIN base_discos.Usuario ON base_discos.Desea.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre = 'Juan García Gómez'",
+               'SELECT base_discos.Disco.Titulo_Disco, base_discos.Disco.Ano_Publicacion, base_discos.Edicion.Ano_Edicion FROM base_discos.Disco JOIN base_discos.Edicion ON base_discos.Disco.Titulo_Disco = base_discos.Edicion.Titulo_Disco  WHERE base_discos.Disco.Ano_Publicacion >= 1970 AND base_discos.Disco.Ano_Publicacion <= 1972 ORDER BY base_discos.Disco.Ano_Publicacion',
+               "SELECT DISTINCT base_discos.Grupo.Nombre FROM base_discos.Grupo JOIN base_discos.Disco ON base_discos.Grupo.Nombre = base_discos.Disco.Nombre_Grupo JOIN base_discos.Generos ON base_discos.Disco.Titulo_Disco = base_discos.Generos.Titulo_Disco WHERE base_discos.Generos.Genero LIKE '%Electronic%'",
+               'SELECT base_discos.Disco.Titulo_Disco, SUM(base_discos.Cancion.Duracion) FROM base_discos.Disco JOIN base_discos.Cancion ON base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco WHERE base_discos.Disco.Ano_Publicacion < 2000 GROUP BY base_discos.Disco.Titulo_Disco',
+               "WITH Deseados_Lorena(Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco ) AS (SELECT Formato, Ano_Edicion, Pais, base_discos.Edicion.Ano_Publicacion_Disco, base_discos.Edicion.Titulo_Disco FROM base_discos.Desea JOIN base_discos.Usuario ON base_discos.Desea.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario JOIN base_discos.Edicion ON base_discos.Desea.Ano_Publicacion_Disco = base_discos.Edicion.Ano_Publicacion_Disco AND base_discos.Desea.Titulo_Disco = base_discos.Edicion.Titulo_Disco WHERE base_discos.Desea.Nombre_Usuario = 'Lorena Sáez Pérez') SELECT dl.Formato, dl.Ano_Edicion, Pais, dl.Ano_Publicacion_Disco, dl.Titulo_Disco FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario JOIN Deseados_Lorena dl ON dl.Ano_Publicacion_Disco = base_discos.Tiene.Ano_Publicacion_Disco AND dl.Titulo_Disco = base_discos.Tiene.Titulo_Disco WHERE base_discos.Tiene.Nombre_Usuario = 'Juan García Gómez'",
+               "SELECT Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre LIKE '%Gómez García' AND (Estado = 'NM' OR Estado = 'M')",
+                "SELECT Nombre_Usuario, COUNT(*), MIN(Ano_Edicion), MAX(Ano_Edicion), AVG(Ano_Edicion) FROM base_discos.Tiene GROUP BY Nombre_Usuario",
+                'SELECT Nombre_Grupo FROM base_discos.Disco JOIN base_discos.Edicion ON base_discos.Disco.Ano_Publicacion = base_discos.Edicion.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Edicion.Titulo_Disco GROUP BY Nombre_Grupo HAVING COUNT(*) > 5',
+                "SELECT Nombre_Usuario FROM base_discos.Tiene GROUP BY Nombre_Usuario HAVING COUNT(*) = (SELECT MAX(NumDiscos) FROM (SELECT COUNT(*) AS NumDiscos FROM base_discos.Tiene GROUP BY Nombre_Usuario) AS NumDiscos)"]
+    cur = conn.cursor()
+    query = consultas[numero-2] 
+    cur.execute(query)
+    for record in cur.fetchall():                                           
+        print(record) 
+    cur.close()
                         
 def main():
     """
@@ -161,100 +181,40 @@ def main():
                 else: insertar_disco_y_canciones(conn)
     
             elif opcion == '2':
-                cur = conn.cursor() # instacia un cursor    
-                query = 'SELECT Titulo_Disco FROM base_discos.Disco WHERE (SELECT COUNT(*) FROM base_discos.Cancion WHERE base_discos.Disco.Ano_Publicacion = base_discos.Cancion.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco) > 5'
-                cur.execute(query)                                                  # ejecuta la consulta
-                for record in cur.fetchall():                                       # fetchall devuelve todas las filas de la consulta
-                    print(record)                                                   # imprime las filas
-                cur.close() 
+                consulta(2,conn)
 
             elif opcion == '3':
-                cur = conn.cursor() 
-                query = "SELECT Titulo_Disco, Pais_Edicion, Ano_Edicion FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre = 'Juan García Gómez' AND base_discos.Tiene.Formato_Edicion = 'Vinyl'"                                    
-                cur.execute(query) 
-                for record in cur.fetchall():                                           
-                    print(record) 
-                cur.close()
+                consulta(3,conn)
 
             elif opcion == '4':
-                cur = conn.cursor()                                                    
-                query = 'WITH DuracionDiscos (Duracion,Titulo_Disco) AS (SELECT SUM(base_discos.Cancion.Duracion), base_discos.Disco.Titulo_Disco FROM base_discos.Cancion JOIN base_discos.Disco ON base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco GROUP BY base_discos.Disco.Titulo_Disco)SELECT Titulo_Disco, Duracion FROM DuracionDiscos WHERE Duracion = (SELECT MAX(Duracion) FROM DuracionDiscos)' 
-                cur.execute(query)                                                    
-                for record in cur.fetchall():                                           
-                    print(record)                                                      
-                cur.close()                                                            
+                consulta(4,conn)                                                            
 
             elif opcion == '5':
-                cur = conn.cursor()                                                  
-                query = "SELECT Nombre_Grupo FROM base_discos.Disco JOIN base_discos.Desea ON base_discos.Disco.Ano_Publicacion = base_discos.Desea.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Desea.Titulo_Disco JOIN base_discos.Usuario ON base_discos.Desea.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre = 'Juan García Gómez'"  
-                cur.execute(query)                                                  
-                for record in cur.fetchall():                                          
-                    print(record)                                                       
-                cur.close()                                                            
+                consulta(5,conn)                                                           
 
             elif opcion == '6':
-                cur = conn.cursor()                                                    
-                query = 'SELECT base_discos.Disco.Titulo_Disco, base_discos.Disco.Ano_Publicacion, base_discos.Edicion.Ano_Edicion FROM base_discos.Disco JOIN base_discos.Edicion ON base_discos.Disco.Titulo_Disco = base_discos.Edicion.Titulo_Disco  WHERE base_discos.Disco.Ano_Publicacion >= 1970 AND base_discos.Disco.Ano_Publicacion <= 1972 ORDER BY base_discos.Disco.Ano_Publicacion'                                        
-                cur.execute(query)                                                     
-                for record in cur.fetchall():                                           
-                    print(record)                                                     
-                cur.close()                                                            
+                consulta(6,conn)                                                          
 
             elif opcion == '7':
-                cur = conn.cursor()                                                  
-                query = "SELECT DISTINCT base_discos.Grupo.Nombre FROM base_discos.Grupo JOIN base_discos.Disco ON base_discos.Grupo.Nombre = base_discos.Disco.Nombre_Grupo JOIN base_discos.Generos ON base_discos.Disco.Titulo_Disco = base_discos.Generos.Titulo_Disco WHERE base_discos.Generos.Genero LIKE '%Electronic%'"                                    
-                cur.execute(query)                                                      
-                for record in cur.fetchall():                                           
-                    print(record)                                                     
-                cur.close()              
+                consulta(7,conn)             
 
             elif opcion == '8':
-                cur = conn.cursor()                                                     
-                query = 'SELECT base_discos.Disco.Titulo_Disco, SUM(base_discos.Cancion.Duracion) FROM base_discos.Disco JOIN base_discos.Cancion ON base_discos.Disco.Titulo_Disco = base_discos.Cancion.Titulo_Disco WHERE base_discos.Disco.Ano_Publicacion < 2000 GROUP BY base_discos.Disco.Titulo_Disco'                                        
-                cur.execute(query)                                                     
-                for record in cur.fetchall():                                          
-                    print(record)                                                       
-                cur.close()                                                            
+                consulta(8,conn)                                                           
 
             elif opcion == '9':
-                cur = conn.cursor()                                                    
-                query = "WITH Deseados_Lorena(Formato, Ano_Edicion, Pais, Ano_Publicacion_Disco, Titulo_Disco ) AS (SELECT Formato, Ano_Edicion, Pais, base_discos.Edicion.Ano_Publicacion_Disco, base_discos.Edicion.Titulo_Disco FROM base_discos.Desea JOIN base_discos.Usuario ON base_discos.Desea.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario JOIN base_discos.Edicion ON base_discos.Desea.Ano_Publicacion_Disco = base_discos.Edicion.Ano_Publicacion_Disco AND base_discos.Desea.Titulo_Disco = base_discos.Edicion.Titulo_Disco WHERE base_discos.Desea.Nombre_Usuario = 'Lorena Sáez Pérez') SELECT dl.Formato, dl.Ano_Edicion, Pais, dl.Ano_Publicacion_Disco, dl.Titulo_Disco FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario JOIN Deseados_Lorena dl ON dl.Ano_Publicacion_Disco = base_discos.Tiene.Ano_Publicacion_Disco AND dl.Titulo_Disco = base_discos.Tiene.Titulo_Disco WHERE base_discos.Tiene.Nombre_Usuario = 'Juan García Gómez'"
-                cur.execute(query)                                                     
-                for record in cur.fetchall():                                          
-                    print(record)                                                      
-                cur.close()                                                            
+                consulta(9,conn)                                                           
 
             elif opcion == '10':
-                cur = conn.cursor()                                                   
-                query = "SELECT Formato_Edicion, Ano_Edicion, Pais_Edicion, Ano_Publicacion_Disco, Titulo_Disco FROM base_discos.Tiene JOIN base_discos.Usuario ON base_discos.Tiene.Nombre_Usuario = base_discos.Usuario.Nombre_Usuario WHERE base_discos.Usuario.Nombre LIKE '%Gómez García' AND (Estado = 'NM' OR Estado = 'M')" 
-                cur.execute(query)                                                      
-                for record in cur.fetchall():                                           
-                    print(record)                                                       
-                cur.close()                                                               
+                consulta(10,conn)                                                               
 
             elif opcion == '11':
-                cur = conn.cursor()                                                   
-                query = "SELECT Nombre_Usuario, COUNT(*), MIN(Ano_Edicion), MAX(Ano_Edicion), AVG(Ano_Edicion) FROM base_discos.Tiene GROUP BY Nombre_Usuario"                                     
-                cur.execute(query)                                                      
-                for record in cur.fetchall():                                           
-                    print(record)                                                   
-                cur.close()                                                   
+                consulta(11,conn)                                                 
 
             elif opcion == '12':
-                cur = conn.cursor()                                                    
-                query = 'SELECT Nombre_Grupo FROM base_discos.Disco JOIN base_discos.Edicion ON base_discos.Disco.Ano_Publicacion = base_discos.Edicion.Ano_Publicacion_Disco AND base_discos.Disco.Titulo_Disco = base_discos.Edicion.Titulo_Disco GROUP BY Nombre_Grupo HAVING COUNT(*) > 5'     
-                cur.execute(query)                                                     
-                for record in cur.fetchall():                                          
-                    print(record)                                                      
-                cur.close()                                                            
+                consulta(12,conn)                                                           
 
             elif opcion == '13':
-                cur = conn.cursor()                                                  
-                query = "SELECT Nombre_Usuario FROM base_discos.Tiene GROUP BY Nombre_Usuario HAVING COUNT(*) = (SELECT MAX(NumDiscos) FROM (SELECT COUNT(*) AS NumDiscos FROM base_discos.Tiene GROUP BY Nombre_Usuario) AS NumDiscos)"                                      
-                cur.execute(query)                                                  
-                for record in cur.fetchall():                                          
-                    print(record)                                                       
-                cur.close()                                                              
+                consulta(13,conn)                                                             
             
             elif opcion == '-1':
                 conn.close() #cierra la conexion 
@@ -276,9 +236,12 @@ def main():
 
 
 
-if __name__ == "__main__":                                                      # Es el modula principal?
-    if '--test' in sys.argv:                                                    # chequea el argumento cmdline buscando el modo test
-        import doctest                                                          # importa la libreria doctest
-        doctest.testmod()                                                       # corre los tests
-    else:                                                                       # else
-        main()                                                                  # ejecuta el programa principal
+if __name__ == "__main__":                                                     
+    if '--test' in sys.argv:                                                 
+        import pruebasTriggers as pt, pruebasUsers as pu 
+        print("Probando triggers: ")
+        pt.probar()
+        print("Probando users: ")
+        pu.probar()
+    else:                                                                     
+        main()                                                                  

@@ -40,15 +40,16 @@ def prueba_users(nombre_user, password):
         conn.rollback() #como es una prueba no se guardan los cambios
         cur.close()
         conn.close()
-#PRUEBAS
-print("\nPrueba cliente")
-prueba_users("cliente","cliente")
+def probar():
+    #PRUEBAS
+    print("\nPrueba cliente")
+    prueba_users("cliente","cliente")
 
-print("\nPrueba invitado")
-prueba_users("invitado","invitado")
+    print("\nPrueba invitado")
+    prueba_users("invitado","invitado")
 
-print("\nPrueba gestor")
-prueba_users("gestor","gestor")
+    print("\nPrueba gestor")
+    prueba_users("gestor","gestor")
 
-print("\nPrueba admin")
-prueba_users("admin","admin")
+    print("\nPrueba admin")
+    prueba_users("admin","admin")

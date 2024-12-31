@@ -76,29 +76,28 @@ def prueba_triggers(nombre_usuario,titulo_disco,formato_edicion,ano_edicion,pais
         conn.rollback() #como es una prueba no se guardan los cambios
         cur.close()
         conn.close()
+def probar():
+    #PRUEBAS (probamos las distintas posibilidades que pueden ocurrir):
+    print("\ndisco que ya existe en Disco, en Edicion y en Desea: ")
+    prueba_triggers("martamoreno","Ivy","Vinyl","1989","UK","M","Primal Scream","1991")
 
-#PRUEBAS (probamos las distintas posibilidades que pueden ocurrir):
-print("\ndisco que ya existe en Disco, en Edicion y en Desea: ")
-prueba_triggers("martamoreno","Ivy","Vinyl","1989","UK","M","Primal Scream","1991")
+    print("\ndisco que ya existe en Disco y en Desea: ")
+    prueba_triggers("javierfernández","Heterogenial","Vinyl","2000","Spain","M","Nikola Parov","1994") 
 
-print("\ndisco que ya existe en Disco y en Desea: ")
-#nos inventamos una edicion de un disco que ya esta
-prueba_triggers("javierfernández","Heterogenial","Vinyl","2000","Spain","M","Nikola Parov","1994") 
+    print("\ndisco que solo existe en Disco y en Edicion: ")
+    prueba_triggers("javierfernández","The Receiver","Vinyl","1980","US","M","Wagon Christ","1980")
 
-print("\ndisco que solo existe en Disco y en Edicion: ")
-prueba_triggers("javierfernández","The Receiver","Vinyl","1980","US","M","Wagon Christ","1980")
+    print("\ndisco que solo existe en Disco: ")
+    prueba_triggers("martamoreno","Pesadillas","CD","2018","Greece","M","Akheron","1992")
 
-print("\ndisco que solo existe en Disco: ")
-prueba_triggers("martamoreno","Pesadillas","CD","2018","Greece","M","Akheron","1992")
+    print("\nusuario que no existe: ")
+    prueba_triggers("pepe","Pesadillas","CD","2018","Greece","M","Akheron","1992")
 
-print("\nusuario que no existe: ")
-prueba_triggers("pepe","Pesadillas","CD","2018","Greece","M","Akheron","1992")
+    print("\nEl disco ya está en tiene para el usuario: ")
+    prueba_triggers("juangomez","Lavatory","CD","2012","Russia","VG+","Wombbath","2012")
 
-print("\nEl disco ya está en tiene para el usuario: ")
-prueba_triggers("juangomez","Lavatory","CD","2012","Russia","VG+","Wombbath","2012")
+    print("\ndisco que no existe en la bbdd: ")
+    prueba_triggers("martamoreno","inventado","CD","2024","Latvia","M","anonimo","2015")
 
-print("\ndisco que no existe en la bbdd: ")
-prueba_triggers("martamoreno","inventado","CD","2024","Latvia","M","anonimo","2015")
-
-print("\ndisco que no existe en la bbdd pero el grupo sí: ")
-prueba_triggers("martamoreno","inventado","CD","2024","Latvia","M","Bee Gees","2015")
+    print("\ndisco que no existe en la bbdd pero el grupo sí: ")
+    prueba_triggers("martamoreno","inventado","CD","2024","Latvia","M","Bee Gees","2015")

@@ -76,6 +76,7 @@ def prueba_triggers(nombre_usuario,titulo_disco,formato_edicion,ano_edicion,pais
         conn.rollback() #como es una prueba no se guardan los cambios
         cur.close()
         conn.close()
+
 def probar():
     #PRUEBAS (probamos las distintas posibilidades que pueden ocurrir):
     print("\ndisco que ya existe en Disco, en Edicion y en Desea: ")
@@ -101,3 +102,4 @@ def probar():
 
     print("\ndisco que no existe en la bbdd pero el grupo sí: ")
     prueba_triggers("martamoreno","inventado","CD","2024","Latvia","M","Bee Gees","2015")
+    

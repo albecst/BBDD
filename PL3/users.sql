@@ -1,11 +1,11 @@
 BEGIN;
 
 -- Crear usuarios
-/*
+
 CREATE USER admin WITH PASSWORD 'admin';
 CREATE USER gestor WITH PASSWORD 'gestor';
 CREATE USER cliente WITH PASSWORD 'cliente';
-CREATE USER invitado WITH PASSWORD 'invitado';*/
+CREATE USER invitado WITH PASSWORD 'invitado';
 
 -- Asignar permisos
 GRANT USAGE ON SCHEMA base_discos TO admin, gestor, cliente, invitado;

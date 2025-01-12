@@ -3,23 +3,6 @@
 SET client_encoding = 'UTF8';
 
 BEGIN;
-/*
-DROP TABLE IF EXISTS base_discos.Generos CASCADE;
-DROP TABLE IF EXISTS base_discos.Tiene CASCADE;
-DROP TABLE IF EXISTS base_discos.Desea CASCADE;
-DROP TABLE IF EXISTS base_discos.Edicion CASCADE;
-DROP TABLE IF EXISTS base_discos.Cancion CASCADE;
-DROP TABLE IF EXISTS base_discos.Usuario CASCADE;
-DROP TABLE IF EXISTS base_discos.Disco CASCADE;
-DROP TABLE IF EXISTS base_discos.Grupo CASCADE;
-DROP TABLE IF EXISTS temp.DiscoTemp CASCADE;
-DROP TABLE IF EXISTS temp.UsuarioTemp CASCADE;
-DROP TABLE IF EXISTS temp.CancionTemp CASCADE;
-DROP TABLE IF EXISTS temp.EdicionTemp CASCADE;
-DROP TABLE IF EXISTS temp.DeseaTemp CASCADE;
-DROP TABLE IF EXISTS temp.TieneTemp CASCADE;
-DROP TABLE IF EXISTS auditoria CASCADE;*/
-
 
 \echo 'creando el esquema para la BBDD de discos'
 

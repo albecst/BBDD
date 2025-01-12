@@ -32,7 +32,7 @@ def ask_conn_parameters():
     database = 'PL3_discos'                                                     # nombre de la base de datos
     return (host, port, user, password, database)
 
-def uebaint_options():
+def print_options():
     print()
     print("1. Insertar disco")
     print("2. Mostrar los discos que tengan más de 5 canciones. Construir la expresión equivalente en álgebra relacional")
